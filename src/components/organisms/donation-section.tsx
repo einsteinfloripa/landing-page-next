@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { Button } from "../atoms/button";
 import { DonationValuesSection } from "../molecules/donation-values-section";
-import Heading from "../atoms/typography/typography";
 import { ArrowUpRight } from "lucide-react";
 
 
@@ -15,9 +14,9 @@ export const DonationSection = () => {
        <div className="flex bg-[#D9D9D9] rounded-lg p-24">
             <div className="flex flex-col gap-16 w-1/2">
                 <div className="flex flex-col gap-8">
-                    <Heading className="text-xl xl:text-5xl uppercase w-3/5">
+                    <h1 className="text-xl xl:text-5xl uppercase w-3/5">
                         É uma empresa e quer nos ajudar?
-                    </Heading>
+                    </h1>
                     <p className="w-3/5">
                     Você pode ser nosso patrocinador! Sempre estamos precisando de alguém para nos ajudar: com materiais, comida, hospedagem de site, e muito mais. Entre em contato e nos conte sua proposta.
                     </p>

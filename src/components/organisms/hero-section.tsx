@@ -1,47 +1,29 @@
 'use client'
-
-import Image from "next/image";
 import { Button } from "../atoms/button";
-import Heading from "../atoms/typography/typography";
+import { CrazyEinsteinBadget } from "../molecules/crazy-einstein-badget";
+import { Sticker } from "../molecules/sticker";
 
 export const Hero = () => {
   return (
-    <section
-      className="relative flex items-center justify-center min-h-screen"
-    >
-
-        <div className="flex flex-col items-center justify-center px-4 gap-7">
-            <Heading className="text-center">
-                Lorem ipsum dolor sit <br/> amet consectetur.
-            </Heading>
-            <p className='text-center'>
-                Lorem ipsum dolor sit amet consectetur. Duis nisi auctor nunc lacus metus nunc viverra sollicitudin scelerisque. <br/> Nibh fringilla blandit ullamcorper etiam.
-            </p>
-            <div className="flex gap-2">
-                <Button className="px-6 py-4 text-white rounded-full bg-black">Seja nosso aluno</Button>
-                <Button className="px-6 py-3 text-black rounded-full bg-white border-[2px] border-black hover:bg-white hover:opacity-70">Faça parte da equipe</Button>
-            </div>
-            <div className="hidden lg:block absolute top-40 right-64">
-                <div className="relative flex items-center justify-center">
-                    <Image  src='/star-shape.svg' alt="Forma de Estrela" width={240} height={240} />
-
-                    <Image className="absolute top-10" src='/images/rosto-einstein.png' alt="Rosto de Albert Einstein" width={160} height={160}/>
+    <div className="w-full px-auto">
+        <section
+            className="relative flex justify-center max-w-wrapper"
+        >
+            <div className="flex flex-col items-center px-4 gap-7 mt-28">
+                <h1 className="title-6xl text-center max-w-[720px] mt-28">
+                    Junte-se a nos e transforme o futuro de aluno para aluno
+                </h1>
+                <p className='text-center max-w-[514px]'>
+                    Cursinho pré-vestibular gratuito para estudantes de baixa renda que sonham com uma educação superior de qualidade.
+                </p>
+                <div className="flex gap-2">
+                    <Button>Seja nosso aluno</Button>
+                    <Button variant={"outline"}>Faça parte da equipe</Button>
                 </div>
             </div>
-            <div className="hidden lg:block absolute bottom-72 left-64 -rotate-12">
-                <div className="relative rounded-2xl bg-[#858585] h-[157px] w-[226px] pt-4">
-                    <p className="text-white text-center uppercase font-semibold">
-                        Nos ajude a
-                    </p>
-                    <div className="absolute top-24 left-1/2 transform -translate-x-1/2 -translate-y-1/2  h-[87px] w-[202px] bg-white flex items-center justify-center font-semibold">
-                        <p className="text-black uppercase text-center">
-                            Mudar a educação do Brasil
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
+            <CrazyEinsteinBadget className="hidden lg:block absolute top-20 right-32 z-50" />
+            <Sticker className="hidden lg:block absolute -rotate-12 top-96 left-32" />
+        </section>
+    </div>
   );
 };

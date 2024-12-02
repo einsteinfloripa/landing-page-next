@@ -12,8 +12,8 @@ export const Sticker = ({
 }:StickerProps) => {
     return(
         <div className={cn(className)}>
-                <div className={cn("relative rounded-2xl h-[157px] w-[226px] pt-4", appColor)}>
-                    <p className="text-white text-center uppercase font-semibold">
+                <div className={cn("relative rounded-2xl h-[157px] w-[226px] text-sm pt-4", appColor)}>
+                    <p className="text-white text-center uppercase font-semibold mt-1">
                         { title }
                     </p>
                     <div className="absolute top-24 left-1/2 transform -translate-x-1/2 -translate-y-1/2  h-[87px] w-[202px] bg-white flex items-center justify-center font-semibold">

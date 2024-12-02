@@ -56,7 +56,7 @@ export const Header = () => {
         duration: 0.35,
         ease: "easeInOut",
       }}
-      className="fixed z-40 w-full px-auto"
+      className="fixed z-40 w-full px-auto bg-app-neutral-10"
     >
       <div
       className="flex items-center justify-between w-full px-6 lg:px-10 py-6 max-w-wrapper"
