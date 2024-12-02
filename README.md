@@ -113,6 +113,7 @@ O escopo do projeto inclui o desenvolvimento completo do site institucional e in
 
 ## Pré-requisitos
 
+- NPM
 - Node 18
 - NVM
 
