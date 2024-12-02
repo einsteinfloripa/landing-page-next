@@ -11,8 +11,39 @@ const config: Config = {
   	extend: {
 		rotate: {
 			'-15': '-15deg',
-		  },
+		},
   		colors: {
+			app: {
+				blue: {
+					50: '#E6F3F9',
+					100: '#B0D9EC',
+					300: '#54ADD5',
+					500: '#0085C1',
+					600: '#0079B0',
+					900: '#00283A',
+				},
+				violet: {
+					500: '#522781',
+				},
+				yellow: {
+					500: '#FFEB66',
+					900: '#4F4A27'
+				},
+				orange: {
+					400: '#F98167',
+				},
+				green: {
+					500: '#54c100',
+				},
+				neutral: {
+					10: '#F5F5F5',
+					50: '#E6E8EC',
+					100: '#B0B7C4',
+					300: '#54647F',
+					600: '#00163A',
+					900: '#000A1B',
+				}
+			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -54,13 +85,32 @@ const config: Config = {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
+		fontFamily: {
+			roboto: ['var(--font-roboto)', 'sans-serif'],
+			anton: ['var(--font-anton)', 'sans-serif'],
+	    },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		maxWidth: {
+			'1440': '90rem'
+		},
+		boxShadow: {
+			'custom': '-36px 74px 23px 0px rgba(28, 28, 28, 0.00), -23px 47px 21px 0px rgba(28, 28, 28, 0.01), -13px 27px 18px 0px rgba(28, 28, 28, 0.05), -6px 12px 13px 0px rgba(28, 28, 28, 0.09), -1px 3px 7px 0px rgba(28, 28, 28, 0.10)',
+		},
+		animation: {
+			'spin-reverse': 'spin-reverse 15s linear infinite',
+		  },
+		keyframes: {
+			'spin-reverse': {
+			  from: { transform: 'rotate(0deg)' },
+			  to: { transform: 'rotate(-360deg)' },
+			},
+		},
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require('tailwindcss-animate')],
 };
 export default config;

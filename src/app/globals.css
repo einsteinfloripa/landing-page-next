@@ -3,13 +3,53 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+  .max-w-wrapper {
+    @apply max-w-1440 mx-auto
+  }
+  .title-6xl {
+    @apply font-anton uppercase leading-[110%] text-6xl
+  }
+  .title-5xl {
+    @apply font-anton uppercase leading-[110%] text-5xl
+  }
+  .title-4xl {
+    @apply font-anton uppercase leading-[110%] text-4xl
+  }
+  .title-3xl {
+    @apply font-anton uppercase leading-[110%] text-3xl
+  }
+  .title-xl {
+    @apply font-anton uppercase leading-[110%] text-xl
+  }
+  .body-4xl {
+    @apply font-roboto leading-[120%] text-4xl
+  }
+  .body-3xl {
+    @apply font-roboto leading-[120%] text-3xl
+  }
+  .body-2xl {
+    @apply font-roboto leading-[130%] text-2xl
+  }
+  .body-2xl-medium {
+    @apply font-roboto leading-[130%] text-2xl font-medium
+  }
+  .body-regular {
+    @apply font-roboto leading-[130%] text-base
+  }
+  .body-small {
+    @apply font-roboto leading-[130%] text-sm
+  }
+  .body-small-medium {
+    @apply font-roboto leading-[130%] text-sm font-medium
+  }
+  
 }
 
 @layer base {
