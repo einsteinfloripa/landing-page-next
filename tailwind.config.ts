@@ -13,6 +13,37 @@ const config: Config = {
 			'-15': '-15deg',
 		  },
   		colors: {
+			app: {
+				blue: {
+					50: '#E6F3F9',
+					100: '#B0D9EC',
+					300: '#54ADD5',
+					500: '#0085C1',
+					600: '#0079B0',
+					900: '#00283A',
+				},
+				violet: {
+					500: '#522781',
+				},
+				yellow: {
+					500: '#FFEB66',
+					900: '#4F4A27'
+				},
+				orange: {
+					400: '#F98167',
+				},
+				green: {
+					500: '#54c100',
+				},
+				neutral: {
+					10: '#F5F5F5',
+					50: '#E6E8EC',
+					100: '#B0B7C4',
+					300: '#54647F',
+					600: '#00163A',
+					900: '#000A1B',
+				}
+			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
