@@ -28,25 +28,25 @@ body {
   .title-xl {
     @apply font-anton uppercase leading-[110%] text-xl
   }
-  .text-4xl {
+  .body-4xl {
     @apply font-roboto leading-[120%] text-4xl
   }
-  .text-3xl {
+  .body-3xl {
     @apply font-roboto leading-[120%] text-3xl
   }
-  .text-2xl {
+  .body-2xl {
     @apply font-roboto leading-[130%] text-2xl
   }
-  .text-2xl-medium {
+  .body-2xl-medium {
     @apply font-roboto leading-[130%] text-2xl font-medium
   }
-  .text-regular {
+  .body-regular {
     @apply font-roboto leading-[130%] text-base
   }
-  .text-small {
+  .body-small {
     @apply font-roboto leading-[130%] text-sm
   }
-  .text-small-medium {
+  .body-small-medium {
     @apply font-roboto leading-[130%] text-sm font-medium
   }
   
