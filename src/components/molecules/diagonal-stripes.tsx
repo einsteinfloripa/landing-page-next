@@ -7,7 +7,7 @@ type StripeProps = {
 const Stripe = ({className}:StripeProps) => {
   return (
     <div 
-          className={cn("absolute xl:flex items-center justify-center gap-16 top-[80%] left-0 w-full transform text-center text-2xl py-3 whitespace-nowrap", className)}
+          className={cn("absolute top-[90%] left-0 xl:flex items-center justify-center gap-16  w-full transform text-center text-2xl py-3 whitespace-nowrap", className)}
           >
           {[...Array(8)].map((_, index) => (
             <Image key={index} src='/pipefy.svg' alt="Logo da Pipefy" width={75} height={32}/>
