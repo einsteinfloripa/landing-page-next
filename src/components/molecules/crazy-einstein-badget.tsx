@@ -2,11 +2,11 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { StarShape } from "../atoms/svg/star-shape";
 
-type EinsteinBadgetProps = {
+type CrazyEinsteinBadgetProps = {
     className?: string
 }
 
-export const EinsteinBadget = ({ className }:EinsteinBadgetProps) => {
+export const CrazyEinsteinBadget = ({ className }:CrazyEinsteinBadgetProps) => {
     return (
         <div className={cn(className)}>
             <div 
@@ -21,7 +21,8 @@ export const EinsteinBadget = ({ className }:EinsteinBadgetProps) => {
                     src='/images/rosto-einstein.png' 
                     alt="Rosto de Albert Einstein" 
                     width={106} 
-                    height={106}/>
+                    height={106}
+                />
             </div>
         </div>
     )
