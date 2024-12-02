@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
-import { Roboto } from 'next/font/google';
+import { Roboto, Anton } from 'next/font/google';
 import "./globals.css";
 import Script from "next/script";
 
 const roboto = Roboto({
-  weight: ['400', '700'], // Pese as opções desejadas (ex: 400 = regular, 700 = bold)
-  subsets: ['latin'], // Defina os subsets necessários (geralmente 'latin')
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  variable: '--font-roboto'
+});
+
+const anton = Anton({
+  weight: ['400'], 
+  subsets: ['latin'],
+  variable: '--font-anton'
 });
 
 
@@ -20,9 +27,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html 
+      lang="en"
+      className={`${roboto.variable} ${anton.variable}`}
+    >
       <body
-        className={`${roboto.className}  antialiased`}
+        className="font-roboto antialiased"
       >
         {children}
         <Script id="clarity-script" strategy="afterInteractive">
