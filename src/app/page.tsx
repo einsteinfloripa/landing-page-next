@@ -16,9 +16,9 @@ const Home = () => {
       animate="visible"
       exit={{ opacity: 0, transition: { duration: 1 } }}
       variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
-      className="bg-[#F5F5F5] dark:bg-neutral-800"
+      className="bg-app-neutral-10"
     >
-      <Header  />
+      <Header />
       <Hero />
       <ImageSection />
       <AboutSection/>
