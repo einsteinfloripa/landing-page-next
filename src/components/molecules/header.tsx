@@ -56,14 +56,14 @@ export const Header = () => {
         duration: 0.35,
         ease: "easeInOut",
       }}
-      className="fixed z-40 w-full px-auto bg-app-neutral-10"
+      className="fixed z-40 w-full px-auto"
     >
       <div
       className="flex items-center justify-between w-full px-6 lg:px-10 py-6 max-w-wrapper"
       >
         <Link href="/" className="">
         
-        <Image alt="Logo EinsteinFloripa" src="/logos/logo-horizontal.svg" width={110} height={40}/>
+        <Image alt="Logo EinsteinFloripa" src="/logos/logo-horizontal.svg" width={130} height={60}/>
         </Link>
         <div
           className={cn(
