@@ -66,6 +66,9 @@ body {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+  .max-w-wrapper {
+    @apply max-w-1440 mx-auto
+  }
 }
 
 @layer base {

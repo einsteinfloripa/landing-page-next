@@ -99,15 +99,6 @@ const config: Config = {
 		},
   	}
   },
-  plugins: [
-	function({ addComponents }) {
-		addComponents({
-			'.max-w-wrapper': {
-			'@apply max-w-1440 mx-auto': {},
-			},
-		})
-	},
-	require('tailwindcss-animate')
-],
+  plugins: [require('tailwindcss-animate')],
 };
 export default config;
