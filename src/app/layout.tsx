@@ -4,7 +4,7 @@ import "./globals.css";
 import Script from "next/script";
 
 const roboto = Roboto({
-  weight: ['400', '700'],
+  weight: ['400', "500", '700'],
   subsets: ['latin'],
   variable: '--font-roboto'
 });
