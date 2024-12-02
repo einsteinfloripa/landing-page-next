@@ -11,7 +11,7 @@ const config: Config = {
   	extend: {
 		rotate: {
 			'-15': '-15deg',
-		  },
+		},
   		colors: {
 			app: {
 				blue: {
@@ -88,14 +88,26 @@ const config: Config = {
 		fontFamily: {
 			roboto: ['var(--font-roboto)', 'sans-serif'],
 			anton: ['var(--font-anton)', 'sans-serif'],
-	  },
+	    },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		maxWidth: {
+			'1440': '90rem'
+		},
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+	function({ addComponents }) {
+		addComponents({
+			'.max-w-wrapper': {
+			'@apply max-w-1440 mx-auto': {},
+			},
+		})
+	},
+	require('tailwindcss-animate')
+],
 };
 export default config;
