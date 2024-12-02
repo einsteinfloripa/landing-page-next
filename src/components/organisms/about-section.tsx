@@ -16,7 +16,7 @@ export const AboutSection = () => {
                 </Heading>
                 <div className="xl:absolute xl:-bottom-24 xl:-right-16 flex items-center justify-center">
                     <div className="w-36 h-36 rounded-full bg-[#E3E3E3] relative flex items-center justify-center"/>
-                    <Image className="absolute left-0 right-0 m-auto" src='/logo-einstein.svg' alt="Logo Einstein" width={72} height={72}/>
+                    <Image className="absolute left-0 right-0 m-auto" src='/logos/logo-icon.svg' alt="Logo Einstein" width={72} height={72}/>
                 </div>
 
             </div>

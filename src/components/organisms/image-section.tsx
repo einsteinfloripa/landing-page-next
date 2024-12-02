@@ -15,7 +15,7 @@ export const ImageSection = () => {
                     
                 </div>
 
-                <Image className="absolute inset-0 m-auto" src='/heart.svg' alt="Ícone de coração" width={40} height={36}/>
+                <Image className="absolute inset-0 m-auto" src='/icons/heart.svg' alt="Ícone de coração" width={40} height={36}/>
             </div>
         </div>
         <DiagonalStripes/>

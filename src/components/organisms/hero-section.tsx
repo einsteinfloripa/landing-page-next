@@ -25,7 +25,7 @@ export const Hero = () => {
                 <div className="relative flex items-center justify-center">
                     <Image  src='/star-shape.svg' alt="Forma de Estrela" width={240} height={240} />
 
-                    <Image className="absolute top-10" src='/einstein-rosto.png' alt="Rosto de Albert Einstein" width={160} height={160}/>
+                    <Image className="absolute top-10" src='/images/rosto-einstein.png' alt="Rosto de Albert Einstein" width={160} height={160}/>
                 </div>
             </div>
             <div className="hidden lg:block absolute bottom-72 left-64 -rotate-12">
