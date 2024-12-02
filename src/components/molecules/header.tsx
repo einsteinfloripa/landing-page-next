@@ -5,11 +5,32 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-
 export const Header = () => {
   const { scrollY } = useScroll();
-
   const [hidden, setHidden] = useState(false);
+
+  const headerLinks = [
+    {
+      name: 'Sobre',
+      link: '/',
+      aria: 'Saiba mais sobre nós.'
+    },
+    {
+      name: 'Curso e Inscrição',
+      link: '/',
+      aria: 'Saiba sobre o curso e como se inscrever.'
+    },
+    {
+      name: 'Voluntario',
+      link: '/',
+      aria: 'Apoie o projeto sendo um voluntario.'
+    },
+    {
+      name: 'Apoie-nos',
+      link: '/',
+      aria: 'Saiba como apoiar nosso projeto.'
+    },
+  ]
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();
@@ -32,41 +53,42 @@ export const Header = () => {
         duration: 0.35,
         ease: "easeInOut",
       }}
-      className="fixed z-40 items-center justify-between w-full h-[70px] px-20 py-2 bg-[#F5F5F5] dark:border-b dark:bg-neutral-800 flex"
+      className="fixed z-40 flex items-center justify-between w-full px-10 py-6 bg-app-neutral-10"
     >
       <Link href="/" className="">
+      
         <Image alt="Logo EinsteinFloripa" src="/logos/logo-horizontal.svg" width={110} height={40}/>
       </Link>
       <nav className="hidden lg:block ">
-        <ul className="flex justify-between gap-6 mr-4 text-lg">
-          <Link
-            href="/"
-            className="border-b-2 text-black dark:text-white relative border-transparent hover:after:w-full px-6 py-2 cursor-pointer after:content-[''] after:absolute after:duration-500 after:bg-blue-steel after:h-0.5 after:w-0 after:left-0 after:-bottom-2"
-          >
-            Home
-          </Link>
-          <Link
-            href="/processo-seletivo"
-            className="border-b-2 text-black dark:text-white relative border-transparent hover:after:w-full px-6 py-2 cursor-pointer after:content-[''] after:absolute after:duration-500 after:bg-blue-steel after:h-0.5 after:w-0 after:left-0 after:-bottom-2"
-          >
-            Processo Seletivo
-          </Link>
-          <Link
-            href="/equipe"
-            className="border-b-2 text-black dark:text-white relative border-transparent hover:after:w-full px-6 py-2 cursor-pointer after:content-[''] after:absolute after:duration-500 after:bg-blue-steel after:h-0.5 after:w-0 after:left-0 after:-bottom-2"
-          >
-            Equipe
-          </Link>
+        <ul className="flex justify-between gap-10 mr-4 text-lg">
+          {headerLinks.map((headerLink) => {
+            return <>
+            <li key={headerLink.name}>
+              <Link
+                href={headerLink.link}
+                aria-label={headerLink.aria}
+                className="text-app-neutral-900 font-medium text-sm cursor-pointer relative inline-block after:content-[''] after:h-[1.5px] after:w-0 after:bg-app-neutral-900 hover:after:w-full after:transition-all after:duration-300 after:absolute after:block"
+              >
+                {headerLink.name}
+              </Link>
+            </li>
+            </>
+          })}
         </ul>
       </nav>
       <Link
             href="/"
-            className="flex gap-2 border-b-2 text-black dark:text-white relative border-transparent hover:after:w-full px-6 py-2 cursor-pointer after:content-[''] after:absolute after:duration-500 after:bg-blue-steel after:h-0.5 after:w-0 after:left-0 after:-bottom-2"
+            aria-label="Entre em contato conosco."
+            className="group flex items-center gap-2 text-sm font-medium w-20 transition-all duration-75"
       >
-            <ChatCentered color="#000" weight="fill" size={14} />
+            <ChatCentered 
+              color="#000A1B" 
+              weight="fill" 
+              size={14} 
+              className="group-hover:h-5 group-hover:w-5"
+            />
             Contato
-        </Link>
-      {/* <Button onClick={setDarkMode}>{darkMode ? "Light" : "Dark"}</Button> */}
+      </Link>
     </motion.nav>
   );
 };
