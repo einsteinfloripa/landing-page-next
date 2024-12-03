@@ -1,27 +1,23 @@
 'use client'
 
-import Image from "next/image";
 import { Button } from "../atoms/button";
+import { EinsteinTransformBadget } from "../molecules/einstein-transform-badget";
 
 export const AboutSection = () => {
   return (
-    <section
-      className="relative flex items-center justify-center min-h-screen"
-    >
-        <div className="flex flex-col lg:flex-row items-center px-4 gap-60">
-            <div className="text-center 2xl:text-start relative 2xl:w-[457px]">
-                <h1 className="text-xl xl:text-5xl uppercase">
+    <div className="w-full px-auto">
+        <section
+        className="relative flex justify-between px-[125px] mt-40 max-w-wrapper"
+        >
+            <div className="flex flex-col items-end gap-3">
+                <h1 className="title-4xl max-w-72 text-left">
                     Criando um futuro onde a educação é para todos
                 </h1>
-                <div className="xl:absolute xl:-bottom-24 xl:-right-16 flex items-center justify-center">
-                    <div className="w-36 h-36 rounded-full bg-[#E3E3E3] relative flex items-center justify-center"/>
-                    <Image className="absolute left-0 right-0 m-auto" src='/logos/logo-icon.svg' alt="Logo Einstein" width={72} height={72}/>
-                </div>
-
+                <EinsteinTransformBadget />
             </div>
             <div className="flex flex-col gap-8">
                 <p className="lg:w-[454px] ">
-                Einstein Floripa nasceu do sonho de três universitários <strong>democratizar o acesso ao ensino superior</strong> em  no Brasil. Ao se depararem com as dificuldades de muitos para alcançar uma <strong>educação de qualidade</strong>, decidiram agir e criaram este projeto <strong> voluntário e gratuito</strong>, que abre portas para um futuro melhor.
+                    Einstein Floripa nasceu do sonho de três universitários <strong>democratizar o acesso ao ensino superior</strong> em  no Brasil. Ao se depararem com as dificuldades de muitos para alcançar uma <strong>educação de qualidade</strong>, decidiram agir e criaram este projeto <strong> voluntário e gratuito</strong>, que abre portas para um futuro melhor.
                 </p>
                 <div>
                     <Button className="rounded-full ">
@@ -29,7 +25,7 @@ export const AboutSection = () => {
                     </Button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
   );
 };

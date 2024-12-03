@@ -23,7 +23,7 @@ export const EinsteinTransformBadget = ({className}:EinsteinTransformBadgetProps
                 width={174} 
                 height={174}
                 className="absolute animate-spin-reverse"
-            />
+                />
             </div>
         </div>
     )
