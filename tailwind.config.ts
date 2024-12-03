@@ -31,6 +31,7 @@ const config: Config = {
 				},
 				orange: {
 					400: '#F98167',
+					500: '#F86241',
 				},
 				green: {
 					500: '#54c100',

@@ -7,7 +7,7 @@ export const DonateCta = () => {
             href={"/"}
         >
             <div
-                className="w-36 h-36 rounded-full bg-app-orange-400 relative flex items-center justify-center shadow-custom"
+                className="w-36 h-36 rounded-full bg-app-orange-400 hover:bg-app-orange-500 transition-all duration-150 relative flex items-center justify-center shadow-custom"
             >
                 <Image 
                     alt="Seja um apoiador"
