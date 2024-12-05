@@ -37,8 +37,8 @@ body {
   .body-2xl {
     @apply font-roboto leading-[130%] text-2xl
   }
-  .body-2xl-medium {
-    @apply font-roboto leading-[130%] text-2xl font-medium
+  .body-xl-medium {
+    @apply font-roboto leading-[130%] text-xl font-medium
   }
   .body-regular {
     @apply font-roboto leading-[130%] text-base
