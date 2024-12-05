@@ -3,49 +3,51 @@
 import Image from "next/image";
 import { Button } from "../atoms/button";
 import { DonationValuesSection } from "../molecules/donation-values-section";
-import { ArrowUpRight } from "lucide-react";
+import { StarShape } from "../atoms/svg/star-shape";
 
 
 export const DonationSection = () => {
   return (
     <section
-      className="relative flex items-center justify-center min-h-screen p-8"
+      className="flex items-center justify-center min-h-screen py-32 px-10 text-app-neutral-900"
     >
-       <div className="flex bg-[#D9D9D9] rounded-lg p-24">
-            <div className="flex flex-col gap-16 w-1/2">
-                <div className="flex flex-col gap-8">
-                    <h1 className="text-xl xl:text-5xl uppercase w-3/5">
-                        É uma empresa e quer nos ajudar?
-                    </h1>
-                    <p className="w-3/5">
-                    Você pode ser nosso patrocinador! Sempre estamos precisando de alguém para nos ajudar: com materiais, comida, hospedagem de site, e muito mais. Entre em contato e nos conte sua proposta.
-                    </p>
-                    <div>
-                        <Button className="px-6 py-4 text-white rounded-full bg-black">Entre em contato</Button>
-                    </div>
-                </div>
+       <div className="relative flex justify-between bg-app-blue-200 rounded-lg pt-14 pb-32 px-[125px] w-full">
+            <div className="flex flex-col gap-11">
+                <h1 className="title-4xl w-3/5">
+                        Gostou da iniciativa e quer nos ajudar?
+                </h1>
+                <div className="flex items-center max-w-[477px]">
+                        <Image 
+                            className="rounded-lg" 
+                            src="/qrcode-doacao.png"
+                            alt="QRCode para realizar doação" 
+                            width={92} 
+                            height={92} 
+                        />
 
-                <div className="flex gap-6 items-center ">
-                    <div>
-                        <Image className="rounded-lg" src="/qrcode-doacao.png"alt="QRCode para realizar doação" width={230} height={230} />
-                    </div>
-
-                    <div className="flex flex-col items-start justify-between">
-                        <p className="w-4/5">
-                            Se você gostou da nossa proposta e não sabe como nos ajudar, um pix pode <strong>melhorar a vida de nossos estudantes</strong> em situação de vulnerabilidade econômica!
-                        </p>
-                        <div>
-                            <Button className="uppercase bg-transparent text-black hover:bg-transparent" >
+                        <div className="flex flex-col items-start justify-between">
+                            <p className="ml-4">
+                            Um pix pode <strong>melhorar a vida de nossos estudantes</strong> em situação de vulnerabilidade econômica!
+                            </p>
+                            <Button variant="link">
                                 Saiba mais
-                                <ArrowUpRight size={18}/>
                             </Button>
                         </div>
-                    </div>
+                </div>
+                <div className="mt-4 space-y-8 max-w-[477px]">
+                        <p className="">
+                        Se você é uma <strong>empresa</strong> e quer nos ajudar, pode virar nosso patrocinador! Sempre estamos precisando de alguém para nos ajudar com materiais, comida, hospedagem de site, e muito mais. Entre em contato e nos conte como pode nos ajudar.
+                        </p>
+                        <Button>Entre em contato</Button>
                 </div>
             </div>
 
-            <DonationValuesSection/>
-
+            <div className="max-w-[422px]">
+                <DonationValuesSection/>
+            </div>
+            <div className="absolute -bottom-24 right-0">
+                <StarShape color="#FFEB66" width="180" height="180" />
+            </div>
        </div>
     </section>
   );
