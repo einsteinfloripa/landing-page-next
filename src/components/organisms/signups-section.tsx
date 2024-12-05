@@ -4,6 +4,7 @@ import SpeechBubble from "@/assets/ilustrations/speech-bubble-with-graduation-ha
 import Books from "@/assets/ilustrations/books.svg"
 import Image from "next/image"
 import { Button } from "../atoms/button"
+import { isSignupsAvailable, signupsDate } from "@/utils/configs"
 
 export const SignupsSection = () => {
     const members = [
@@ -31,7 +32,10 @@ export const SignupsSection = () => {
     ]
     return(
         <div className="w-full px-auto">
-            <PulsingBanner announcement="O período para as inscrições já está aberto! Inscreva-se abaixo"/>
+            <PulsingBanner 
+                announcement={isSignupsAvailable ? "O período para as inscrições já está aberto! Inscreva-se abaixo" : `O período para as inscrições abrirá no dia ${signupsDate}!`}
+                dotColor={isSignupsAvailable ? 'green' : 'red'}
+            />
             <section className="min-h-screen px-[125px] text-app-neutral-900 max-w-wrapper">
                 <h1 className="title-4xl max-w-72 mt-14">
                     Faça parte do Einstein Floripa
@@ -62,7 +66,9 @@ export const SignupsSection = () => {
                                 </div>
                                 <div className="space-x-1">
                                     <Button variant="link">Saiba mais</Button>
-                                    <Button>Inscreva-se</Button>
+                                    <Button 
+                                        disabled={!isSignupsAvailable}
+                                    >Inscreva-se</Button>
                                 </div>
                             </li>
                             <hr />
