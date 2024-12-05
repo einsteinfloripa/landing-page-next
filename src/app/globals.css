@@ -20,7 +20,7 @@ body {
     @apply font-anton uppercase leading-[110%] text-5xl
   }
   .title-4xl {
-    @apply font-anton uppercase leading-[110%] text-4xl
+    @apply font-anton uppercase leading-[130%] text-4xl
   }
   .title-3xl {
     @apply font-anton uppercase leading-[110%] text-3xl
@@ -41,7 +41,7 @@ body {
     @apply font-roboto leading-[130%] text-xl font-medium
   }
   .body-regular {
-    @apply font-roboto leading-[130%] text-base
+    @apply font-roboto leading-[150%] text-base
   }
   .body-small {
     @apply font-roboto leading-[130%] text-sm

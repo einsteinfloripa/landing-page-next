@@ -104,11 +104,22 @@ const config: Config = {
 		},
 		animation: {
 			'spin-reverse': 'spin-reverse 15s linear infinite',
+			'ripple': 'ripple 3s infinite',
 		  },
 		keyframes: {
 			'spin-reverse': {
 			  from: { transform: 'rotate(0deg)' },
 			  to: { transform: 'rotate(-360deg)' },
+			},
+			'ripple': {
+				'0%': {
+				transform: 'scale(1)',
+				opacity: '0.4',
+				},
+				'100%': {
+					transform: 'scale(2.5)',
+					opacity: '0',
+				},
 			},
 		},
   	}
