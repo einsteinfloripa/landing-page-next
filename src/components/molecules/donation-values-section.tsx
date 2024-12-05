@@ -10,16 +10,16 @@ const doacoes = [
 
 export const DonationValuesSection = () => {
   return (
-    <div className="flex flex-col justify-center">
+    <ul>
         {doacoes.map((doacao, index) => (
-            <>
-                <div className="flex gap-2 py-8" key={index}>
-                    <p className="font-bold text-2xl">R${doacao.valor}</p>
-                    <p>{doacao.descricao}</p>
+            <li key={doacao.valor}>
+                <div className="flex gap-2 py-7" key={index}>
+                    <p className="title-xl">R${doacao.valor}</p>
+                    <p className="body-regular">{doacao.descricao}</p>
                 </div>
-                <hr className="border-[#B7B7B7] "/>
-            </>
+                <hr className="border-app-blue-300 "/>
+            </li>
         ))}
-    </div>
+    </ul>
   );
 };
