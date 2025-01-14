@@ -1,4 +1,4 @@
-const isSignupsAvailable = false
-const signupsDate = '25 de Fevereiro'
+const isSignupsAvailable = true;
+const signupsDate = "15 de Janeiro";
 
-export {isSignupsAvailable, signupsDate}
+export { isSignupsAvailable, signupsDate };
