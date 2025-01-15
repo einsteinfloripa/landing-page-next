@@ -19,6 +19,7 @@ const config: Config = {
             100: "#B0D9EC",
             200: "#8AC7E2",
             300: "#54ADD5",
+            400: "#339DCD",
             500: "#0085C1",
             600: "#0079B0",
             900: "#00283A",
@@ -107,8 +108,18 @@ const config: Config = {
       animation: {
         "spin-reverse": "spin-reverse 15s linear infinite",
         ripple: "ripple 3s infinite",
+        slideDown: "slideDown 300ms ease-out",
+        slideUp: "slideUp 300ms ease-out",
       },
       keyframes: {
+        slideDown: {
+          "0%": { height: "0" },
+          "100%": { height: "var(--radix-accordion-content-height)" },
+        },
+        slideUp: {
+          "0%": { height: "var(--radix-accordion-content-height)" },
+          "100%": { height: "0" },
+        },
         "spin-reverse": {
           from: { transform: "rotate(0deg)" },
           to: { transform: "rotate(-360deg)" },
