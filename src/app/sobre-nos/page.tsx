@@ -2,7 +2,7 @@
 
 import { Header } from "@/components/molecules/header";
 import { AboutHeroSection } from "@/components/organisms/about-hero-section";
-import { Hero } from "@/components/organisms/hero-section";
+import { ValuesSection } from "@/components/organisms/values-section";
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -15,6 +15,7 @@ const Home = () => {
     >
       <Header />
       <AboutHeroSection />
+      <ValuesSection />
     </motion.div>
   );
 };
