@@ -1,4 +1,4 @@
-import * as Accordion from "@radix-ui/react-accordion";
+import { Accordion } from "@/components/ui/accordion";
 import { TeamAccordion } from "../molecules/team-accordion";
 import ProtagonismoIcon from "@/assets/ilustrations/protagonismo.svg";
 
@@ -16,7 +16,7 @@ export const TeamSection = () => {
           </p>
         </div>
 
-        <Accordion.Root type="single" className="w-full" collapsible>
+        <Accordion type="single" className="w-full" collapsible>
           <TeamAccordion
             title="Capital"
             description="Diretoria Administrativa"
@@ -72,7 +72,7 @@ export const TeamSection = () => {
               image: ProtagonismoIcon,
             }))}
           />
-        </Accordion.Root>
+        </Accordion>
       </section>
     </div>
   );

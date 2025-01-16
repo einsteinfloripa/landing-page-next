@@ -15,36 +15,36 @@ const config: Config = {
       colors: {
         app: {
           blue: {
-            50: "#E6F3F9",
-            100: "#B0D9EC",
-            200: "#8AC7E2",
-            300: "#54ADD5",
-            400: "#339DCD",
-            500: "#0085C1",
-            600: "#0079B0",
-            900: "#00283A",
+            "50": "#E6F3F9",
+            "100": "#B0D9EC",
+            "200": "#8AC7E2",
+            "300": "#54ADD5",
+            "400": "#339DCD",
+            "500": "#0085C1",
+            "600": "#0079B0",
+            "900": "#00283A",
           },
           violet: {
-            500: "#522781",
+            "500": "#522781",
           },
           yellow: {
-            500: "#FFEB66",
-            900: "#4F4A27",
+            "500": "#FFEB66",
+            "900": "#4F4A27",
           },
           orange: {
-            400: "#F98167",
-            500: "#F86241",
+            "400": "#F98167",
+            "500": "#F86241",
           },
           green: {
-            500: "#54c100",
+            "500": "#54c100",
           },
           neutral: {
-            10: "#F5F5F5",
-            50: "#E6E8EC",
-            100: "#B0B7C4",
-            300: "#54647F",
-            600: "#00163A",
-            900: "#000A1B",
+            "10": "#F5F5F5",
+            "50": "#E6E8EC",
+            "100": "#B0B7C4",
+            "300": "#54647F",
+            "600": "#00163A",
+            "900": "#000A1B",
           },
         },
         background: "hsl(var(--background))",
@@ -108,21 +108,17 @@ const config: Config = {
       animation: {
         "spin-reverse": "spin-reverse 15s linear infinite",
         ripple: "ripple 3s infinite",
-        slideDown: "slideDown 300ms ease-out",
-        slideUp: "slideUp 300ms ease-out",
+        "accordion-down": "accordion-down 0.3s ease-out",
+        "accordion-up": "accordion-up 0.3s ease-out",
       },
       keyframes: {
-        slideDown: {
-          "0%": { height: "0" },
-          "100%": { height: "var(--radix-accordion-content-height)" },
-        },
-        slideUp: {
-          "0%": { height: "var(--radix-accordion-content-height)" },
-          "100%": { height: "0" },
-        },
         "spin-reverse": {
-          from: { transform: "rotate(0deg)" },
-          to: { transform: "rotate(-360deg)" },
+          from: {
+            transform: "rotate(0deg)",
+          },
+          to: {
+            transform: "rotate(-360deg)",
+          },
         },
         ripple: {
           "0%": {
@@ -132,6 +128,22 @@ const config: Config = {
           "100%": {
             transform: "scale(2.5)",
             opacity: "0",
+          },
+        },
+        "accordion-down": {
+          from: {
+            height: "0",
+          },
+          to: {
+            height: "var(--radix-accordion-content-height)",
+          },
+        },
+        "accordion-up": {
+          from: {
+            height: "var(--radix-accordion-content-height)",
+          },
+          to: {
+            height: "0",
           },
         },
       },
