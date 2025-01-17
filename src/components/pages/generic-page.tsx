@@ -1,17 +1,12 @@
 import { SbBlokData, StoryblokComponent } from "@storyblok/react";
 import { FC, Fragment } from "react";
 import { Blok } from "@/utils/types";
+import { StoryblokPagina } from "@/utils/storyblok-types.generated";
 
-interface Props {
-  blok: Blok<{
-    sections: Blok<SbBlokData[]>[];
-  }>;
-}
-
-const GenericPage: FC<Props> = ({ blok }) => {
+const GenericPage = ({ blok }: Blok<StoryblokPagina>) => {
   return (
     <Fragment>
-      {blok.sections.map((component, index) => (
+      {blok.body.map((component, index) => (
         <StoryblokComponent key={index} blok={component} />
       ))}
     </Fragment>

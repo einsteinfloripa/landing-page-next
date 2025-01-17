@@ -5,6 +5,10 @@ import { apiPlugin, storyblokInit } from "@storyblok/react";
 
 import "./globals.css";
 import GenericPage from "@/components/pages/generic-page";
+import { SbMainHero } from "@/components/storyblok/sb-main-hero";
+import { SbButton } from "@/components/storyblok/sb-button";
+import { SbButtonNav } from "@/components/storyblok/sb-nav-button";
+import SbComponentNotFound from "@/components/storyblok/sb-component-not-found";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
@@ -28,11 +32,16 @@ storyblokInit({
   accessToken: process.env.NEXT_PUBLIC_STORYBLOK_API_TOKEN,
   use: [apiPlugin],
   components: {
+    "main-hero": SbMainHero,
+    "button-nav": SbButtonNav,
     pagina: GenericPage,
+    button: SbButton,
   },
   apiOptions: {
     region: "us",
   },
+  customFallbackComponent: SbComponentNotFound,
+  enableFallbackComponent: true,
 });
 
 export default function RootLayout({
@@ -42,7 +51,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className={`${roboto.variable} ${anton.variable}`}>
-      <body className="font-roboto antialiased">
+      <body className="font-roboto antialiased bg-app-neutral-10">
         {children}
         <Script id="clarity-script" strategy="afterInteractive">
           {`

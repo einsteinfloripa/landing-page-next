@@ -21,7 +21,6 @@ const Home = () => {
     >
       <Header />
       <Hero />
-      <ImageSection />
       <AboutSection />
       <AchievementsSection />
       <SomosEinsteinStripe />
