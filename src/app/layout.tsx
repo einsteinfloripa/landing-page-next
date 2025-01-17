@@ -3,9 +3,8 @@ import { Roboto, Anton } from "next/font/google";
 import Script from "next/script";
 import { apiPlugin, storyblokInit } from "@storyblok/react";
 
-import AboutUs from "@/components/pages/sobre-nos";
-import Home from "@/components/pages/home";
 import "./globals.css";
+import GenericPage from "@/components/pages/generic-page";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
@@ -29,8 +28,7 @@ storyblokInit({
   accessToken: process.env.NEXT_PUBLIC_STORYBLOK_API_TOKEN,
   use: [apiPlugin],
   components: {
-    home: Home,
-    "sobre-nos": AboutUs,
+    pagina: GenericPage,
   },
   apiOptions: {
     region: "us",
