@@ -7,7 +7,7 @@ import { TeamSection } from "@/components/organisms/team-section";
 import { ValuesSection } from "@/components/organisms/values-section";
 import { motion } from "framer-motion";
 
-const Home = () => {
+const AboutUs = () => {
   return (
     <motion.div
       animate="visible"
@@ -24,4 +24,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default AboutUs;

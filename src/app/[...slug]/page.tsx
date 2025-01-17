@@ -1,6 +1,6 @@
 import { getStoryblokApi, StoryblokComponent } from "@storyblok/react";
 
-export default async function Home({ params }: { params: { slug: string[] } }) {
+export default async function DynamicPage({ params }: { params: { slug: string[] } }) {
   const slug = params && Array.isArray(params.slug) ? params.slug.join("/") : "home";
   const storyblokApi = getStoryblokApi();
   const { data } = await storyblokApi.get(`cdn/stories/${slug}`, {
