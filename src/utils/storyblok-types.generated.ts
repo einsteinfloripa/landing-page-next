@@ -143,6 +143,19 @@ export interface StoryblokButtonNav {
   [k: string]: any;
 }
 
+export interface StoryblokContributionSection {
+  titulo: string;
+  qrCode: StoryblokAsset;
+  qrCodeDescricao: StoryblokRichtext;
+  botaoPix: StoryblokButtonNav[];
+  descricao: StoryblokRichtext;
+  acoes?: (StoryblokButtonNav | StoryblokButton)[];
+  valores: StoryblokValorContribuicao[];
+  component: "contribution-section";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface StoryblokMainHero {
   titulo: string;
   subtitulo: string;
@@ -170,11 +183,21 @@ export interface StoryblokPagina {
     | StoryblokAchievementsSection
     | StoryblokButton
     | StoryblokButtonNav
+    | StoryblokContributionSection
     | StoryblokMainHero
     | StoryblokMetric
     | StoryblokPagina
+    | StoryblokValorContribuicao
   )[];
   component: "pagina";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokValorContribuicao {
+  valor: string;
+  contribuicao: string;
+  component: "valor-contribuicao";
   _uid: string;
   [k: string]: any;
 }

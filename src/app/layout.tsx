@@ -12,6 +12,7 @@ import SbComponentNotFound from "@/components/storyblok/sb-component-not-found";
 import { SbAboutSection } from "@/components/storyblok/sb-about-section";
 import SbAchievementsSection from "@/components/storyblok/sb-achievements-section";
 import SbMetric from "@/components/storyblok/sb-metric";
+import SbContributionSection from "@/components/storyblok/sb-contribution-section";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
@@ -42,6 +43,7 @@ storyblokInit({
     "about-section": SbAboutSection,
     "achievements-section": SbAchievementsSection,
     metric: SbMetric,
+    "contribution-section": SbContributionSection,
   },
   apiOptions: {
     region: "us",

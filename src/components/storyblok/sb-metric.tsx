@@ -7,7 +7,7 @@ const SbMetric = ({ blok }: Blok<StoryblokMetric>) => {
   return (
     <div className="flex items-center space-x-4">
       <span className="title-4xl">{valor}</span>
-      <span className="body-small-medium">{descricao}</span>
+      <span className="body-small-medium uppercase">{descricao}</span>
     </div>
   );
 };
