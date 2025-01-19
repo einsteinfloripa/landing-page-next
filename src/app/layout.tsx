@@ -10,6 +10,8 @@ import { SbButton } from "@/components/storyblok/sb-button";
 import { SbButtonNav } from "@/components/storyblok/sb-nav-button";
 import SbComponentNotFound from "@/components/storyblok/sb-component-not-found";
 import { SbAboutSection } from "@/components/storyblok/sb-about-section";
+import SbAchievementsSection from "@/components/storyblok/sb-achievements-section";
+import SbMetric from "@/components/storyblok/sb-metric";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
@@ -38,6 +40,8 @@ storyblokInit({
     pagina: GenericPage,
     button: SbButton,
     "about-section": SbAboutSection,
+    "achievements-section": SbAchievementsSection,
+    metric: SbMetric,
   },
   apiOptions: {
     region: "us",

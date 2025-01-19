@@ -1,7 +1,6 @@
 "use client";
 
 import { Header } from "@/components/molecules/header";
-import { SomosEinsteinStripe } from "@/components/molecules/somos-einstein-stripe";
 import { AboutSection } from "@/components/organisms/about-section";
 import AchievementsSection from "@/components/organisms/achievements-section";
 import { DonationSection } from "@/components/organisms/donation-section";
@@ -22,7 +21,6 @@ const Home = () => {
       <Hero />
       <AboutSection />
       <AchievementsSection />
-      <SomosEinsteinStripe />
       <DonationSection />
       <TestimonialSection />
       <SignupsSection />

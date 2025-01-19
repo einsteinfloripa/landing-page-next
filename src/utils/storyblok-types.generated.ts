@@ -11,10 +11,44 @@ export interface StoryblokRichtext {
 }
 
 export interface StoryblokAboutSection {
-  title: string;
+  titulo: string;
   descricao: StoryblokRichtext;
   acoes?: (StoryblokButton | StoryblokButtonNav)[];
   component: "about-section";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokAsset {
+  alt: string | null;
+  copyright?: string | null;
+  fieldtype: "asset";
+  id: number;
+  filename: string | null;
+  name: string;
+  title: string | null;
+  focus: string | null;
+  meta_data?: {
+    [k: string]: any;
+  };
+  source?: string | null;
+  is_external_url?: boolean;
+  is_private?: boolean;
+  src?: string;
+  updated_at?: string;
+  width?: number | null;
+  height?: number | null;
+  aspect_ratio?: number | null;
+  public_id?: string | null;
+  content_type?: string;
+  [k: string]: any;
+}
+
+export interface StoryblokAchievementsSection {
+  metricas: StoryblokMetric[];
+  imagem: StoryblokAsset;
+  textoStripe?: string;
+  component: "achievements-section";
   _uid: string;
   [k: string]: any;
 }
@@ -109,31 +143,6 @@ export interface StoryblokButtonNav {
   [k: string]: any;
 }
 
-export interface StoryblokAsset {
-  alt: string | null;
-  copyright?: string | null;
-  fieldtype: "asset";
-  id: number;
-  filename: string | null;
-  name: string;
-  title: string | null;
-  focus: string | null;
-  meta_data?: {
-    [k: string]: any;
-  };
-  source?: string | null;
-  is_external_url?: boolean;
-  is_private?: boolean;
-  src?: string;
-  updated_at?: string;
-  width?: number | null;
-  height?: number | null;
-  aspect_ratio?: number | null;
-  public_id?: string | null;
-  content_type?: string;
-  [k: string]: any;
-}
-
 export interface StoryblokMainHero {
   titulo: string;
   subtitulo: string;
@@ -147,8 +156,24 @@ export interface StoryblokMainHero {
   [k: string]: any;
 }
 
+export interface StoryblokMetric {
+  valor: string;
+  descricao: string;
+  component: "metric";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface StoryblokPagina {
-  body: (StoryblokAboutSection | StoryblokButton | StoryblokButtonNav | StoryblokMainHero | StoryblokPagina)[];
+  body: (
+    | StoryblokAboutSection
+    | StoryblokAchievementsSection
+    | StoryblokButton
+    | StoryblokButtonNav
+    | StoryblokMainHero
+    | StoryblokMetric
+    | StoryblokPagina
+  )[];
   component: "pagina";
   _uid: string;
   [k: string]: any;
