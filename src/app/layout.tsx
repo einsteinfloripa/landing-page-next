@@ -9,6 +9,7 @@ import { SbMainHero } from "@/components/storyblok/sb-main-hero";
 import { SbButton } from "@/components/storyblok/sb-button";
 import { SbButtonNav } from "@/components/storyblok/sb-nav-button";
 import SbComponentNotFound from "@/components/storyblok/sb-component-not-found";
+import { SbAboutSection } from "@/components/storyblok/sb-about-section";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
@@ -36,6 +37,7 @@ storyblokInit({
     "button-nav": SbButtonNav,
     pagina: GenericPage,
     button: SbButton,
+    "about-section": SbAboutSection,
   },
   apiOptions: {
     region: "us",

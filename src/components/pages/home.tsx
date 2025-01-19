@@ -6,7 +6,6 @@ import { AboutSection } from "@/components/organisms/about-section";
 import AchievementsSection from "@/components/organisms/achievements-section";
 import { DonationSection } from "@/components/organisms/donation-section";
 import { Hero } from "@/components/organisms/hero-section";
-import { ImageSection } from "@/components/organisms/image-section";
 import { SignupsSection } from "@/components/organisms/signups-section";
 import { TestimonialSection } from "@/components/organisms/testimonial-section";
 import { motion } from "framer-motion";
