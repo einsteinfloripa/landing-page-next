@@ -143,6 +143,16 @@ export interface StoryblokButtonNav {
   [k: string]: any;
 }
 
+export interface StoryblokCardInscricao {
+  icon: StoryblokAsset;
+  titulo: string;
+  descricao: string;
+  acoes?: (StoryblokButton | StoryblokButtonNav)[];
+  component: "card-inscricao";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface StoryblokContributionSection {
   titulo: string;
   qrCode: StoryblokAsset;
@@ -152,6 +162,15 @@ export interface StoryblokContributionSection {
   acoes?: (StoryblokButtonNav | StoryblokButton)[];
   valores: StoryblokValorContribuicao[];
   component: "contribution-section";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokJoinUsSection {
+  faixaInscricao: StoryblokPeriodoInscricao[];
+  titulo: string;
+  cards: StoryblokCardInscricao[];
+  component: "join-us-section";
   _uid: string;
   [k: string]: any;
 }
@@ -183,14 +202,26 @@ export interface StoryblokPagina {
     | StoryblokAchievementsSection
     | StoryblokButton
     | StoryblokButtonNav
+    | StoryblokCardInscricao
     | StoryblokContributionSection
+    | StoryblokJoinUsSection
     | StoryblokMainHero
     | StoryblokMetric
     | StoryblokPagina
+    | StoryblokPeriodoInscricao
     | StoryblokSingleTestimonalSection
     | StoryblokValorContribuicao
   )[];
   component: "pagina";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokPeriodoInscricao {
+  dataInscricao: string;
+  tituloInscricoesAbertas: string;
+  tituloInscricoesEmBreve: string;
+  component: "periodo-inscricao";
   _uid: string;
   [k: string]: any;
 }
