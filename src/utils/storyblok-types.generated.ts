@@ -187,9 +187,21 @@ export interface StoryblokPagina {
     | StoryblokMainHero
     | StoryblokMetric
     | StoryblokPagina
+    | StoryblokSingleTestimonalSection
     | StoryblokValorContribuicao
   )[];
   component: "pagina";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokSingleTestimonalSection {
+  imagem: StoryblokAsset;
+  testemunho: string;
+  nome?: string;
+  apresentacao: string;
+  botao: (StoryblokButton | StoryblokButtonNav)[];
+  component: "single-testimonal-section";
   _uid: string;
   [k: string]: any;
 }
