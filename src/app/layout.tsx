@@ -16,6 +16,7 @@ import SbContributionSection from "@/components/storyblok/sb-contribution-sectio
 import { SbSingleTestimonialSection } from "@/components/storyblok/sb-single-testimonial-section";
 import SbJoinUsSection from "@/components/storyblok/sb-signups-section";
 import SbHeader from "@/components/storyblok/sb-header";
+import SbAboutHero from "@/components/storyblok/sb-about-hero";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
@@ -49,6 +50,7 @@ storyblokInit({
     "contribution-section": SbContributionSection,
     "single-testimonal-section": SbSingleTestimonialSection,
     "join-us-section": SbJoinUsSection,
+    "about-hero": SbAboutHero,
     header: SbHeader,
   },
   apiOptions: {

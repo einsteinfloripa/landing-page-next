@@ -10,15 +10,6 @@ export interface StoryblokRichtext {
   [k: string]: any;
 }
 
-export interface StoryblokAboutSection {
-  titulo: string;
-  descricao: StoryblokRichtext;
-  acoes?: (StoryblokButton | StoryblokButtonNav)[];
-  component: "about-section";
-  _uid: string;
-  [k: string]: any;
-}
-
 export interface StoryblokAsset {
   alt: string | null;
   copyright?: string | null;
@@ -41,6 +32,27 @@ export interface StoryblokAsset {
   aspect_ratio?: number | null;
   public_id?: string | null;
   content_type?: string;
+  [k: string]: any;
+}
+
+export interface StoryblokAboutHero {
+  titulo: string;
+  descricao: StoryblokRichtext;
+  acoes?: (StoryblokButtonNav | StoryblokButton)[];
+  imagemCantoSuperior: StoryblokAsset;
+  imagemCantoDireito: StoryblokAsset;
+  imagemCantoEsquerdo: StoryblokAsset;
+  component: "about-hero";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokAboutSection {
+  titulo: string;
+  descricao: StoryblokRichtext;
+  acoes?: (StoryblokButton | StoryblokButtonNav)[];
+  component: "about-section";
+  _uid: string;
   [k: string]: any;
 }
 
@@ -208,6 +220,7 @@ export interface StoryblokMetric {
 export interface StoryblokPagina {
   header?: ISbStoryData<StoryblokHeader> | string;
   body: (
+    | StoryblokAboutHero
     | StoryblokAboutSection
     | StoryblokAchievementsSection
     | StoryblokButton
