@@ -1,5 +1,5 @@
-import { SbBlokData, StoryblokComponent } from "@storyblok/react";
-import { FC, Fragment } from "react";
+import { StoryblokComponent } from "@storyblok/react";
+import { Fragment } from "react";
 import { Blok } from "@/utils/types";
 import { StoryblokPagina } from "@/utils/storyblok-types.generated";
 

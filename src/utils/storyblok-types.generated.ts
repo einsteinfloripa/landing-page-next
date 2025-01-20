@@ -166,6 +166,15 @@ export interface StoryblokContributionSection {
   [k: string]: any;
 }
 
+export interface StoryblokHeader {
+  logo: StoryblokAsset;
+  links: StoryblokButtonNav[];
+  acoes?: (StoryblokButtonNav | StoryblokButton)[];
+  component: "header";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface StoryblokJoinUsSection {
   faixaInscricao: StoryblokPeriodoInscricao[];
   titulo: string;
@@ -197,6 +206,7 @@ export interface StoryblokMetric {
 }
 
 export interface StoryblokPagina {
+  header?: ISbStoryData<StoryblokHeader> | string;
   body: (
     | StoryblokAboutSection
     | StoryblokAchievementsSection
@@ -204,6 +214,7 @@ export interface StoryblokPagina {
     | StoryblokButtonNav
     | StoryblokCardInscricao
     | StoryblokContributionSection
+    | StoryblokHeader
     | StoryblokJoinUsSection
     | StoryblokMainHero
     | StoryblokMetric
