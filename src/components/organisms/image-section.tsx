@@ -4,9 +4,19 @@ import Image from "next/image";
 import DiagonalStripes from "../molecules/diagonal-stripes";
 import { DonateCta } from "../molecules/donate-cta";
 import useScreenSize from "@/hooks/useScreenSize";
+import { StoryblokAsset } from "@/utils/storyblok-types.generated";
+import { getWebpVersionFromSBImage } from "@/lib/utils";
 
-export const ImageSection = () => {
+type ImageSectionProps = Readonly<{
+  desktopImage: StoryblokAsset;
+  mobileImage: StoryblokAsset;
+}>;
+
+export const ImageSection: React.FC<ImageSectionProps> = ({ desktopImage, mobileImage }) => {
   const { isMobile } = useScreenSize();
+
+  const image = isMobile ? mobileImage : desktopImage;
+
   return (
     <section className="relative w-full flex items-center justify-center mt-16 lg:mt-28">
       <div className="flex items-center justify-center">
@@ -14,8 +24,8 @@ export const ImageSection = () => {
           <Image
             width={1273}
             height={491}
-            src={isMobile ? "/alunos-organizadores-mobile.jpeg" : "/alunos-organizadores.png"}
-            alt="Alunos e Organizadores do EinsteinFloripa"
+            src={getWebpVersionFromSBImage(image.filename!)}
+            alt={image.alt || ""}
             priority={true} // Load this image with high priority
             loading="eager" // Load the image eagerly
             sizes="(max-width: 768px) 100vw, 1273px" // Specify different sizes for different viewport widths
