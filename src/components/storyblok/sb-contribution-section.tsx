@@ -24,7 +24,7 @@ const SbContributionSection = ({ blok }: Blok<StoryblokContributionSection>) => 
 
   return (
     <section className="relative flex items-center justify-center py-32 xl:py-48 sm:px-10 text-app-neutral-900">
-      <PaperTextureBackground className="bg-app-blue-500 " />
+      <PaperTextureBackground className="bg-app-blue-500" />
       <div className="relative flex flex-col lg:flex-row bg-white rounded-lg gap-10 py-10 px-5 lg:gap-16 lg:p-14 w-full border border-black">
         {/* Left Container */}
         <div className="flex flex-col gap-10 flex-shrink-1">

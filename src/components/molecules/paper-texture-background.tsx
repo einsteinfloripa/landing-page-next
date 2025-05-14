@@ -7,6 +7,10 @@ interface Props {
   opacity?: number;
 }
 
+/**
+ * Componente compartilhado para exibir um fundo de textura de papel.
+ * Use o className para adicionar uma cor ao fundo usando `bg-<cor>`.
+ */
 const PaperTextureBackground: React.FC<Props> = ({ opacity = 20, className }) => {
   return (
     <div className={cn("absolute inset-0 z-0", className)}>
