@@ -1,13 +1,16 @@
 import { StoryblokButton } from "@/utils/storyblok-types.generated";
-import { Button } from "../atoms/button";
-import { Blok } from "@/utils/types";
+import { Button, ButtonProps } from "../atoms/button";
 import { storyblokEditable } from "@storyblok/react";
 
-export const SbButton = ({ blok }: Blok<StoryblokButton>) => {
+export interface Props extends Omit<ButtonProps, "variant" | "children"> {
+  blok: StoryblokButton;
+}
+
+export const SbButton = ({ blok, className, ...rest }: Props) => {
   const { title, variant } = blok;
 
   return (
-    <Button {...storyblokEditable(blok)} variant={variant}>
+    <Button {...storyblokEditable(blok)} variant={variant} className={className} {...rest}>
       {title}
     </Button>
   );

@@ -2,8 +2,10 @@ import Image from "next/image";
 import { Blok } from "@/utils/types";
 import { StoryblokJoinUsSection } from "@/utils/storyblok-types.generated";
 import { getWebpVersionFromSBImage } from "@/lib/utils";
-import { StoryblokComponent, storyblokEditable } from "@storyblok/react";
+import { storyblokEditable } from "@storyblok/react";
 import PaperTextureBackground from "../molecules/paper-texture-background";
+import { SbButton } from "./sb-button";
+import { SbButtonNav } from "./sb-nav-button";
 
 const SbJoinUsSection = ({ blok }: Blok<StoryblokJoinUsSection>) => {
   const { cards } = blok;
@@ -32,7 +34,8 @@ const SbJoinUsSection = ({ blok }: Blok<StoryblokJoinUsSection>) => {
                 key={c.titulo}
                 className="flex w-full flex-col justify-center items-center gap-8 p-5 bg-white border border-black rounded-lg"
               >
-                <div className="relative w-full h-[300px]">
+                <div className="relative w-full h-[300px] flex items-end">
+                  <div style={{ backgroundColor: c.cor }} className="w-full h-[222px]"></div>
                   <Image
                     src={getWebpVersionFromSBImage(c.image.filename!)}
                     alt={c.image.alt ?? ""}
@@ -46,9 +49,13 @@ const SbJoinUsSection = ({ blok }: Blok<StoryblokJoinUsSection>) => {
                 </div>
 
                 <div className="flex gap-8 justify-center flex-row-reverse md:flex-row">
-                  {(c.acoes ?? []).map((acao, index) => (
-                    <StoryblokComponent key={index} blok={acao} />
-                  ))}
+                  {(c.acoes ?? []).map((acao, index) =>
+                    acao.component === "button" ? (
+                      <SbButton key={index} blok={acao} />
+                    ) : (
+                      <SbButtonNav key={index} blok={acao} style={{ backgroundColor: c.cor }} />
+                    )
+                  )}
                 </div>
               </li>
             );

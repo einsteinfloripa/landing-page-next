@@ -1,17 +1,19 @@
 import { StoryblokButtonNav } from "@/utils/storyblok-types.generated";
-import { Button } from "../atoms/button";
-import { Blok } from "@/utils/types";
 import Link from "next/link";
 import { storyblokEditable } from "@storyblok/react";
 import { getUrlFromSBLink } from "@/lib/utils";
-import { SbButton } from "./sb-button";
+import { SbButton, Props as SbButtonProps } from "./sb-button";
 
-export const SbButtonNav = ({ blok }: Blok<StoryblokButtonNav>) => {
+interface Props extends Omit<SbButtonProps, "blok"> {
+  blok: StoryblokButtonNav;
+}
+
+export const SbButtonNav = ({ blok, className, ...rest }: Props) => {
   const { button, link } = blok;
 
   return (
     <Link {...storyblokEditable(blok)} href={getUrlFromSBLink(link)}>
-      <SbButton blok={button[0]} />
+      <SbButton blok={button[0]} className={className} {...rest} />
     </Link>
   );
 };
