@@ -32,7 +32,7 @@ const SbJoinUsSection = ({ blok }: Blok<StoryblokJoinUsSection>) => {
             return (
               <li
                 key={c.titulo}
-                className="flex w-full flex-col justify-center items-center gap-8 p-5 bg-white border border-black rounded-lg"
+                className="flex w-full flex-col justify-center items-center gap-8 p-5 pb-16 bg-white border border-black rounded-lg"
               >
                 <div className="relative w-full h-[300px] flex items-end">
                   <div style={{ backgroundColor: c.cor }} className="w-full h-[222px]"></div>
