@@ -156,7 +156,7 @@ export interface StoryblokButtonNav {
 }
 
 export interface StoryblokCardInscricao {
-  icon: StoryblokAsset;
+  image: StoryblokAsset;
   titulo: string;
   descricao: string;
   acoes?: (StoryblokButton | StoryblokButtonNav)[];
@@ -167,12 +167,14 @@ export interface StoryblokCardInscricao {
 
 export interface StoryblokContributionSection {
   titulo: string;
+  subtitulo?: StoryblokRichtext;
   qrCode: StoryblokAsset;
   qrCodeDescricao: StoryblokRichtext;
   botaoPix: StoryblokButtonNav[];
   descricao: StoryblokRichtext;
   acoes?: (StoryblokButtonNav | StoryblokButton)[];
-  valores: StoryblokValorContribuicao[];
+  headlineImagem: StoryblokRichtext;
+  imagem: StoryblokAsset;
   component: "contribution-section";
   _uid: string;
   [k: string]: any;
@@ -187,9 +189,14 @@ export interface StoryblokHeader {
   [k: string]: any;
 }
 
+export interface StoryblokIdentitySection {
+  itens: StoryblokTextoIdentidade[];
+  component: "identity-section";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface StoryblokJoinUsSection {
-  faixaInscricao: StoryblokPeriodoInscricao[];
-  titulo: string;
   cards: StoryblokCardInscricao[];
   component: "join-us-section";
   _uid: string;
@@ -228,12 +235,14 @@ export interface StoryblokPagina {
     | StoryblokCardInscricao
     | StoryblokContributionSection
     | StoryblokHeader
+    | StoryblokIdentitySection
     | StoryblokJoinUsSection
     | StoryblokMainHero
     | StoryblokMetric
     | StoryblokPagina
     | StoryblokPeriodoInscricao
     | StoryblokSingleTestimonalSection
+    | StoryblokTextoIdentidade
     | StoryblokValorContribuicao
   )[];
   component: "pagina";
@@ -257,6 +266,15 @@ export interface StoryblokSingleTestimonalSection {
   apresentacao: string;
   botao: (StoryblokButton | StoryblokButtonNav)[];
   component: "single-testimonal-section";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokTextoIdentidade {
+  titulo: string;
+  conteudo: StoryblokRichtext;
+  tituloAbaixoDoConteudo?: boolean;
+  component: "texto-identidade";
   _uid: string;
   [k: string]: any;
 }

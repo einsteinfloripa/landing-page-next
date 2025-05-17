@@ -14,7 +14,7 @@ import SbAchievementsSection from "@/components/storyblok/sb-achievements-sectio
 import SbMetric from "@/components/storyblok/sb-metric";
 import SbContributionSection from "@/components/storyblok/sb-contribution-section";
 import { SbSingleTestimonialSection } from "@/components/storyblok/sb-single-testimonial-section";
-import SbJoinUsSection from "@/components/storyblok/sb-signups-section";
+import SbJoinUsSection from "@/components/storyblok/sb-join-us-section";
 import SbHeader from "@/components/storyblok/sb-header";
 import SbAboutHero from "@/components/storyblok/sb-about-hero";
 
