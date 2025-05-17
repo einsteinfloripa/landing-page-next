@@ -11,11 +11,21 @@ const SbJoinUsSection = ({ blok }: Blok<StoryblokJoinUsSection>) => {
   return (
     <section {...storyblokEditable(blok)} className="relative w-full relative flex">
       <PaperTextureBackground className="bg-app-dark-blue-500" />
-      <div className="text-app-neutral-900 px-5 sm:px-24 py-24 sm:py-36 w-full gap-28 flex flex-col">
+      <div className="text-app-neutral-900 px-5 sm:px-24 py-24 sm:py-36 w-full gap-28 flex flex-col overflow-hidden">
         <h1 className="title-4xl text-white text-center">
-          Faça parte da transform<span className="text-app-yellow-500">ação</span>
+          Faça parte da transform
+          <span className="relative inline-block text-app-yellow-500">
+            ação
+            <span className="absolute size-[76px] border-[1.2px] border-dashed border-app-blue-200 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+            <span className="absolute size-[150px] border-[1.2px] opacity-90 border-dashed border-app-blue-200 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+            <span className="absolute size-[240px] border-[1.2px] opacity-80 border-dashed border-app-blue-200 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+            <span className="absolute size-[325px] border-[1.2px] opacity-70 border-dashed border-app-blue-200 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+            <span className="absolute size-[425px] border-[1.2px] opacity-60 border-dashed border-app-blue-200 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+            <span className="absolute size-[512px] border-[1.2px] opacity-40 border-dashed border-app-blue-200 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+            <span className="absolute size-[612px] border-[1.2px] opacity-30 border-dashed border-app-blue-200 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+          </span>
         </h1>
-        <ul className="flex flex-col xl:flex-row gap-10">
+        <ul className="flex flex-col xl:flex-row gap-10 z-10">
           {cards.map((c) => {
             return (
               <li
