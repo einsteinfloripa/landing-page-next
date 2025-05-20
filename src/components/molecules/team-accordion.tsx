@@ -1,5 +1,4 @@
 import { AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ChevronDownIcon } from "lucide-react";
 import { PropsWithChildren } from "react";
 import { TeamMemberCard } from "./team-member-card";
 

@@ -10,6 +10,24 @@ export interface StoryblokRichtext {
   [k: string]: any;
 }
 
+export interface StoryblokAboutHero {
+  titulo: string;
+  descricao: StoryblokRichtext;
+  imagens?: StoryblokPicture[];
+  component: "about-hero";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokAboutSection {
+  titulo: string;
+  descricao: StoryblokRichtext;
+  acoes?: (StoryblokButton | StoryblokButtonNav)[];
+  component: "about-section";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface StoryblokAsset {
   alt: string | null;
   copyright?: string | null;
@@ -32,27 +50,6 @@ export interface StoryblokAsset {
   aspect_ratio?: number | null;
   public_id?: string | null;
   content_type?: string;
-  [k: string]: any;
-}
-
-export interface StoryblokAboutHero {
-  titulo: string;
-  descricao: StoryblokRichtext;
-  acoes?: (StoryblokButtonNav | StoryblokButton)[];
-  imagemCantoSuperior: StoryblokAsset;
-  imagemCantoDireito: StoryblokAsset;
-  imagemCantoEsquerdo: StoryblokAsset;
-  component: "about-hero";
-  _uid: string;
-  [k: string]: any;
-}
-
-export interface StoryblokAboutSection {
-  titulo: string;
-  descricao: StoryblokRichtext;
-  acoes?: (StoryblokButton | StoryblokButtonNav)[];
-  component: "about-section";
-  _uid: string;
   [k: string]: any;
 }
 
@@ -160,6 +157,7 @@ export interface StoryblokCardInscricao {
   titulo: string;
   descricao: string;
   acoes?: (StoryblokButton | StoryblokButtonNav)[];
+  cor?: "#75529A" | "#0085C1" | "#2FA5B3";
   component: "card-inscricao";
   _uid: string;
   [k: string]: any;
@@ -241,6 +239,7 @@ export interface StoryblokPagina {
     | StoryblokMetric
     | StoryblokPagina
     | StoryblokPeriodoInscricao
+    | StoryblokPicture
     | StoryblokSingleTestimonalSection
     | StoryblokTextoIdentidade
     | StoryblokValorContribuicao
@@ -255,6 +254,13 @@ export interface StoryblokPeriodoInscricao {
   tituloInscricoesAbertas: string;
   tituloInscricoesEmBreve: string;
   component: "periodo-inscricao";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokPicture {
+  asset: StoryblokAsset;
+  component: "picture";
   _uid: string;
   [k: string]: any;
 }
