@@ -5,9 +5,12 @@ import { storyblokEditable } from "@storyblok/react";
 import PaperTextureBackground from "../molecules/paper-texture-background";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import StarsDraw from "@/assets/ilustrations/stars-draw.svg";
+import SingleStarDraw from "@/assets/ilustrations/single-star-draw.svg";
 
+// Tem 6 imagens, então definimos um array de posições para cada uma das imagens.
 const imagePositions = [
-  "absolute block top-[8%] -left-[3%] lg:top-[10%] lg:left-[10%] -rotate-3",
+  "absolute block top-[8%] -left-[3%] lg:top-[10%] lg:left-[10%] rotate-3",
   "absolute block bottom-[4%] -right-[3%] lg:top-[40%] lg:left-[-5vw] -rotate-1",
   "absolute hidden lg:block bottom-[6%] left-[24%] -rotate-3",
   "absolute hidden lg:block bottom-[8%] right-[18%] rotate-6",
@@ -48,6 +51,19 @@ const SbAboutHero = ({ blok }: Blok<StoryblokAboutHero>) => {
           />
         </div>
       ))}
+
+      {/* Figuras dos detalhes */}
+      <Image
+        src={StarsDraw}
+        alt=""
+        className="absolute md:top-[20%] md:left-[15%] max-w-[120px] w-[10vw] block top-[25%] left-[5%] lg:top-[22%] lg:left-[5%]"
+      />
+
+      <Image
+        src={SingleStarDraw}
+        alt=""
+        className="absolute max-w-[175px] bottom-[30%] -right-[30%] sm:-right-[5%] lg:bottom-[15%] lg:right-[5%]"
+      />
     </section>
   );
 };
