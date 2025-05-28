@@ -11,7 +11,7 @@ const SbJoinUsSection = ({ blok }: Blok<StoryblokJoinUsSection>) => {
   const { cards } = blok;
 
   return (
-    <section {...storyblokEditable(blok)} className="relative w-full relative flex">
+    <section {...storyblokEditable(blok)} className="relative w-full flex">
       <PaperTextureBackground className="bg-app-dark-blue-500" />
       <div className="text-app-neutral-900 px-5 sm:px-24 py-24 sm:py-36 w-full gap-28 flex flex-col overflow-hidden">
         <h1 className="title-4xl text-white text-center">
