@@ -3,10 +3,9 @@ import { StoryblokAchievementsSection } from "@/utils/storyblok-types.generated"
 import { Blok } from "@/utils/types";
 import { StoryblokComponent } from "@storyblok/react";
 import Image from "next/image";
-import { BlueStripe } from "../molecules/somos-einstein-stripe";
 
 const SbAchievementsSection = ({ blok }: Blok<StoryblokAchievementsSection>) => {
-  const { metricas, imagem, textoStripe } = blok;
+  const { metricas, imagem } = blok;
 
   return (
     <div className="w-full">
@@ -32,8 +31,6 @@ const SbAchievementsSection = ({ blok }: Blok<StoryblokAchievementsSection>) => 
           />
         </div>
       </section>
-
-      {textoStripe && <BlueStripe text={textoStripe} />}
     </div>
   );
 };
