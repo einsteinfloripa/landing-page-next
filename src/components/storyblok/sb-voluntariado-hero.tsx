@@ -30,7 +30,7 @@ const SbVoluntariadoHero = ({ blok }: Blok<StoryblokVoluntariadoHero>) => {
           <Image
             src={ScribbleDraw}
             alt=""
-            className="absolute -bottom-[75%] right-[23%] max-w-[310px] w-[30vw] block"
+            className="absolute -bottom-[30%] right  -[20%] lg:-bottom-[75%] lg:right-[23%] max-w-[310px] w-[30vw] block"
           />
         </div>
         <RichText richText={descricao} />
