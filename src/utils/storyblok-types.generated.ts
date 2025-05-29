@@ -62,6 +62,16 @@ export interface StoryblokAchievementsSection {
   [k: string]: any;
 }
 
+export interface StoryblokAreaAtuacaoSection {
+  titulo: string;
+  descricao: StoryblokRichtext;
+  acoes: StoryblokButtonNav[];
+  departamentos: StoryblokEquipeDepartamento[];
+  component: "area-atuacao-section";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface StoryblokButton {
   variant: "default" | "secondary" | "outline" | "ghost" | "link" | "destructive";
   title: string;
@@ -257,6 +267,7 @@ export interface StoryblokPagina {
     | StoryblokAboutHero
     | StoryblokAboutSection
     | StoryblokAchievementsSection
+    | StoryblokAreaAtuacaoSection
     | StoryblokButton
     | StoryblokButtonNav
     | StoryblokCardInscricao

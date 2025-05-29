@@ -35,9 +35,11 @@ const SbVoluntariadoHero = ({ blok }: Blok<StoryblokVoluntariadoHero>) => {
         </div>
         <RichText richText={descricao} />
 
-        {(acoes ?? []).map((acao, index) => (
-          <SbButtonNav key={index} blok={acao} className="min-w-[195px]" />
-        ))}
+        <div className="flex flex-row flex-wrap gap-4 justify-center">
+          {(acoes ?? []).map((acao, index) => (
+            <SbButtonNav key={index} blok={acao} className="min-w-[195px]" />
+          ))}
+        </div>
       </div>
 
       {/* Imagens */}
