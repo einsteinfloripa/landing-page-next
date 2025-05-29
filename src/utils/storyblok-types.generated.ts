@@ -73,7 +73,7 @@ export interface StoryblokAreaAtuacaoSection {
 }
 
 export interface StoryblokButton {
-  variant: "default" | "secondary" | "outline" | "ghost" | "link" | "destructive";
+  variant: "default" | "secondary" | "tertiary" | "outline" | "ghost" | "link" | "destructive";
   title: string;
   component: "button";
   _uid: string;
@@ -284,6 +284,7 @@ export interface StoryblokPagina {
     | StoryblokPeriodoInscricao
     | StoryblokPicture
     | StoryblokSingleTestimonalSection
+    | StoryblokTextStripe
     | StoryblokValorContribuicao
     | StoryblokVoluntariadoHero
   )[];
@@ -315,6 +316,14 @@ export interface StoryblokSingleTestimonalSection {
   apresentacao: string;
   botao: (StoryblokButton | StoryblokButtonNav)[];
   component: "single-testimonal-section";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokTextStripe {
+  texto: string;
+  animar?: boolean;
+  component: "text-stripe";
   _uid: string;
   [k: string]: any;
 }

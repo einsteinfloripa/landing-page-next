@@ -21,6 +21,7 @@ import { SbEquipeSection } from "@/components/storyblok/sb-equipe-section";
 import { SbHierarquiaSection } from "@/components/storyblok/sb-hierarquia-section";
 import SbVoluntariadoHero from "@/components/storyblok/sb-voluntariado-hero";
 import { SbAreaAtuacaoSection } from "@/components/storyblok/sb-area-atuacao-section";
+import SbTextStripe from "@/components/storyblok/sb-text-stripe";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
@@ -59,6 +60,7 @@ storyblokInit({
     "hierarquia-section": SbHierarquiaSection,
     "voluntariado-hero": SbVoluntariadoHero,
     "area-atuacao-section": SbAreaAtuacaoSection,
+    "text-stripe": SbTextStripe,
     header: SbHeader,
   },
   apiOptions: {

@@ -113,6 +113,7 @@ const config: Config = {
         ripple: "ripple 3s infinite",
         "accordion-down": "accordion-down 0.3s ease-out",
         "accordion-up": "accordion-up 0.3s ease-out",
+        marquee: "marquee 40s linear infinite",
       },
       keyframes: {
         "spin-reverse": {
@@ -148,6 +149,10 @@ const config: Config = {
           to: {
             height: "0",
           },
+        },
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
         },
       },
     },
