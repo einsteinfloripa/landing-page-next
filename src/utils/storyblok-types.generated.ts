@@ -274,6 +274,7 @@ export interface StoryblokPagina {
     | StoryblokPicture
     | StoryblokSingleTestimonalSection
     | StoryblokValorContribuicao
+    | StoryblokVoluntariadoHero
   )[];
   component: "pagina";
   _uid: string;
@@ -311,6 +312,15 @@ export interface StoryblokValorContribuicao {
   valor: string;
   contribuicao: string;
   component: "valor-contribuicao";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokVoluntariadoHero {
+  descricao: StoryblokRichtext;
+  imagens?: StoryblokPicture[];
+  acoes: StoryblokButtonNav[];
+  component: "voluntariado-hero";
   _uid: string;
   [k: string]: any;
 }
