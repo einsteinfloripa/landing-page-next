@@ -10,7 +10,7 @@ export const SbAreaAtuacaoSection = ({ blok }: Blok<StoryblokAreaAtuacaoSection>
   const { titulo, descricao, acoes, departamentos } = blok;
   return (
     <section {...storyblokEditable(blok)} className="relative w-full flex overflow-hidden">
-      <PaperTextureBackground className="bg-app-blue-500" opacity={20} version={2} />
+      <PaperTextureBackground className="bg-app-blue-500" opacity={50} version={2} />
       <div className="relative w-full text-white flex flex-col sm:px-24 py-24 sm:py-36">
         <div className="flex flex-col text-center w-full gap-8 items-center justify-center xl:mb-10 z-10 px-5 sm:px-auto">
           <h1 className="title-4xl">{titulo}</h1>
