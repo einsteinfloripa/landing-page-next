@@ -214,6 +214,15 @@ export interface StoryblokHeader {
   [k: string]: any;
 }
 
+export interface StoryblokHierarquiaSection {
+  titulo: string;
+  descricao: StoryblokRichtext;
+  organograma: StoryblokAsset;
+  component: "hierarquia-section";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface StoryblokJoinUsSection {
   cards: StoryblokCardInscricao[];
   component: "join-us-section";
@@ -256,6 +265,7 @@ export interface StoryblokPagina {
     | StoryblokEquipeDepartamento
     | StoryblokEquipeSection
     | StoryblokHeader
+    | StoryblokHierarquiaSection
     | StoryblokJoinUsSection
     | StoryblokMainHero
     | StoryblokMetric

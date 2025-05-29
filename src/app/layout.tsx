@@ -18,6 +18,7 @@ import SbJoinUsSection from "@/components/storyblok/sb-join-us-section";
 import SbHeader from "@/components/storyblok/sb-header";
 import SbAboutHero from "@/components/storyblok/sb-about-hero";
 import { SbEquipeSection } from "@/components/storyblok/sb-equipe-section";
+import { SbHierarquiaSection } from "@/components/storyblok/sb-hierarquia-section";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
@@ -53,6 +54,7 @@ storyblokInit({
     "join-us-section": SbJoinUsSection,
     "about-hero": SbAboutHero,
     "equipe-section": SbEquipeSection,
+    "hierarquia-section": SbHierarquiaSection, // Reusing the same component for hierarchy
     header: SbHeader,
   },
   apiOptions: {
