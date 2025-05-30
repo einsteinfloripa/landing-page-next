@@ -298,6 +298,7 @@ export interface StoryblokPagina {
     | StoryblokMainHero
     | StoryblokMetric
     | StoryblokPagina
+    | StoryblokParceirosHero
     | StoryblokPeriodoInscricao
     | StoryblokPicture
     | StoryblokSingleTestimonalSection
@@ -306,6 +307,15 @@ export interface StoryblokPagina {
     | StoryblokVoluntariadoHero
   )[];
   component: "pagina";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokParceirosHero {
+  descricao: StoryblokRichtext;
+  imagens?: StoryblokPicture[];
+  acoes: StoryblokButtonNav[];
+  component: "parceiros-hero";
   _uid: string;
   [k: string]: any;
 }
