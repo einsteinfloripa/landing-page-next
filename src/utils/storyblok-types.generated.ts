@@ -56,7 +56,6 @@ export interface StoryblokAsset {
 export interface StoryblokAchievementsSection {
   metricas: StoryblokMetric[];
   imagem: StoryblokAsset;
-  textoStripe?: string;
   component: "achievements-section";
   _uid: string;
   [k: string]: any;
@@ -188,6 +187,22 @@ export interface StoryblokContributionSection {
   [k: string]: any;
 }
 
+export interface StoryblokDuvida {
+  pergunta: string;
+  resposta: StoryblokRichtext;
+  component: "duvida";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokDuvidasFrequentesSection {
+  subtitulo: StoryblokRichtext;
+  duvidas: StoryblokDuvida[];
+  component: "duvidas-frequentes-section";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface StoryblokEquipeCard {
   imagem: StoryblokAsset;
   nome: string;
@@ -272,6 +287,8 @@ export interface StoryblokPagina {
     | StoryblokButtonNav
     | StoryblokCardInscricao
     | StoryblokContributionSection
+    | StoryblokDuvida
+    | StoryblokDuvidasFrequentesSection
     | StoryblokEquipeCard
     | StoryblokEquipeDepartamento
     | StoryblokEquipeSection
