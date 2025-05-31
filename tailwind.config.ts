@@ -28,6 +28,7 @@ const config: Config = {
             "500": "#003EA7",
           },
           violet: {
+            "400": "#75529A",
             "500": "#522781",
           },
           yellow: {
