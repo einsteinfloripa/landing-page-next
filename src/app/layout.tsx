@@ -26,6 +26,7 @@ import { SbDuvidasFrequentesSection } from "@/components/storyblok/sb-duvidas-fr
 import SbParceirosHero from "@/components/storyblok/sb-parceiros-hero";
 import SbFooter from "@/components/storyblok/sb-footer";
 import SbFraseImpacto from "@/components/storyblok/sb-frase-impacto";
+import { SbDoacaoSection } from "@/components/storyblok/sb-doacao-section";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
@@ -40,11 +41,10 @@ const anton = Anton({
 });
 
 const kalam = Kalam({
-  weight: ['300', '400', '700'],
-  subsets: ['latin'],
-  variable: '--font-kalam',  
+  weight: ["300", "400", "700"],
+  subsets: ["latin"],
+  variable: "--font-kalam",
 });
-
 
 export const metadata: Metadata = {
   title: "Einstein Floripa",
@@ -74,6 +74,7 @@ storyblokInit({
     "text-stripe": SbTextStripe,
     "duvidas-frequentes-section": SbDuvidasFrequentesSection,
     "parceiros-hero": SbParceirosHero,
+    "doacao-section": SbDoacaoSection,
     header: SbHeader,
     footer: SbFooter,
     "frase-impacto-section": SbFraseImpacto,

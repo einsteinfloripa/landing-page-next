@@ -187,6 +187,24 @@ export interface StoryblokContributionSection {
   [k: string]: any;
 }
 
+export interface StoryblokDoacaoCard {
+  valor: string;
+  titulo: string;
+  descricao: StoryblokRichtext;
+  component: "doacao-card";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokDoacaoSection {
+  subtitulo: string;
+  titulo: string;
+  valores: StoryblokDoacaoCard[];
+  component: "doacao-section";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface StoryblokDuvida {
   pergunta: string;
   resposta: StoryblokRichtext;
@@ -330,6 +348,8 @@ export interface StoryblokPagina {
     | StoryblokButtonNav
     | StoryblokCardInscricao
     | StoryblokContributionSection
+    | StoryblokDoacaoCard
+    | StoryblokDoacaoSection
     | StoryblokDuvida
     | StoryblokDuvidasFrequentesSection
     | StoryblokEquipeCard
