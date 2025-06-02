@@ -27,10 +27,13 @@ const config: Config = {
           },
           "dark-blue": {
             "500": "#003EA7",
+            "600": "#262498",
+            "900": "#100F40",
           },
           violet: {
             "400": "#75529A",
             "500": "#522781",
+            "800": "#2D1547",
           },
           yellow: {
             "500": "#FFEB66",
@@ -51,6 +54,7 @@ const config: Config = {
             "200": "#8A95A7",
             "300": "#54647F",
             "600": "#00163A",
+            "700": "#00112D",
             "900": "#000A1B",
           },
         },
@@ -98,7 +102,7 @@ const config: Config = {
       fontFamily: {
         roboto: ["var(--font-roboto)", "sans-serif"],
         anton: ["var(--font-anton)", "sans-serif"],
-        kalam: ['var(--font-kalam)', 'cursive'],
+        kalam: ["var(--font-kalam)", "cursive"],
       },
       borderRadius: {
         lg: "var(--radius)",

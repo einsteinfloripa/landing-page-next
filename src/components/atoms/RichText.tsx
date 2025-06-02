@@ -8,6 +8,7 @@ import {
   NODE_UL,
   render,
   MARK_LINK,
+  NODE_OL,
 } from "storyblok-rich-text-react-renderer";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -69,6 +70,16 @@ const RichText: FC<Props> = ({ className = {}, richText }) => {
       [NODE_PARAGRAPH]: (c) => <p className={cn("mb-2", paragraph)}>{c}</p>,
       [NODE_UL]: (c) => (
         <ul className={cn("mb-4 mt-4 pl-6 [&>li]:list-disc", unorderedList)}>{c}</ul>
+      ),
+      [NODE_OL]: (c) => (
+        <ol
+          className={cn(
+            "mb-4 mt-4 pl-4 [&>li]:list-decimal [&_li]:marker:font-bold [&_li>p]:m-0",
+            unorderedList
+          )}
+        >
+          {c}
+        </ol>
       ),
     },
     defaultBlokResolver: (name, props) => {

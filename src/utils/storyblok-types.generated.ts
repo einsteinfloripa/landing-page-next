@@ -172,6 +172,19 @@ export interface StoryblokCardInscricao {
   [k: string]: any;
 }
 
+export interface StoryblokComoDoarSection {
+  subtitulo: string;
+  titulo: string;
+  descricao: string;
+  infoTransferencia: StoryblokRichtext;
+  infoDoacaoRecorrente: StoryblokRichtext;
+  chavePix: string;
+  qrCodePix: StoryblokAsset;
+  component: "como-doar-section";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface StoryblokContributionSection {
   titulo: string;
   subtitulo?: StoryblokRichtext;
@@ -347,6 +360,7 @@ export interface StoryblokPagina {
     | StoryblokButton
     | StoryblokButtonNav
     | StoryblokCardInscricao
+    | StoryblokComoDoarSection
     | StoryblokContributionSection
     | StoryblokDoacaoCard
     | StoryblokDoacaoSection

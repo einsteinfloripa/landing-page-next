@@ -27,6 +27,7 @@ import SbParceirosHero from "@/components/storyblok/sb-parceiros-hero";
 import SbFooter from "@/components/storyblok/sb-footer";
 import SbFraseImpacto from "@/components/storyblok/sb-frase-impacto";
 import { SbDoacaoSection } from "@/components/storyblok/sb-doacao-section";
+import { SbComoDoarSection } from "@/components/storyblok/sb-como-doar-section";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
@@ -75,6 +76,7 @@ storyblokInit({
     "duvidas-frequentes-section": SbDuvidasFrequentesSection,
     "parceiros-hero": SbParceirosHero,
     "doacao-section": SbDoacaoSection,
+    "como-doar-section": SbComoDoarSection,
     header: SbHeader,
     footer: SbFooter,
     "frase-impacto-section": SbFraseImpacto,
