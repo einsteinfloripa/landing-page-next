@@ -25,6 +25,9 @@ body {
   .title-3xl {
     @apply font-anton uppercase leading-[110%] text-3xl
   }
+  .title-2xl {
+    @apply font-anton leading-[110%] text-2xl
+  }
   .title-xl {
     @apply font-anton uppercase leading-[110%] text-xl
   }

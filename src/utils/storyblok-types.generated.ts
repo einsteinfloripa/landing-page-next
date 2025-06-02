@@ -72,7 +72,7 @@ export interface StoryblokAreaAtuacaoSection {
 }
 
 export interface StoryblokButton {
-  variant: "default" | "secondary" | "tertiary" | "outline" | "ghost" | "link" | "destructive";
+  variant: "default" | "secondary" | "tertiary" | "outline" | "outline-secondary" | "ghost" | "link" | "destructive";
   title: string;
   component: "button";
   _uid: string;
@@ -230,6 +230,41 @@ export interface StoryblokEquipeSection {
   [k: string]: any;
 }
 
+export interface StoryblokFooter {
+  logo?: StoryblokAsset;
+  title?: string;
+  social?: StoryblokSocialButton[];
+  linkscol?: StoryblokFooterColLink[];
+  copyright?: string;
+  component: "footer";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokFooterColLink {
+  title: string;
+  links?: StoryblokLabelLink[];
+  component: "footer-col-link";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokFooterLinkCard {
+  title: string;
+  links: (StoryblokButtonNav | StoryblokButton)[];
+  component: "footer-link-card";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokFraseImpactoSection {
+  title?: string;
+  description?: string;
+  component: "frase-impacto-section";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface StoryblokHeader {
   logo: StoryblokAsset;
   links: StoryblokButtonNav[];
@@ -251,6 +286,14 @@ export interface StoryblokHierarquiaSection {
 export interface StoryblokJoinUsSection {
   cards: StoryblokCardInscricao[];
   component: "join-us-section";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokLabelLink {
+  label: string;
+  link?: Exclude<StoryblokMultilink, {linktype?: "email"} | {linktype?: "asset"}>;
+  component: "label+link";
   _uid: string;
   [k: string]: any;
 }
@@ -292,9 +335,14 @@ export interface StoryblokPagina {
     | StoryblokEquipeCard
     | StoryblokEquipeDepartamento
     | StoryblokEquipeSection
+    | StoryblokFooter
+    | StoryblokFooterColLink
+    | StoryblokFooterLinkCard
+    | StoryblokFraseImpactoSection
     | StoryblokHeader
     | StoryblokHierarquiaSection
     | StoryblokJoinUsSection
+    | StoryblokLabelLink
     | StoryblokMainHero
     | StoryblokMetric
     | StoryblokPagina
@@ -302,10 +350,12 @@ export interface StoryblokPagina {
     | StoryblokPeriodoInscricao
     | StoryblokPicture
     | StoryblokSingleTestimonalSection
+    | StoryblokSocialButton
     | StoryblokTextStripe
     | StoryblokValorContribuicao
     | StoryblokVoluntariadoHero
   )[];
+  footer?: ISbStoryData<StoryblokFooter> | string;
   component: "pagina";
   _uid: string;
   [k: string]: any;
@@ -343,6 +393,14 @@ export interface StoryblokSingleTestimonalSection {
   apresentacao: string;
   botao: (StoryblokButton | StoryblokButtonNav)[];
   component: "single-testimonal-section";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokSocialButton {
+  image?: StoryblokAsset;
+  link?: Exclude<StoryblokMultilink, {linktype?: "email"} | {linktype?: "asset"}>;
+  component: "social-button";
   _uid: string;
   [k: string]: any;
 }

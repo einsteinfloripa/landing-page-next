@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto, Anton } from "next/font/google";
+import { Roboto, Anton, Kalam } from "next/font/google";
 import Script from "next/script";
 import { apiPlugin, storyblokInit } from "@storyblok/react";
 
@@ -24,6 +24,8 @@ import { SbAreaAtuacaoSection } from "@/components/storyblok/sb-area-atuacao-sec
 import SbTextStripe from "@/components/storyblok/sb-text-stripe";
 import { SbDuvidasFrequentesSection } from "@/components/storyblok/sb-duvidas-frequentes-section";
 import SbParceirosHero from "@/components/storyblok/sb-parceiros-hero";
+import SbFooter from "@/components/storyblok/sb-footer";
+import SbFraseImpacto from "@/components/storyblok/sb-frase-impacto";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
@@ -36,6 +38,13 @@ const anton = Anton({
   subsets: ["latin"],
   variable: "--font-anton",
 });
+
+const kalam = Kalam({
+  weight: ['300', '400', '700'],
+  subsets: ['latin'],
+  variable: '--font-kalam',  
+});
+
 
 export const metadata: Metadata = {
   title: "Einstein Floripa",
@@ -66,6 +75,8 @@ storyblokInit({
     "duvidas-frequentes-section": SbDuvidasFrequentesSection,
     "parceiros-hero": SbParceirosHero,
     header: SbHeader,
+    footer: SbFooter,
+    "frase-impacto-section": SbFraseImpacto,
   },
   apiOptions: {
     region: "us",
@@ -80,7 +91,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br" className={`${roboto.variable} ${anton.variable}`}>
+    <html lang="pt-br" className={`${roboto.variable} ${anton.variable} ${kalam.variable}`}>
       <body className="font-roboto antialiased bg-app-neutral-10">
         {children}
         <Script id="clarity-script" strategy="afterInteractive">

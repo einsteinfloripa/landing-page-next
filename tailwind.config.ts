@@ -22,6 +22,7 @@ const config: Config = {
             "400": "#339DCD",
             "500": "#0085C1",
             "600": "#0079B0",
+            "700": "#005E89",
             "900": "#00283A",
           },
           "dark-blue": {
@@ -43,6 +44,7 @@ const config: Config = {
             "500": "#54c100",
           },
           neutral: {
+            "5": "#FAFAFA",
             "10": "#F5F5F5",
             "50": "#E6E8EC",
             "100": "#B0B7C4",
@@ -95,6 +97,7 @@ const config: Config = {
       fontFamily: {
         roboto: ["var(--font-roboto)", "sans-serif"],
         anton: ["var(--font-anton)", "sans-serif"],
+        kalam: ['var(--font-kalam)', 'cursive'],
       },
       borderRadius: {
         lg: "var(--radius)",
