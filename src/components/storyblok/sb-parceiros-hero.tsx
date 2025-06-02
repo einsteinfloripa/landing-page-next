@@ -29,7 +29,7 @@ const SbParceirosHero = ({ blok }: Blok<StoryblokParceirosHero>) => {
                 alt=""
                 className="absolute -bottom-[30%] lg:-bottom-[20%] lg:right-[40%] max-w-[310px] w-[30vw] block"
               />
-              <span className="relative text-app-yellow-500 -z-10 overflow-hidden">
+              <span className="relative text-app-yellow-500 -z-10 overflow-hidden lg:animate-slow-ping">
                 <span className="absolute size-[100px] md:size-[205px] border-[1.2px] opacity-80 border-dashed border-app-blue-200 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
                 <span className="absolute size-[200px] sm:size-[300px] md:size-[412px] border-[1.2px] opacity-70 border-dashed border-app-blue-200 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
                 <span className="absolute size-[300px] sm:size-[500px] md:size-[644px] border-[1.2px] opacity-60 border-dashed border-app-blue-200 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />

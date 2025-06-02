@@ -122,6 +122,7 @@ const config: Config = {
         ripple: "ripple 3s infinite",
         "accordion-down": "accordion-down 0.3s ease-out",
         "accordion-up": "accordion-up 0.3s ease-out",
+        "slow-ping": "slow-ping 4s infinite",
         marquee: "marquee 40s linear infinite",
       },
       keyframes: {
@@ -141,6 +142,20 @@ const config: Config = {
           "100%": {
             transform: "scale(2.5)",
             opacity: "0",
+          },
+        },
+        "slow-ping": {
+          "0%": {
+            transform: "scale(1)",
+            opacity: "0.2",
+          },
+          "50%": {
+            transform: "scale(2.5)",
+            opacity: "1",
+          },
+          "100%": {
+            transform: "scale(1)",
+            opacity: "0.2",
           },
         },
         "accordion-down": {
