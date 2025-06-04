@@ -1,4 +1,5 @@
-import { getStoryblokApi, ISbResult, ISbStoriesParams } from "@storyblok/react";
+import { getStoryblokApi } from "@/lib/storyblok";
+import { ISbResult, ISbStoriesParams } from "@storyblok/react";
 
 interface TypedISbResult<T> extends Omit<ISbResult, "data"> {
   data: T;
