@@ -28,6 +28,7 @@ import SbFooter from "@/components/storyblok/sb-footer";
 import SbFraseImpacto from "@/components/storyblok/sb-frase-impacto";
 import { SbDoacaoSection } from "@/components/storyblok/sb-doacao-section";
 import { SbComoDoarSection } from "@/components/storyblok/sb-como-doar-section";
+import { SbCardGridSection } from "@/components/storyblok/sb-card-grid-section";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
@@ -77,6 +78,7 @@ export const components = {
   header: SbHeader,
   footer: SbFooter,
   "frase-impacto-section": SbFraseImpacto,
+  "card-grid-section": SbCardGridSection,
 };
 
 storyblokInit({

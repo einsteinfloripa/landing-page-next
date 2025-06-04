@@ -161,6 +161,14 @@ export interface StoryblokButtonNav {
   [k: string]: any;
 }
 
+export interface StoryblokCardGridSection {
+  titulo?: string;
+  cards: StoryblokImagemCard[];
+  component: "card-grid-section";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface StoryblokCardInscricao {
   image: StoryblokAsset;
   titulo: string;
@@ -314,6 +322,15 @@ export interface StoryblokHierarquiaSection {
   [k: string]: any;
 }
 
+export interface StoryblokImagemCard {
+  imagem: StoryblokAsset;
+  titulo: string;
+  descricao: StoryblokRichtext;
+  component: "imagem-card";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface StoryblokJoinUsSection {
   cards: StoryblokCardInscricao[];
   component: "join-us-section";
@@ -359,6 +376,7 @@ export interface StoryblokPagina {
     | StoryblokAreaAtuacaoSection
     | StoryblokButton
     | StoryblokButtonNav
+    | StoryblokCardGridSection
     | StoryblokCardInscricao
     | StoryblokComoDoarSection
     | StoryblokContributionSection
@@ -375,6 +393,7 @@ export interface StoryblokPagina {
     | StoryblokFraseImpactoSection
     | StoryblokHeader
     | StoryblokHierarquiaSection
+    | StoryblokImagemCard
     | StoryblokJoinUsSection
     | StoryblokLabelLink
     | StoryblokMainHero
