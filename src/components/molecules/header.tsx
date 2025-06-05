@@ -6,7 +6,7 @@ import {
   StoryblokMultilink,
 } from "@/utils/storyblok-types.generated";
 import { List, X } from "@phosphor-icons/react/dist/ssr";
-import { StoryblokComponent } from "@storyblok/react";
+import { StoryblokServerComponent } from "@storyblok/react/rsc";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -82,7 +82,7 @@ const Header = ({ links, logo, acoes }: HeaderProps) => {
             </ul>
           </nav>
           {(acoes ?? []).map((acao, index) => (
-            <StoryblokComponent key={index} blok={acao} />
+            <StoryblokServerComponent key={index} blok={acao} />
           ))}
         </div>
         <button

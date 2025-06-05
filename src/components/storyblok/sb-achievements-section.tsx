@@ -1,7 +1,7 @@
 import { getWebpVersionFromSBImage } from "@/lib/utils";
 import { StoryblokAchievementsSection } from "@/utils/storyblok-types.generated";
 import { Blok } from "@/utils/types";
-import { StoryblokComponent } from "@storyblok/react";
+import { StoryblokServerComponent } from "@storyblok/react/rsc";
 import Image from "next/image";
 
 const SbAchievementsSection = ({ blok }: Blok<StoryblokAchievementsSection>) => {
@@ -14,7 +14,7 @@ const SbAchievementsSection = ({ blok }: Blok<StoryblokAchievementsSection>) => 
           {metricas.map((m, index) => (
             <>
               <li key={index} className="flex items-center space-x-4">
-                <StoryblokComponent blok={m} />
+                <StoryblokServerComponent blok={m} />
               </li>
               <hr />
             </>

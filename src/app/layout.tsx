@@ -1,34 +1,8 @@
 import type { Metadata } from "next";
 import { Roboto, Anton, Kalam } from "next/font/google";
 import Script from "next/script";
-import { apiPlugin, storyblokInit } from "@storyblok/react";
-
 import "./globals.css";
-import GenericPage from "@/components/pages/generic-page";
-import { SbMainHero } from "@/components/storyblok/sb-main-hero";
-import { SbButton } from "@/components/storyblok/sb-button";
-import { SbButtonNav } from "@/components/storyblok/sb-nav-button";
-import SbComponentNotFound from "@/components/storyblok/sb-component-not-found";
-import { SbAboutSection } from "@/components/storyblok/sb-about-section";
-import SbAchievementsSection from "@/components/storyblok/sb-achievements-section";
-import SbMetric from "@/components/storyblok/sb-metric";
-import SbContributionSection from "@/components/storyblok/sb-contribution-section";
-import { SbSingleTestimonialSection } from "@/components/storyblok/sb-single-testimonial-section";
-import SbJoinUsSection from "@/components/storyblok/sb-join-us-section";
-import SbHeader from "@/components/storyblok/sb-header";
-import SbAboutHero from "@/components/storyblok/sb-about-hero";
-import { SbEquipeSection } from "@/components/storyblok/sb-equipe-section";
-import { SbHierarquiaSection } from "@/components/storyblok/sb-hierarquia-section";
-import SbVoluntariadoHero from "@/components/storyblok/sb-voluntariado-hero";
-import { SbAreaAtuacaoSection } from "@/components/storyblok/sb-area-atuacao-section";
-import SbTextStripe from "@/components/storyblok/sb-text-stripe";
-import { SbDuvidasFrequentesSection } from "@/components/storyblok/sb-duvidas-frequentes-section";
-import SbParceirosHero from "@/components/storyblok/sb-parceiros-hero";
-import SbFooter from "@/components/storyblok/sb-footer";
-import SbFraseImpacto from "@/components/storyblok/sb-frase-impacto";
-import { SbDoacaoSection } from "@/components/storyblok/sb-doacao-section";
-import { SbComoDoarSection } from "@/components/storyblok/sb-como-doar-section";
-import { SbCardGridSection } from "@/components/storyblok/sb-card-grid-section";
+import StoryblokProvider from "@/components/StoryblokProvider";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
@@ -54,44 +28,6 @@ export const metadata: Metadata = {
     "Cursinho pré-vestibular gratuito para estudantes de baixa renda que sonham com uma educação superior de qualidade.",
 };
 
-export const components = {
-  "main-hero": SbMainHero,
-  "button-nav": SbButtonNav,
-  pagina: GenericPage,
-  button: SbButton,
-  "about-section": SbAboutSection,
-  "achievements-section": SbAchievementsSection,
-  metric: SbMetric,
-  "contribution-section": SbContributionSection,
-  "single-testimonal-section": SbSingleTestimonialSection,
-  "join-us-section": SbJoinUsSection,
-  "about-hero": SbAboutHero,
-  "equipe-section": SbEquipeSection,
-  "hierarquia-section": SbHierarquiaSection,
-  "voluntariado-hero": SbVoluntariadoHero,
-  "area-atuacao-section": SbAreaAtuacaoSection,
-  "text-stripe": SbTextStripe,
-  "duvidas-frequentes-section": SbDuvidasFrequentesSection,
-  "parceiros-hero": SbParceirosHero,
-  "doacao-section": SbDoacaoSection,
-  "como-doar-section": SbComoDoarSection,
-  header: SbHeader,
-  footer: SbFooter,
-  "frase-impacto-section": SbFraseImpacto,
-  "card-grid-section": SbCardGridSection,
-};
-
-storyblokInit({
-  accessToken: process.env.NEXT_PUBLIC_STORYBLOK_API_TOKEN,
-  use: [apiPlugin],
-  components: components,
-  apiOptions: {
-    region: "us",
-  },
-  customFallbackComponent: SbComponentNotFound,
-  enableFallbackComponent: true,
-});
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -99,18 +35,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className={`${roboto.variable} ${anton.variable} ${kalam.variable}`}>
-      <body className="font-roboto antialiased bg-app-neutral-10">
-        {children}
-        <Script id="clarity-script" strategy="afterInteractive">
-          {`
+      <StoryblokProvider>
+        <body className="font-roboto antialiased bg-app-neutral-10">
+          {children}
+          <Script id="clarity-script" strategy="afterInteractive">
+            {`
               (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "${process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID}");
           `}
-        </Script>
-      </body>
+          </Script>
+        </body>
+      </StoryblokProvider>
     </html>
   );
 }

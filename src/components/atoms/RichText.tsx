@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { ISbRichtext, StoryblokComponent } from "@storyblok/react";
+import { ISbRichtext } from "@storyblok/react";
 import {
   MARK_BOLD,
   NODE_HEADING,
@@ -13,6 +13,7 @@ import {
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Headline from "./Headline";
+import { StoryblokServerComponent } from "@storyblok/react/rsc";
 
 interface Props {
   className?: {
@@ -39,7 +40,7 @@ const RichText: FC<Props> = ({ className = {}, richText }) => {
         </a>
       ),
       [MARK_LINK]: (children, props) => {
-        const { linktype, href, target } = props;
+        const { linktype, href } = props;
         if (!href) return <a href="#">{children}</a>;
 
         if (linktype === "email") {
@@ -84,7 +85,7 @@ const RichText: FC<Props> = ({ className = {}, richText }) => {
     },
     defaultBlokResolver: (name, props) => {
       const blok = { ...props, component: name };
-      return <StoryblokComponent blok={blok} key={props._uid} />;
+      return <StoryblokServerComponent blok={blok} key={props._uid} />;
     },
   });
 

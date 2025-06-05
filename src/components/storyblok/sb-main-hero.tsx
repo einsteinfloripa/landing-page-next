@@ -2,8 +2,9 @@ import { StoryblokMainHero } from "@/utils/storyblok-types.generated";
 import { CrazyEinsteinBadget } from "../molecules/crazy-einstein-badget";
 import { Sticker } from "../molecules/sticker";
 import { Blok } from "@/utils/types";
-import { StoryblokComponent, storyblokEditable } from "@storyblok/react";
+import { storyblokEditable } from "@storyblok/react";
 import { ImageSection } from "../organisms/image-section";
+import { StoryblokServerComponent } from "@storyblok/react/rsc";
 
 export const SbMainHero = ({ blok }: Blok<StoryblokMainHero>) => {
   const { titulo, subtitulo, acoes, cardTitulo, cardSubtitulo, imagem, imagemMobile } = blok;
@@ -16,7 +17,7 @@ export const SbMainHero = ({ blok }: Blok<StoryblokMainHero>) => {
           <p className="md:text-center md:max-w-[514px]">{subtitulo}</p>
           <div className="flex gap-2">
             {(acoes ?? []).map((acao, index) => (
-              <StoryblokComponent key={index} blok={acao} />
+              <StoryblokServerComponent key={index} blok={acao} />
             ))}
           </div>
         </div>

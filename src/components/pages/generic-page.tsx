@@ -1,15 +1,14 @@
-import { StoryblokComponent } from "@storyblok/react";
-import { Fragment } from "react";
 import { Blok } from "@/utils/types";
 import { StoryblokPagina } from "@/utils/storyblok-types.generated";
+import { storyblokEditable, StoryblokServerComponent } from "@storyblok/react/rsc";
 
 const GenericPage = ({ blok }: Blok<StoryblokPagina>) => {
   return (
-    <Fragment>
+    <main {...storyblokEditable(blok)}>
       {blok.body.map((component, index) => (
-        <StoryblokComponent key={index} blok={component} />
+        <StoryblokServerComponent key={index} blok={component} />
       ))}
-    </Fragment>
+    </main>
   );
 };
 

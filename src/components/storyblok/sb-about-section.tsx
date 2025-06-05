@@ -2,7 +2,7 @@ import { StoryblokAboutSection } from "@/utils/storyblok-types.generated";
 import { EinsteinTransformBadget } from "../molecules/einstein-transform-badget";
 import { Blok } from "@/utils/types";
 import RichText from "../atoms/RichText";
-import { StoryblokComponent } from "@storyblok/react";
+import { StoryblokServerComponent } from "@storyblok/react/rsc";
 
 export const SbAboutSection = ({ blok }: Blok<StoryblokAboutSection>) => {
   const { titulo, descricao, acoes } = blok;
@@ -17,7 +17,7 @@ export const SbAboutSection = ({ blok }: Blok<StoryblokAboutSection>) => {
           <RichText richText={descricao} />
           <div className="flex gap-2">
             {(acoes ?? []).map((acao, index) => (
-              <StoryblokComponent key={index} blok={acao} />
+              <StoryblokServerComponent key={index} blok={acao} />
             ))}
           </div>
         </div>
