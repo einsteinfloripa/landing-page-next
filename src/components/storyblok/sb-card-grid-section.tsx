@@ -16,7 +16,7 @@ export const SbCardGridSection = ({ blok }: Blok<StoryblokCardGridSection>) => {
       <div className="relative w-full flex flex-col px-8 sm:px-24 py-24 sm:py-36 lg:gap-20">
         <h1 className="title-4xl text-center">{titulo}</h1>
 
-        <div className="flex flex-wrap justify-evenly gap-10 mt-12">
+        <div className="flex flex-wrap justify-evenly gap-5 mt-12">
           {cards?.map((c) => (
             <div
               key={c._uid}
