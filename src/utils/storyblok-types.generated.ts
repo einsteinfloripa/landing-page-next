@@ -405,6 +405,8 @@ export interface StoryblokPagina {
     | StoryblokSingleTestimonalSection
     | StoryblokSocialButton
     | StoryblokTextStripe
+    | StoryblokTipoParceriaCard
+    | StoryblokTiposParceriaSection
     | StoryblokValorContribuicao
     | StoryblokVoluntariadoHero
   )[];
@@ -462,6 +464,24 @@ export interface StoryblokTextStripe {
   texto: string;
   animar?: boolean;
   component: "text-stripe";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokTipoParceriaCard {
+  titulo: string;
+  descricao: StoryblokRichtext;
+  botao: StoryblokButtonNav[];
+  cor: "" | "#B0D9EC" | "#54ADD5" | "#74C3CC" | "#BFE3E7";
+  component: "tipo-parceria-card";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokTiposParceriaSection {
+  titulo: string;
+  cards: StoryblokTipoParceriaCard[];
+  component: "tipos-parceria-section";
   _uid: string;
   [k: string]: any;
 }

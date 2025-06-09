@@ -22,6 +22,7 @@ import { SbButtonNav } from "@/components/storyblok/sb-nav-button";
 import SbParceirosHero from "@/components/storyblok/sb-parceiros-hero";
 import { SbSingleTestimonialSection } from "@/components/storyblok/sb-single-testimonial-section";
 import SbTextStripe from "@/components/storyblok/sb-text-stripe";
+import { SbTiposParceriaSection } from "@/components/storyblok/sb-tipos-parceria-section";
 import SbVoluntariadoHero from "@/components/storyblok/sb-voluntariado-hero";
 import { apiPlugin, storyblokInit } from "@storyblok/react/rsc";
 
@@ -53,6 +54,7 @@ export const getStoryblokApi = storyblokInit({
     footer: SbFooter,
     "frase-impacto-section": SbFraseImpacto,
     "card-grid-section": SbCardGridSection,
+    "tipos-parceria-section": SbTiposParceriaSection,
   },
   apiOptions: {
     region: "us",
