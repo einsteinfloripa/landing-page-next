@@ -21,6 +21,7 @@ import { SbMainHero } from "@/components/storyblok/sb-main-hero";
 import SbMetric from "@/components/storyblok/sb-metric";
 import { SbButtonNav } from "@/components/storyblok/sb-nav-button";
 import SbParceirosHero from "@/components/storyblok/sb-parceiros-hero";
+import { SbProcessoParceriaSection } from "@/components/storyblok/sb-processo-parceria-section";
 import { SbSingleTestimonialSection } from "@/components/storyblok/sb-single-testimonial-section";
 import SbTextStripe from "@/components/storyblok/sb-text-stripe";
 import { SbTiposParceriaSection } from "@/components/storyblok/sb-tipos-parceria-section";
@@ -57,6 +58,7 @@ export const getStoryblokApi = storyblokInit({
     "card-grid-section": SbCardGridSection,
     "tipos-parceria-section": SbTiposParceriaSection,
     "beneficios-parceria-section": SbBeneficiosParceriaSection,
+    "processo-parceria-section": SbProcessoParceriaSection,
   },
   apiOptions: {
     region: "us",

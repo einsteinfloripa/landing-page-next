@@ -189,6 +189,14 @@ export interface StoryblokCardInscricao {
   [k: string]: any;
 }
 
+export interface StoryblokCardTexto {
+  titulo: string;
+  descricao: StoryblokRichtext;
+  component: "card-texto";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface StoryblokComoDoarSection {
   subtitulo: string;
   titulo: string;
@@ -388,6 +396,7 @@ export interface StoryblokPagina {
     | StoryblokButtonNav
     | StoryblokCardGridSection
     | StoryblokCardInscricao
+    | StoryblokCardTexto
     | StoryblokComoDoarSection
     | StoryblokContributionSection
     | StoryblokDoacaoCard
@@ -412,6 +421,7 @@ export interface StoryblokPagina {
     | StoryblokParceirosHero
     | StoryblokPeriodoInscricao
     | StoryblokPicture
+    | StoryblokProcessoParceriaSection
     | StoryblokSingleTestimonalSection
     | StoryblokSocialButton
     | StoryblokTextStripe
@@ -447,6 +457,15 @@ export interface StoryblokPeriodoInscricao {
 export interface StoryblokPicture {
   asset: StoryblokAsset;
   component: "picture";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokProcessoParceriaSection {
+  subtitulo: string;
+  titulo: string;
+  etapas: StoryblokCardTexto[];
+  component: "processo-parceria-section";
   _uid: string;
   [k: string]: any;
 }
