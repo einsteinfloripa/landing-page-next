@@ -71,6 +71,15 @@ export interface StoryblokAreaAtuacaoSection {
   [k: string]: any;
 }
 
+export interface StoryblokBeneficiosParceriaSection {
+  subtitulo: string;
+  titulo: string;
+  cards: StoryblokImagemCard[];
+  component: "beneficios-parceria-section";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface StoryblokButton {
   variant: "default" | "secondary" | "tertiary" | "outline" | "outline-secondary" | "ghost" | "link" | "destructive";
   title: string;
@@ -374,6 +383,7 @@ export interface StoryblokPagina {
     | StoryblokAboutSection
     | StoryblokAchievementsSection
     | StoryblokAreaAtuacaoSection
+    | StoryblokBeneficiosParceriaSection
     | StoryblokButton
     | StoryblokButtonNav
     | StoryblokCardGridSection

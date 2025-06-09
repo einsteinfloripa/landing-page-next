@@ -3,6 +3,7 @@ import SbAboutHero from "@/components/storyblok/sb-about-hero";
 import { SbAboutSection } from "@/components/storyblok/sb-about-section";
 import SbAchievementsSection from "@/components/storyblok/sb-achievements-section";
 import { SbAreaAtuacaoSection } from "@/components/storyblok/sb-area-atuacao-section";
+import { SbBeneficiosParceriaSection } from "@/components/storyblok/sb-beneficios-parceria-section";
 import { SbButton } from "@/components/storyblok/sb-button";
 import { SbCardGridSection } from "@/components/storyblok/sb-card-grid-section";
 import { SbComoDoarSection } from "@/components/storyblok/sb-como-doar-section";
@@ -55,6 +56,7 @@ export const getStoryblokApi = storyblokInit({
     "frase-impacto-section": SbFraseImpacto,
     "card-grid-section": SbCardGridSection,
     "tipos-parceria-section": SbTiposParceriaSection,
+    "beneficios-parceria-section": SbBeneficiosParceriaSection,
   },
   apiOptions: {
     region: "us",
