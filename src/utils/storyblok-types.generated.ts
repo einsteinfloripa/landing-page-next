@@ -61,6 +61,14 @@ export interface StoryblokAchievementsSection {
   [k: string]: any;
 }
 
+export interface StoryblokAmigosEinsteinSection {
+  descricao: StoryblokRichtext;
+  cards: StoryblokCardAmigosEinstein[];
+  component: "amigos-einstein-section";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface StoryblokAreaAtuacaoSection {
   titulo: string;
   descricao: StoryblokRichtext;
@@ -166,6 +174,17 @@ export interface StoryblokButtonNav {
   link: Exclude<StoryblokMultilink, {linktype?: "asset"}>;
   button: StoryblokButton[];
   component: "button-nav";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokCardAmigosEinstein {
+  titulo: string;
+  descricao: StoryblokRichtext;
+  link: Exclude<StoryblokMultilink, {linktype?: "email"} | {linktype?: "asset"}>;
+  cor: "#00283A" | "#005E89" | "#0079B0" | "#54ADD5" | "#B0D9EC" | "#74C3CC";
+  corTexto: "light" | "dark";
+  component: "card-amigos-einstein";
   _uid: string;
   [k: string]: any;
 }
@@ -390,10 +409,12 @@ export interface StoryblokPagina {
     | StoryblokAboutHero
     | StoryblokAboutSection
     | StoryblokAchievementsSection
+    | StoryblokAmigosEinsteinSection
     | StoryblokAreaAtuacaoSection
     | StoryblokBeneficiosParceriaSection
     | StoryblokButton
     | StoryblokButtonNav
+    | StoryblokCardAmigosEinstein
     | StoryblokCardGridSection
     | StoryblokCardInscricao
     | StoryblokCardTexto

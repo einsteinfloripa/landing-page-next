@@ -2,6 +2,7 @@ import GenericPage from "@/components/pages/generic-page";
 import SbAboutHero from "@/components/storyblok/sb-about-hero";
 import { SbAboutSection } from "@/components/storyblok/sb-about-section";
 import SbAchievementsSection from "@/components/storyblok/sb-achievements-section";
+import { SbAmigosEinsteinSection } from "@/components/storyblok/sb-amigos-einstein-section";
 import { SbAreaAtuacaoSection } from "@/components/storyblok/sb-area-atuacao-section";
 import { SbBeneficiosParceriaSection } from "@/components/storyblok/sb-beneficios-parceria-section";
 import { SbButton } from "@/components/storyblok/sb-button";
@@ -59,6 +60,7 @@ export const getStoryblokApi = storyblokInit({
     "tipos-parceria-section": SbTiposParceriaSection,
     "beneficios-parceria-section": SbBeneficiosParceriaSection,
     "processo-parceria-section": SbProcessoParceriaSection,
+    "amigos-einstein-section": SbAmigosEinsteinSection,
   },
   apiOptions: {
     region: "us",
