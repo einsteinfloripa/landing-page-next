@@ -452,6 +452,9 @@ export interface StoryblokPagina {
     | StoryblokVoluntariadoHero
   )[];
   footer?: ISbStoryData<StoryblokFooter> | string;
+  titulo: string;
+  descricao: string;
+  imagem?: StoryblokAsset;
   component: "pagina";
   _uid: string;
   [k: string]: any;
