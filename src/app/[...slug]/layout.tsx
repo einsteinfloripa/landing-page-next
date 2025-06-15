@@ -32,7 +32,9 @@ interface Props {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const slug = (await params).slug;
+  const paramsResolved = await params;
+  const slug =
+    paramsResolved && Array.isArray(paramsResolved.slug) ? paramsResolved.slug : ["home"];
   const content = await fetchStory<StoryblokPagina>(`${[slug[0]].join("/")}`)
     .then((res) => res.story.content)
     .catch(notFound);
