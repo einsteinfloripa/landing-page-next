@@ -12,6 +12,9 @@
 - TailwindCSS
 - Storyblock
 
+Deploy V1 Netlify para testes
+https://site-einsteinfloripa.netlify.app/
+
 [**Link do Design no Figma** ](https://www.figma.com/design/WU7RpztgmjZntvEywl9c43/ReDesign---Site?node-id=72-322&t=aLRjy3ZHFgr8DlmL-1)
 
 ![Imagem da Hero](/src/assets/readme-cover.png)
