@@ -1,4 +1,5 @@
 import { getStoryblokApi } from "@/lib/storyblok";
+import { ISbStories, ISbStoriesParams } from "@storyblok/react/rsc";
 import { ISbStoryData } from "storyblok";
 
 export async function fetchStory<T>(slug: string) {
@@ -10,4 +11,19 @@ export async function fetchStory<T>(slug: string) {
   https://api-us.storyblok.com/v2/cdn/stories/${slug}?version=${version}&token=${process.env.NEXT_PUBLIC_STORYBLOK_API_TOKEN}`,
     { next: { tags: ["cms"] }, cache: version === "published" ? "default" : "no-store" }
   ).then((res) => res.json()) as Promise<{ story: ISbStoryData<T> }>;
+}
+
+export async function fetchStories<T>(
+  storyUrl: string,
+  apiParams: Omit<ISbStoriesParams, "version">
+) {
+  const storyblokApi = getStoryblokApi();
+  const version = process.env.NODE_ENV === "production" ? "published" : "draft";
+
+  return storyblokApi
+    .get(storyUrl, {
+      ...apiParams,
+      version,
+    })
+    .then((res) => res as ISbStories<T>);
 }
