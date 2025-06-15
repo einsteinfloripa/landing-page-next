@@ -105,6 +105,7 @@ export const replaceWildCard = (
   wildcardIdentifier: string,
   replacement: string
 ): ISbRichtext => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const replaceName = (obj: any) => {
     if (Array.isArray(obj)) {
       obj.forEach((item) => replaceName(item));
