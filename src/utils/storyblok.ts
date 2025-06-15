@@ -9,7 +9,7 @@ export async function fetchStory<T>(slug: string) {
   return fetch(
     `
   https://api-us.storyblok.com/v2/cdn/stories/${slug}?version=${version}&token=${process.env.NEXT_PUBLIC_STORYBLOK_API_TOKEN}`,
-    { next: { tags: ["cms"] }, cache: version === "published" ? "default" : "no-store" }
+    { next: { tags: ["cms"] }, cache: "no-store" }
   ).then((res) => res.json()) as Promise<{ story: ISbStoryData<T> }>;
 }
 

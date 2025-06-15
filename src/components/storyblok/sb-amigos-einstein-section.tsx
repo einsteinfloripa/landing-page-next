@@ -18,14 +18,16 @@ export const SbAmigosEinsteinSection = ({ blok }: Blok<StoryblokAmigosEinsteinSe
     >
       <PaperTextureBackground className="bg-app-blue-500" opacity={100} version={2} />
       <div className="w-full flex flex-col sm:px-24 py-24 sm:py-36 gap-10 p-5">
-        <div className="relative flex flex-col text-center w-full gap-4 items-center justify-center xl:mb-10 z-10 px-5 sm:px-auto text-white">
-          <h1 className="title-4xl">Torne-se um amigo do einstein</h1>
-          <Image
-            src={ScribbleDraw}
-            alt=""
-            className="absolute bottom-[57%] lg:bottom-[50%] lg:right-[40%] max-w-[200px] lg:max-w-[310px] w-[100vw] block"
-            unoptimized
-          />
+        <div className="flex flex-col text-center w-full gap-6 items-center justify-center xl:mb-10 z-10 px-5 sm:px-auto text-white">
+          <div className="relative">
+            <h1 className="title-4xl">Torne-se um amigo do einstein</h1>
+            <Image
+              src={ScribbleDraw}
+              alt=""
+              className="absolute bottom-[-30%] right-[30%] lg:bottom-[-60%] lg:right-[10%] max-w-[200px] lg:max-w-[310px] w-[100vw] block"
+              unoptimized
+            />
+          </div>
           <RichText className={{ container: "max-w-[620px]" }} richText={descricao} />
         </div>
 
