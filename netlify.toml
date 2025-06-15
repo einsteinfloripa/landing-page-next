@@ -9,4 +9,4 @@
   paths = ["node_modules/**", ".next/cache/**"]
 
 [[plugins]]
-  package = "@netlify/next"
+package = "@netlify/plugin-nextjs"
