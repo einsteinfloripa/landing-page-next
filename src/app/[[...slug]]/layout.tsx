@@ -61,6 +61,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: metadata.description,
     twitter,
     openGraph: {
+      ...twitter,
       siteName: "Einstein Floripa",
       title: metadata.title,
       description: metadata.description,
