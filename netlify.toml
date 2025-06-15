@@ -4,6 +4,7 @@
 
 [build.environment]
   NODE_VERSION = "20"
+  NODE_ENV = "development"
 
 [cache]
   paths = ["node_modules/**", ".next/cache/**"]
