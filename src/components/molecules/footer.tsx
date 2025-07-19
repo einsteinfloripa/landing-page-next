@@ -40,7 +40,7 @@ const Footer = ({ logo, title, social, linkscol, copyright }: FooterProps) => {
       )}
       <div className="relative w-full max-w-wrapper flex flex-col p-4 sm:px-12 sm:py-8 mt-10 mb-20 rounded-3xl">
         <PaperTextureBackground className="bg-app-blue-500 rounded-3xl" />
-        <div className="flex justify-between">
+        <div className="flex justify-between flex-col md:flex-row gap-4">
           <div className="flex gap-4 items-center">
             <Image
               src={getWebpVersionFromSBImage(logo.filename!)}
@@ -62,8 +62,8 @@ const Footer = ({ logo, title, social, linkscol, copyright }: FooterProps) => {
                   <Image
                     src={getWebpVersionFromSBImage(s.image.filename!)}
                     alt={s.image.alt ?? ""}
-                    width={32}
-                    height={32}
+                    width={48}
+                    height={48}
                   />
                 </Link>
               );

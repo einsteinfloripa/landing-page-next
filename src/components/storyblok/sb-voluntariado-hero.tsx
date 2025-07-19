@@ -24,8 +24,8 @@ const SbVoluntariadoHero = ({ blok }: Blok<StoryblokVoluntariadoHero>) => {
       className="relative flex justify-center min-h-screen overflow-hidden"
     >
       <PaperTextureBackground className="bg-white" version={2} opacity={80} />
-      <div className="relative flex w-full flex-col gap-8 justify-center xl:mb-10 z-10 max-w-[700px] px-5 sm:px-auto">
-        <div className="relative">
+      <div className="relative bg-white/60 backdrop-blur-sm sm:backdrop-blur-none sm:bg-transparent flex w-full flex-col gap-8 justify-center xl:mb-10 z-10 max-w-[700px] px-5 sm:px-auto">
+        <div className="relative h-fit mt-28">
           <h1 className="title-4xl">Transforme Vidas, inclusive a Sua</h1>
           <Image
             src={ScribbleDraw}
