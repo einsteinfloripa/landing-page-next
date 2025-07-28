@@ -27,6 +27,7 @@ const Footer = ({ logo, title, social, linkscol, copyright }: FooterProps) => {
     "/home": "bg-app-dark-blue-500",
     "/voluntariado": "bg-app-neutral-10",
     "/sobre-nos": "bg-app-neutral-10",
+    "/contato": "bg-app-blue-500",
   }; // Mapear as rotas com o bg correspondente
 
   const bgBackground = bgBackgroundMap[pathname] ?? null;
@@ -35,10 +36,12 @@ const Footer = ({ logo, title, social, linkscol, copyright }: FooterProps) => {
     <section className="relative w-full flex overflow-hidden">
       {bgBackground && (
         <PaperTextureBackground
+          version={2}
+          opacity={100}
           className={`${bgBackground} transform scale-y-[-1] transition-transform`}
         />
       )}
-      <div className="relative w-full max-w-wrapper flex flex-col p-4 sm:px-12 sm:py-8 mt-10 mb-20 rounded-3xl">
+      <div className="relative w-full max-w-wrapper flex flex-col p-4 sm:px-12 sm:py-8 mt-10 mb-20 rounded-3xl shadow-lg">
         <PaperTextureBackground className="bg-app-blue-500 rounded-3xl" />
         <div className="flex justify-between flex-col md:flex-row gap-4">
           <div className="flex gap-4 items-center">
