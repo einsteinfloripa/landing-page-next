@@ -9,6 +9,7 @@ import { SbButton } from "@/components/storyblok/sb-button";
 import { SbCardGridSection } from "@/components/storyblok/sb-card-grid-section";
 import { SbComoDoarSection } from "@/components/storyblok/sb-como-doar-section";
 import SbComponentNotFound from "@/components/storyblok/sb-component-not-found";
+import { SbContatoSection } from "@/components/storyblok/sb-contato-section";
 import SbContributionSection from "@/components/storyblok/sb-contribution-section";
 import { SbDoacaoSection } from "@/components/storyblok/sb-doacao-section";
 import { SbDuvidasFrequentesSection } from "@/components/storyblok/sb-duvidas-frequentes-section";
@@ -61,6 +62,7 @@ export const getStoryblokApi = storyblokInit({
     "beneficios-parceria-section": SbBeneficiosParceriaSection,
     "processo-parceria-section": SbProcessoParceriaSection,
     "amigos-einstein-section": SbAmigosEinsteinSection,
+    "contato-section": SbContatoSection,
   },
   apiOptions: {
     region: "us",

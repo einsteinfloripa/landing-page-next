@@ -68,7 +68,15 @@ const RichText: FC<Props> = ({ className = {}, richText }) => {
           </Headline>
         );
       },
-      [NODE_PARAGRAPH]: (c) => <p className={cn("mb-2", paragraph)}>{c}</p>,
+      [NODE_PARAGRAPH]: (c) => {
+        const isEmpty =
+          !c ||
+          (Array.isArray(c) &&
+            c.every((child) => (typeof child === "string" ? child.trim() === "" : false)));
+
+        return isEmpty ? <br /> : <p className={cn("mb-2", paragraph)}>{c}</p>;
+      },
+
       [NODE_UL]: (c) => (
         <ul className={cn("mb-4 mt-4 pl-6 [&>li]:list-disc", unorderedList)}>{c}</ul>
       ),
