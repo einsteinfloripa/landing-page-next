@@ -10,6 +10,7 @@ import { useState } from "react";
 import Input from "../molecules/input";
 import Textarea from "../molecules/textarea";
 import { Button } from "../atoms/button";
+import { EinsteinTransformBadget } from "../molecules/einstein-transform-badget";
 
 type FormState = {
   name: string;
@@ -69,46 +70,67 @@ export const SbContatoSection = ({ blok }: Blok<StoryblokContatoSection>) => {
           <RichText className={{ container: "max-w-[620px]" }} richText={descricao} />
         </div>
         <div className="p-10 bg-white rounded-2xl max-w-1/2 md:w-[500px] text-app-neutral-900 flex flex-col gap-10">
-          <div className="flex flex-col gap-2">
-            <Headline element="h3" className="font-normal">
-              Fale conosco
-            </Headline>
-            <p className="text-app-neutral-400">Preencha os campos abaixo e envie sua mensagem!</p>
-          </div>
-          <form onSubmit={handleSubmit} className="space-y-6 w-full">
-            <Input
-              label="Nome"
-              placeholder="Seu Nome"
-              value={formData.name}
-              onChange={handleChange("name")}
-              error={errors.name}
-            />
+          {submitted ? (
+            <div className="flex flex-col items-center text-center gap-4">
+              <EinsteinTransformBadget className="my-10" />
+              <Headline element="h3" className="font-normal text-green-700">
+                Mensagem enviada com sucesso!
+              </Headline>
+              <p className="text-app-neutral-500">
+                Obrigado por entrar em contato. Em breve responderemos sua mensagem!
+              </p>
+              <Button
+                className="mt-4"
+                onClick={() => {
+                  setFormData({ name: "", email: "", message: "" });
+                  setSubmitted(false);
+                }}
+              >
+                Enviar nova mensagem
+              </Button>
+            </div>
+          ) : (
+            <>
+              <div className="flex flex-col gap-2">
+                <Headline element="h3" className="font-normal">
+                  Fale conosco
+                </Headline>
+                <p className="text-app-neutral-400">
+                  Preencha os campos abaixo e envie sua mensagem!
+                </p>
+              </div>
+              <form onSubmit={handleSubmit} className="space-y-6 w-full">
+                <Input
+                  label="Nome"
+                  placeholder="Seu Nome"
+                  value={formData.name}
+                  onChange={handleChange("name")}
+                  error={errors.name}
+                />
 
-            <Input
-              label="Email"
-              placeholder="seuemail@dominio.com"
-              value={formData.email}
-              onChange={handleChange("email")}
-              error={errors.email}
-              type="email"
-            />
+                <Input
+                  label="Email"
+                  placeholder="seuemail@dominio.com"
+                  value={formData.email}
+                  onChange={handleChange("email")}
+                  error={errors.email}
+                  type="email"
+                />
 
-            <Textarea
-              label="Mensagem"
-              placeholder="Como podemos ajudar?"
-              value={formData.message}
-              onChange={handleChange("message")}
-              error={errors.message}
-            />
+                <Textarea
+                  label="Mensagem"
+                  placeholder="Como podemos ajudar?"
+                  value={formData.message}
+                  onChange={handleChange("message")}
+                  error={errors.message}
+                />
 
-            <Button type="submit" className="w-full">
-              Enviar
-            </Button>
-
-            {submitted && (
-              <p className="text-green-600 font-medium">Mensagem enviada com sucesso!</p>
-            )}
-          </form>
+                <Button type="submit" className="w-full">
+                  Enviar
+                </Button>
+              </form>
+            </>
+          )}
         </div>
       </div>
     </section>
