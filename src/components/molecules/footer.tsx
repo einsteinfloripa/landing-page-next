@@ -54,15 +54,11 @@ const Footer = ({ logo, title, social, linkscol, copyright }: FooterProps) => {
             <h2 className="title-2xl max-w-72 text-neutral-50">{title}</h2>
           </div>
           <div className="flex gap-4">
-            {social?.map((s) => {
+            {social?.map((s, index) => {
               return (
-                <Link
-                  key={s._uid}
-                  href={getUrlFromSBLink(s.link!)}
-                  aria-label={s.title}
-                  className="flex items-center"
-                >
+                <Link key={s._uid} href={getUrlFromSBLink(s.link!)} className="flex items-center">
                   <Image
+                    aria-label={`Rede social ${index + 1}`}
                     src={getWebpVersionFromSBImage(s.image.filename!)}
                     alt={s.image.alt ?? ""}
                     width={48}

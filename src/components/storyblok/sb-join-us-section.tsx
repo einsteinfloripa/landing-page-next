@@ -12,7 +12,7 @@ const SbJoinUsSection = ({ blok }: Blok<StoryblokJoinUsSection>) => {
 
   return (
     <section {...storyblokEditable(blok)} className="relative w-full flex">
-      <PaperTextureBackground className="bg-app-dark-blue-500" />
+      <PaperTextureBackground className="bg-app-dark-blue-500" version={2} opacity={100} />
       <div className="text-app-neutral-900 px-5 sm:px-24 py-24 sm:py-36 w-full gap-28 flex flex-col overflow-hidden">
         <h1 className="title-4xl text-white text-center">
           Faça parte da transform
@@ -39,8 +39,9 @@ const SbJoinUsSection = ({ blok }: Blok<StoryblokJoinUsSection>) => {
                   <Image
                     src={getWebpVersionFromSBImage(c.image.filename!)}
                     alt={c.image.alt ?? ""}
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    sizes="600px"
+                    className="object-cover"
                   />
                 </div>
                 <div className="flex flex-col gap-6 max-w-[300px]">

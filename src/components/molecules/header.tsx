@@ -50,8 +50,9 @@ const Header = ({ links, logo, acoes }: HeaderProps) => {
       className="fixed z-40 w-full px-auto backdrop-blur-md bg-white/20"
     >
       <div className="flex items-center justify-between w-full px-6 lg:px-10 py-4 max-w-wrapper">
-        <Link href="/" className="">
+        <Link href="/">
           <Image
+            aria-label="Ir para página inicial"
             alt={logo.alt ?? ""}
             src={getWebpVersionFromSBImage(logo.filename!)}
             width={130}

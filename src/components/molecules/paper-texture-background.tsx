@@ -22,11 +22,10 @@ const PaperTextureBackground: React.FC<Props> = ({ opacity, className, version }
       <Image
         src={image}
         alt=""
-        layout="fill"
-        objectFit="cover"
-        style={{
-          opacity: opacity ? opacity / 100 : 0.3,
-        }}
+        fill
+        sizes="100vw"
+        className="object-cover"
+        style={{ opacity: opacity ? opacity / 100 : 0.3 }}
       />
     </div>
   );

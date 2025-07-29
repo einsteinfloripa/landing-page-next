@@ -8,7 +8,7 @@ export const SbSingleTestimonialSection = ({ blok }: Blok<StoryblokSingleTestimo
   const { imagem, testemunho, nome, apresentacao } = blok;
   return (
     <section className="relative w-full px-auto">
-      <PaperTextureBackground className="bg-app-blue-500 rotate-180" />
+      <PaperTextureBackground className="bg-app-blue-500 rotate-180" version={2} opacity={70} />
       <div className="flex items-center justify-center min-h-screen px-10 max-w-wrapper text-white">
         <div className="flex flex-col items-center gap-10">
           <Image
