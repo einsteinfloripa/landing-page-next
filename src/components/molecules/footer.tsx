@@ -25,8 +25,8 @@ const Footer = ({ logo, title, social, linkscol, copyright }: FooterProps) => {
   const bgBackgroundMap: Record<string, string> = {
     "/": "bg-app-dark-blue-500",
     "/home": "bg-app-dark-blue-500",
-    "/voluntariado": "bg-app-neutral-10",
-    "/sobre-nos": "bg-app-neutral-10",
+    "/voluntariado": "bg-white",
+    "/sobre-nos": "bg-white",
     "/contato": "bg-app-blue-500",
   }; // Mapear as rotas com o bg correspondente
 

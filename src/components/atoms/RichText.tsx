@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { ISbRichtext } from "@storyblok/react";
 import {
   MARK_BOLD,
   NODE_HEADING,
@@ -14,6 +13,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Headline from "./Headline";
 import { StoryblokServerComponent } from "@storyblok/react/rsc";
+import { StoryblokRichtext } from "@/utils/storyblok-types.generated";
 
 interface Props {
   className?: {
@@ -25,7 +25,7 @@ interface Props {
     link?: string;
     anchor?: string; // Optional className for anchor styling
   };
-  richText: ISbRichtext;
+  richText: StoryblokRichtext;
 }
 
 const RichText: FC<Props> = ({ className = {}, richText }) => {
@@ -100,7 +100,7 @@ const RichText: FC<Props> = ({ className = {}, richText }) => {
   return <div className={container}>{content}</div>;
 };
 
-export const richTextHasContent = (richText?: ISbRichtext) => {
+export const richTextHasContent = (richText?: StoryblokRichtext) => {
   if (!richText) return false;
   return !!(richText && richText.content?.some((c) => c.content));
 };
@@ -109,10 +109,10 @@ export const richTextHasContent = (richText?: ISbRichtext) => {
  * Replace all occurrences of a wildcard in a rich text component
  */
 export const replaceWildCard = (
-  richText: ISbRichtext,
+  richText: StoryblokRichtext,
   wildcardIdentifier: string,
   replacement: string
-): ISbRichtext => {
+): StoryblokRichtext => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const replaceName = (obj: any) => {
     if (Array.isArray(obj)) {
@@ -129,7 +129,7 @@ export const replaceWildCard = (
   };
 
   const richTextCopy = JSON.parse(JSON.stringify(richText));
-  replaceName(richTextCopy) as unknown as ISbRichtext;
+  replaceName(richTextCopy) as unknown as StoryblokRichtext;
   return richTextCopy;
 };
 

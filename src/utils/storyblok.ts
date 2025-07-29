@@ -1,6 +1,5 @@
 import { getStoryblokApi } from "@/lib/storyblok";
-import { ISbStories, ISbStoriesParams } from "@storyblok/react/rsc";
-import { ISbStoryData } from "storyblok";
+import { ISbStories, ISbStoriesParams, ISbStoryData } from "@storyblok/react/rsc";
 
 export async function fetchStory<T>(slug: string) {
   getStoryblokApi();

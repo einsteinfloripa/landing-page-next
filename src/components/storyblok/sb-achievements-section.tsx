@@ -12,14 +12,12 @@ const SbAchievementsSection = ({ blok }: Blok<StoryblokAchievementsSection>) => 
       <section className="flex md:justify-around max-w-wrapper px-5 sm:px-auto">
         <ul className="w-full md:w-fit max-w-container space-y-8 mt-32">
           {metricas.map((m, index) => (
-            <>
-              <li
-                key={index}
-                className="flex items-center space-x-4 [&:not(:last-child)]:border-b border-app-neutral-100 pb-8"
-              >
-                <StoryblokServerComponent blok={m} />
-              </li>
-            </>
+            <li
+              key={index}
+              className="flex items-center space-x-4 [&:not(:last-child)]:border-b border-app-neutral-100 pb-8"
+            >
+              <StoryblokServerComponent blok={m} />
+            </li>
           ))}
         </ul>
 

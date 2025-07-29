@@ -49,7 +49,7 @@ const SbJoinUsSection = ({ blok }: Blok<StoryblokJoinUsSection>) => {
                   <p className="body-regular text-center">{c.descricao}</p>
                 </div>
 
-                <div className="flex gap-8 justify-center flex-row-reverse md:flex-row">
+                <div className="flex gap-8 justify-center flex-row-reverse md:flex-row w-full items-center">
                   {(c.acoes ?? []).map((acao, index) =>
                     acao.component === "button" ? (
                       <SbButton key={index} blok={acao} />

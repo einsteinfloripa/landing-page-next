@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
 
 body {
   font-family: "Roboto", sans-serif;
@@ -11,7 +10,7 @@ body {
     text-wrap: balance;
   }
   .max-w-wrapper {
-    @apply max-w-1440 mx-auto;
+    @apply max-w-[1440px] mx-auto;
   }
   .title-6xl {
     @apply font-anton uppercase leading-[110%] text-6xl;

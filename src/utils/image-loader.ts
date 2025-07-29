@@ -1,4 +1,4 @@
-import { ImageLoaderProps } from "next/image";
+import type { ImageLoaderProps } from "next/image";
 
 export default function imageLoader({ src, width, quality }: ImageLoaderProps) {
   // Use the Storyblok image service for images from Storyblok
