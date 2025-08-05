@@ -21,7 +21,7 @@ type FormState = {
 type Errors = Partial<Record<keyof FormState, string>>;
 
 export const SbContatoSection = ({ blok }: Blok<StoryblokContatoSection>) => {
-  const { titulo, descricao } = blok;
+  const { titulo, descricao, emailContato } = blok;
   const [formData, setFormData] = useState<FormState>({
     name: "",
     email: "",
@@ -30,6 +30,8 @@ export const SbContatoSection = ({ blok }: Blok<StoryblokContatoSection>) => {
 
   const [errors, setErrors] = useState<Errors>({});
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [failedToSubmit, setFailedToSubmit] = useState(false);
 
   const validate = () => {
     const newErrors: Errors = {};
@@ -51,13 +53,37 @@ export const SbContatoSection = ({ blok }: Blok<StoryblokContatoSection>) => {
       setErrors({ ...errors, [field]: undefined });
     };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
 
-    // TODO: enviar as informações para algum lugar
-    setSubmitted(true);
+    const { name, email, message } = formData;
+
+    const data = new FormData();
+    data.append("name", name);
+    data.append("email", email);
+    data.append("message", message);
+    data.append("_captcha", "false");
+
+    try {
+      setIsSubmitting(true);
+      const response = await fetch(`https://formsubmit.co/${emailContato}`, {
+        method: "POST",
+        body: data,
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        setFailedToSubmit(true);
+      }
+    } catch (err) {
+      setFailedToSubmit(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
+
   return (
     <section
       {...storyblokEditable(blok)}
@@ -69,7 +95,7 @@ export const SbContatoSection = ({ blok }: Blok<StoryblokContatoSection>) => {
           <h1 className="title-4xl">{titulo}</h1>
           <RichText className={{ container: "max-w-[620px]" }} richText={descricao} />
         </div>
-        <div className="p-10 bg-white rounded-2xl max-w-1/2 md:w-[500px] text-app-neutral-900 flex flex-col gap-10">
+        <div className="p-10 bg-white rounded-2xl lg:max-w-1/2 lg:w-[500px] text-app-neutral-900 flex flex-col gap-10">
           {submitted ? (
             <div className="flex flex-col items-center text-center gap-4">
               <EinsteinTransformBadget className="my-10" />
@@ -87,6 +113,26 @@ export const SbContatoSection = ({ blok }: Blok<StoryblokContatoSection>) => {
                 }}
               >
                 Enviar nova mensagem
+              </Button>
+            </div>
+          ) : failedToSubmit ? (
+            <div className="flex flex-col items-center text-center gap-4">
+              <EinsteinTransformBadget className="my-10" />
+              <Headline element="h3" className="font-normal text-red-700">
+                Oops! Algo deu errado.
+              </Headline>
+              <p className="text-app-neutral-500">
+                Não conseguimos enviar sua mensagem. Por favor, entre em contato diretamente pelo
+                email: <span className="underline">{emailContato}</span>
+              </p>
+              <Button
+                className="mt-4"
+                onClick={() => {
+                  setFormData({ name: "", email: "", message: "" });
+                  setSubmitted(false);
+                }}
+              >
+                Tentar novamente
               </Button>
             </div>
           ) : (
@@ -125,8 +171,8 @@ export const SbContatoSection = ({ blok }: Blok<StoryblokContatoSection>) => {
                   error={errors.message}
                 />
 
-                <Button type="submit" className="w-full">
-                  Enviar
+                <Button type="submit" className="w-full" disabled={isSubmitting}>
+                  {isSubmitting ? "Enviando..." : "Enviar"}
                 </Button>
               </form>
             </>
