@@ -67,6 +67,7 @@ export const SbContatoSection = ({ blok }: Blok<StoryblokContatoSection>) => {
 
     try {
       setIsSubmitting(true);
+      // Usamos formsubmit como um serviço de envio de email (é gratuito e não requer backend ou conta)
       const response = await fetch(`https://formsubmit.co/${emailContato}`, {
         method: "POST",
         body: data,
