@@ -10,7 +10,7 @@ import { StoryblokServerComponent } from "@storyblok/react/rsc";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 type HeaderProps = {
   links: {
@@ -26,6 +26,18 @@ const Header = ({ links, logo, acoes }: HeaderProps) => {
   const [hidden, setHidden] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // Bloqueia o scroll do body quando o menu mobile está aberto
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMenuOpen]);
+
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();
     if (!previous) return;
@@ -37,38 +49,36 @@ const Header = ({ links, logo, acoes }: HeaderProps) => {
   });
 
   return (
-    <motion.nav
-      variants={{
-        hidden: { y: "-100%" },
-        visible: { y: 0 },
-      }}
-      animate={hidden ? "hidden" : "visible"}
-      transition={{
-        duration: 0.35,
-        ease: "easeInOut",
-      }}
-      className="fixed z-40 w-full px-auto backdrop-blur-md bg-white/20"
-    >
-      <div className="flex items-center justify-between w-full px-6 lg:px-10 py-4 max-w-wrapper">
-        <Link href="/">
-          <Image
-            aria-label="Ir para página inicial"
-            alt={logo.alt ?? ""}
-            src={getWebpVersionFromSBImage(logo.filename!)}
-            width={130}
-            height={60}
-          />
-        </Link>
-        <div
-          className={cn("hidden md:flex md:items-center md:w-full", {
-            "block absolute top-20 right-0 bg-app-neutral-10 border border-app-neutral-50 rounded-xl p-10 ":
-              isMenuOpen && !hidden,
-          })}
-        >
-          <nav className="mx-auto">
-            <ul className="flex flex-col md:flex-row md:justify-between gap-10 mr-4 text-lg">
-              {links.map((l, index) => {
-                return (
+    <>
+      {/* Top nav bar */}
+      <motion.nav
+        variants={{
+          hidden: { y: "-100%" },
+          visible: { y: 0 },
+        }}
+        animate={hidden ? "hidden" : "visible"}
+        transition={{
+          duration: 0.35,
+          ease: "easeInOut",
+        }}
+        className="fixed z-50 w-full backdrop-blur-md bg-white/20"
+      >
+        <div className="flex items-center justify-between w-full px-6 lg:px-10 py-4 max-w-wrapper">
+          <Link href="/">
+            <Image
+              aria-label="Ir para página inicial"
+              alt={logo.alt ?? ""}
+              src={getWebpVersionFromSBImage(logo.filename!)}
+              width={130}
+              height={60}
+            />
+          </Link>
+
+          {/* Desktop nav */}
+          <div className="hidden md:flex md:items-center md:w-full">
+            <nav className="mx-auto">
+              <ul className="flex flex-row md:justify-between gap-10 mr-4 text-lg">
+                {links.map((l, index) => (
                   <li key={index}>
                     <Link
                       href={getUrlFromSBLink(l.link)}
@@ -78,27 +88,82 @@ const Header = ({ links, logo, acoes }: HeaderProps) => {
                       {l.title}
                     </Link>
                   </li>
-                );
-              })}
-            </ul>
-          </nav>
-          {(acoes ?? []).map((acao, index) => (
-            <StoryblokServerComponent key={index} blok={acao} />
-          ))}
+                ))}
+              </ul>
+            </nav>
+            {(acoes ?? []).map((acao, index) => (
+              <StoryblokServerComponent key={index} blok={acao} />
+            ))}
+          </div>
+
+          {/* Mobile menu (fechado) */}
+          <button
+            className="p-3 rounded-full border border-app-neutral-900 md:hidden"
+            onClick={() => setIsMenuOpen(true)}
+            aria-label="Abrir menu"
+          >
+            <List color="#001840" weight="regular" size={20} />
+          </button>
         </div>
-        <button
-          className="p-3 rounded-full border border-app-neutral-50 md:hidden"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Abrir menu"
+      </motion.nav>
+
+      {/* Mobile menu (aberto) */}
+      {isMenuOpen && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.15 }}
+          className="fixed inset-0 z-50 bg-white flex flex-col"
         >
-          {!isMenuOpen ? (
-            <List color="#001840" weight="regular" size={16} className="" />
-          ) : (
-            <X color="#001840" weight="regular" size={16} className="" />
-          )}
-        </button>
-      </div>
-    </motion.nav>
+          {/* Top bar */}
+          <div className="flex items-center justify-between px-6 py-4 border-b border-app-neutral-50">
+            <Link href="/" onClick={() => setIsMenuOpen(false)}>
+              <Image
+                aria-label="Ir para página inicial"
+                alt={logo.alt ?? ""}
+                src={getWebpVersionFromSBImage(logo.filename!)}
+                width={130}
+                height={60}
+              />
+            </Link>
+            <button
+              className="p-3 rounded-full border border-app-neutral-50"
+              onClick={() => setIsMenuOpen(false)}
+              aria-label="Fechar menu"
+            >
+              <X color="#001840" weight="regular" size={20} />
+            </button>
+          </div>
+
+          {/* Menu items */}
+          <nav className="flex flex-col">
+            {links.map((l, index) => (
+              <Link
+                key={index}
+                href={getUrlFromSBLink(l.link)}
+                aria-label={l.title}
+                className="px-6 py-4 text-app-neutral-900 font-medium text-lg border-b border-app-neutral-50"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {l.title}
+              </Link>
+            ))}
+            {(acoes ?? []).map((a, index) => (
+              <Link
+                key={index}
+                href={getUrlFromSBLink(a.link)}
+                aria-label={a.button[0].title}
+                className="px-6 py-4 text-app-neutral-900 font-medium text-lg border-b border-app-neutral-50"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {a.button[0].title}
+              </Link>
+            ))}
+          </nav>
+        </motion.div>
+      )}
+    </>
   );
 };
 
