@@ -20,6 +20,7 @@ import SbFraseImpacto from "@/components/storyblok/sb-frase-impacto";
 import SbHeader from "@/components/storyblok/sb-header";
 import { SbHierarquiaSection } from "@/components/storyblok/sb-hierarquia-section";
 import SbJoinUsSection from "@/components/storyblok/sb-join-us-section";
+import { SbLinksMateriaisSection } from "@/components/storyblok/sb-links-materiais";
 import { SbMainHero } from "@/components/storyblok/sb-main-hero";
 import SbMetric from "@/components/storyblok/sb-metric";
 import { SbButtonNav } from "@/components/storyblok/sb-nav-button";
@@ -65,6 +66,7 @@ export const getStoryblokApi = storyblokInit({
     "amigos-einstein-section": SbAmigosEinsteinSection,
     "contato-section": SbContatoSection,
     "etapas-section": SbEtapasSection,
+    "links-materiais-section": SbLinksMateriaisSection,
   },
   apiOptions: {
     region: "us",

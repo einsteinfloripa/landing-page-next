@@ -385,6 +385,15 @@ export interface StoryblokLabelLink {
   [k: string]: any;
 }
 
+export interface StoryblokLinksMateriaisSection {
+  titulo: string;
+  descricao: StoryblokRichtext;
+  links: StoryblokButtonNav[];
+  component: "links-materiais-section";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface StoryblokMainHero {
   titulo: string;
   subtitulo: string;
@@ -441,6 +450,7 @@ export interface StoryblokPagina {
     | StoryblokImagemCard
     | StoryblokJoinUsSection
     | StoryblokLabelLink
+    | StoryblokLinksMateriaisSection
     | StoryblokMainHero
     | StoryblokMetric
     | StoryblokPagina
