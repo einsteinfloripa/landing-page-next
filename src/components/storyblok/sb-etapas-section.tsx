@@ -1,11 +1,11 @@
-import { StoryblokDoacaoSection } from "@/utils/storyblok-types.generated";
+import { StoryblokEtapasSection } from "@/utils/storyblok-types.generated";
 import RichText from "../atoms/RichText";
 import { Blok } from "@/utils/types";
 import PaperTextureBackground from "../molecules/paper-texture-background";
 import { storyblokEditable } from "@storyblok/react";
 
-export const SbDoacaoSection = ({ blok }: Blok<StoryblokDoacaoSection>) => {
-  const { titulo, subtitulo, valores } = blok;
+export const SbEtapasSection = ({ blok }: Blok<StoryblokEtapasSection>) => {
+  const { titulo, subtitulo, etapas } = blok;
   return (
     <section
       {...storyblokEditable(blok)}
@@ -18,19 +18,19 @@ export const SbDoacaoSection = ({ blok }: Blok<StoryblokDoacaoSection>) => {
           <h1 className="title-4xl">{titulo}</h1>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-6 mt-12">
-          {valores?.map((valor, idx) => (
+        <div className="flex flex-wrap justify-center gap-6 md:gap-20 mt-12">
+          {etapas?.map((e, i) => (
             <div
-              key={valor._uid || idx}
+              key={e._uid}
               className="flex-1 min-w-[180px] max-w-[220px] basis-[18%] flex flex-col items-center text-center gap-6"
               style={{ flexBasis: "18%" }}
             >
               <div className="p-1 size-[80px] rounded-lg bg-app-blue-50 flex items-center justify-center">
-                <h2 className="text-app-blue-700 title-3xl">{`R$${valor.valor}`}</h2>
+                <h2 className="text-app-blue-700 title-3xl">{i + 1}</h2>
               </div>
 
-              <h3 className="text-lg font-medium">{valor.titulo}</h3>
-              <RichText richText={valor.descricao} className={{ paragraph: "text-app-blue-900" }} />
+              <h3 className="text-lg font-medium">{e.titulo}</h3>
+              <RichText richText={e.descricao} className={{ paragraph: "text-app-blue-900" }} />
             </div>
           ))}
         </div>

@@ -299,6 +299,15 @@ export interface StoryblokEquipeSection {
   [k: string]: any;
 }
 
+export interface StoryblokEtapasSection {
+  subtitulo: string;
+  titulo: string;
+  etapas: StoryblokCardTexto[];
+  component: "etapas-section";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface StoryblokFooter {
   logo?: StoryblokAsset;
   title?: string;
@@ -337,7 +346,7 @@ export interface StoryblokFraseImpactoSection {
 export interface StoryblokHeader {
   logo: StoryblokAsset;
   links: StoryblokButtonNav[];
-  acoes?: (StoryblokButtonNav | StoryblokButton)[];
+  acoes?: StoryblokButtonNav[];
   component: "header";
   _uid: string;
   [k: string]: any;
@@ -422,6 +431,7 @@ export interface StoryblokPagina {
     | StoryblokEquipeCard
     | StoryblokEquipeDepartamento
     | StoryblokEquipeSection
+    | StoryblokEtapasSection
     | StoryblokFooter
     | StoryblokFooterColLink
     | StoryblokFooterLinkCard

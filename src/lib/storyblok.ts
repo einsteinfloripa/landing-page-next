@@ -14,6 +14,7 @@ import SbContributionSection from "@/components/storyblok/sb-contribution-sectio
 import { SbDoacaoSection } from "@/components/storyblok/sb-doacao-section";
 import { SbDuvidasFrequentesSection } from "@/components/storyblok/sb-duvidas-frequentes-section";
 import { SbEquipeSection } from "@/components/storyblok/sb-equipe-section";
+import { SbEtapasSection } from "@/components/storyblok/sb-etapas-section";
 import SbFooter from "@/components/storyblok/sb-footer";
 import SbFraseImpacto from "@/components/storyblok/sb-frase-impacto";
 import SbHeader from "@/components/storyblok/sb-header";
@@ -63,6 +64,7 @@ export const getStoryblokApi = storyblokInit({
     "processo-parceria-section": SbProcessoParceriaSection,
     "amigos-einstein-section": SbAmigosEinsteinSection,
     "contato-section": SbContatoSection,
+    "etapas-section": SbEtapasSection,
   },
   apiOptions: {
     region: "us",
