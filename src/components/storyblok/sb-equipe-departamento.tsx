@@ -14,7 +14,7 @@ interface Props {
   variant: "light" | "dark";
 }
 
-export const SbDepartamento: React.FC<Readonly<Props>> = ({ departamentos, variant }) => {
+export const SbEquipeDepartamento: React.FC<Readonly<Props>> = ({ departamentos, variant }) => {
   return (
     <Accordion type="multiple">
       {departamentos.map((d) => (

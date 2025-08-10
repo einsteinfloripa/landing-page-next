@@ -6,7 +6,7 @@ import PaperTextureBackground from "../molecules/paper-texture-background";
 import { storyblokEditable } from "@storyblok/react";
 import HeartsDraw from "@/assets/ilustrations/hearts-draw.svg";
 import HighlightDraw from "@/assets/ilustrations/highlight-draw.svg";
-import { SbDepartamento } from "@/components/storyblok/sb-departamento";
+import { SbEquipeDepartamento } from "@/components/storyblok/sb-equipe-departamento";
 
 export const SbEquipeSection = ({ blok }: Blok<StoryblokEquipeSection>) => {
   const { titulo, descricao, departamentos } = blok;
@@ -23,7 +23,7 @@ export const SbEquipeSection = ({ blok }: Blok<StoryblokEquipeSection>) => {
         </div>
 
         <div className="relative">
-          <SbDepartamento departamentos={departamentos} variant="light" />
+          <SbEquipeDepartamento departamentos={departamentos} variant="light" />
           <Image
             src={HeartsDraw}
             alt=""

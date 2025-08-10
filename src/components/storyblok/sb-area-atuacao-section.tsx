@@ -4,14 +4,14 @@ import { Blok } from "@/utils/types";
 import PaperTextureBackground from "../molecules/paper-texture-background";
 import { storyblokEditable } from "@storyblok/react";
 import { SbButtonNav } from "./sb-nav-button";
-import { SbDepartamento } from "./sb-departamento";
+import { SbDepartamentos } from "./sb-departamentos";
 
 export const SbAreaAtuacaoSection = ({ blok }: Blok<StoryblokAreaAtuacaoSection>) => {
   const { titulo, descricao, acoes, departamentos } = blok;
   return (
     <section {...storyblokEditable(blok)} className="relative w-full flex overflow-hidden">
       <PaperTextureBackground className="bg-app-blue-500" opacity={50} version={2} />
-      <div className="relative w-full text-white flex flex-col sm:px-24 py-24 sm:py-36">
+      <div className="relative w-full text-white flex flex-col sm:px-24 py-24 sm:py-36 gap-4">
         <div className="flex flex-col text-center w-full gap-8 items-center justify-center xl:mb-10 z-10 px-5 sm:px-auto">
           <h1 className="title-4xl">{titulo}</h1>
           <RichText className={{ container: "max-w-[620px]" }} richText={descricao} />
@@ -22,7 +22,7 @@ export const SbAreaAtuacaoSection = ({ blok }: Blok<StoryblokAreaAtuacaoSection>
           </div>
         </div>
 
-        <SbDepartamento departamentos={departamentos} variant="dark" />
+        <SbDepartamentos departamentos={departamentos} variant="dark" />
       </div>
     </section>
   );

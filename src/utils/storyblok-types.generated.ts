@@ -132,7 +132,7 @@ export interface StoryblokAreaAtuacaoSection {
   titulo: string;
   descricao: StoryblokRichtext;
   acoes: StoryblokButtonNav[];
-  departamentos: StoryblokEquipeDepartamento[];
+  departamentos: StoryblokDetalhesDepartamento[];
   component: "area-atuacao-section";
   _uid: string;
   [k: string]: any;
@@ -234,6 +234,14 @@ export interface StoryblokContributionSection {
   headlineImagem: StoryblokRichtext;
   imagem: StoryblokAsset;
   component: "contribution-section";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokDetalhesDepartamento {
+  titulo: string;
+  descricao: StoryblokRichtext;
+  component: "detalhes-departamento";
   _uid: string;
   [k: string]: any;
 }
@@ -433,6 +441,7 @@ export interface StoryblokPagina {
     | StoryblokComoDoarSection
     | StoryblokContatoSection
     | StoryblokContributionSection
+    | StoryblokDetalhesDepartamento
     | StoryblokDoacaoCard
     | StoryblokDoacaoSection
     | StoryblokDuvida
