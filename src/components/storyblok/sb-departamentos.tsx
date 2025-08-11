@@ -37,10 +37,10 @@ export const SbDepartamentos: React.FC<Readonly<Props>> = ({ departamentos, vari
             </div>
           </AccordionTrigger>
 
-          <AccordionContent className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 sm:gap-12 xl:gap-16 items-center justify-center">
+          <AccordionContent className="flex w-full">
             <RichText
               richText={d.descricao}
-              className={{ paragraph: "text-white text-lg px-10" }}
+              className={{ container: "w-full", paragraph: "text-white text-lg px-10 w-full" }}
             />
           </AccordionContent>
         </AccordionItem>
