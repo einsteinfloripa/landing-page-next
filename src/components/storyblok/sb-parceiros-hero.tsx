@@ -16,7 +16,7 @@ const SbParceirosHero = ({ blok }: Blok<StoryblokParceirosHero>) => {
       className="relative flex justify-between min-h-screen flex-col"
     >
       <PaperTextureBackground className="bg-app-blue-500" version={2} opacity={50} />
-      <div className="relative flex justify-between min-h-screen flex-col">
+      <div className="relative flex justify-between min-h-screen flex-col mt-28">
         <div className="relative flex flex-1 items-center justify-center my-10 px-5 sm:px-auto lg:min-h-[70vh]">
           <div className="max-w-[420px] text-center flex flex-col gap-8 text-white">
             <div className="relative">
