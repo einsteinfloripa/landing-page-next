@@ -216,6 +216,12 @@ export interface StoryblokComoDoarSection {
   [k: string]: any;
 }
 
+export interface StoryblokConfiguracoesGlobais {
+  component: "configuracoes-globais";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface StoryblokContatoSection {
   titulo: string;
   descricao: StoryblokRichtext;
@@ -441,6 +447,7 @@ export interface StoryblokPagina {
     | StoryblokCardInscricao
     | StoryblokCardTexto
     | StoryblokComoDoarSection
+    | StoryblokConfiguracoesGlobais
     | StoryblokContatoSection
     | StoryblokContributionSection
     | StoryblokDetalhesDepartamento
@@ -481,6 +488,7 @@ export interface StoryblokPagina {
   titulo: string;
   descricao: string;
   imagem?: StoryblokAsset;
+  corDoFooter?: "azul" | "azul-escuro" | "branco";
   component: "pagina";
   _uid: string;
   [k: string]: any;

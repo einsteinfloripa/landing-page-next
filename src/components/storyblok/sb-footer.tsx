@@ -1,12 +1,16 @@
-import { StoryblokFooter } from "@/utils/storyblok-types.generated";
+import { StoryblokFooter, StoryblokPagina } from "@/utils/storyblok-types.generated";
 import { Blok } from "@/utils/types";
 import Footer from "../molecules/footer";
 
-const SbFooter = ({ blok }: Blok<StoryblokFooter>) => {
+interface Props extends Blok<StoryblokFooter> {
+  corDoFooter?: StoryblokPagina["corDoFooter"];
+}
+
+const SbFooter = ({ blok, corDoFooter }: Props) => {
   const { logo, title, social, linkscol, copyright } = blok;
 
   return (
-    <Footer      
+    <Footer
       logo={logo!}
       title={title!}
       social={social?.map((item) => ({
@@ -18,6 +22,7 @@ const SbFooter = ({ blok }: Blok<StoryblokFooter>) => {
       }))}
       linkscol={linkscol}
       copyright={copyright!}
+      corDoFooter={corDoFooter}
     />
   );
 };

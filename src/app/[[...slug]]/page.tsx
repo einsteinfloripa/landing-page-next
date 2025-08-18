@@ -1,13 +1,19 @@
+import SbFooter from "@/components/storyblok/sb-footer";
+import SbHeader from "@/components/storyblok/sb-header";
 import { fetchStory } from "@/utils/storyblok";
-import { StoryblokPagina } from "@/utils/storyblok-types.generated";
+import {
+  StoryblokFooter,
+  StoryblokHeader,
+  StoryblokPagina,
+} from "@/utils/storyblok-types.generated";
 import { StoryblokServerComponent } from "@storyblok/react/rsc";
 import { notFound } from "next/navigation";
 
 async function getProps(slug: string[]) {
   return Promise.all([
     fetchStory<StoryblokPagina>(`${[slug[0]].join("/")}`),
-    fetchStory(`${["layout", "header"].join("/")}`),
-    fetchStory(`${["layout", "footer"].join("/")}`),
+    fetchStory<StoryblokHeader>(`${["layout", "header"].join("/")}`),
+    fetchStory<StoryblokFooter>(`${["layout", "footer"].join("/")}`),
   ])
     .then(([body, header, footer]) => ({
       body: body.story.content,
@@ -21,12 +27,13 @@ export default async function DynamicPage({ params }: { params: Promise<{ slug: 
   const { slug: slugParams } = await params;
   const slug = slugParams && Array.isArray(slugParams) ? slugParams : ["home"];
   const { body, header, footer } = await getProps(slug);
+  const { corDoFooter } = body;
 
   return (
     <>
-      {body.header && <StoryblokServerComponent blok={header} />}
+      {body.header && <SbHeader blok={header} />}
       <StoryblokServerComponent blok={body} />
-      {body.footer && <StoryblokServerComponent blok={footer} />}
+      {body.footer && <SbFooter blok={footer} corDoFooter={corDoFooter} />}
     </>
   );
 }

@@ -4,12 +4,12 @@ import {
   StoryblokAsset,
   StoryblokFooter,
   StoryblokFooterColLink,
+  StoryblokPagina,
 } from "@/utils/storyblok-types.generated";
 import Image from "next/image";
-import { getUrlFromSBLink, getWebpVersionFromSBImage } from "@/lib/utils";
+import { cn, getUrlFromSBLink, getWebpVersionFromSBImage } from "@/lib/utils";
 import Link from "next/link";
 import PaperTextureBackground from "./paper-texture-background";
-import { usePathname } from "next/navigation";
 
 type FooterProps = {
   logo: StoryblokAsset;
@@ -17,30 +17,32 @@ type FooterProps = {
   social?: StoryblokFooterColLink["links"];
   linkscol: StoryblokFooter["linkscol"];
   copyright: string;
+  corDoFooter: StoryblokPagina["corDoFooter"];
 };
 
-const Footer = ({ logo, title, social, linkscol, copyright }: FooterProps) => {
-  const pathname = usePathname();
-
-  const bgBackgroundMap: Record<string, string> = {
-    "/": "bg-app-dark-blue-500",
-    "/home": "bg-app-dark-blue-500",
-    "/voluntariado": "bg-white",
-    "/sobre-nos": "bg-white",
-    "/contato": "bg-app-blue-500",
-  }; // Mapear as rotas com o bg correspondente
-
-  const bgBackground = bgBackgroundMap[pathname] ?? null;
+const Footer = ({ logo, title, social, linkscol, copyright, corDoFooter }: FooterProps) => {
+  const getBackgroundColor = (color: StoryblokPagina["corDoFooter"] | undefined) => {
+    switch (color) {
+      case "branco":
+        return "bg-white";
+      case "azul-escuro":
+        return "bg-app-dark-blue-500";
+      default:
+      case "azul":
+        return "bg-app-blue-500";
+    }
+  };
 
   return (
     <section className="relative w-full flex overflow-hidden">
-      {bgBackground && (
-        <PaperTextureBackground
-          version={2}
-          opacity={100}
-          className={`${bgBackground} transform scale-y-[-1] transition-transform`}
-        />
-      )}
+      <PaperTextureBackground
+        version={2}
+        opacity={100}
+        className={cn(
+          "transform scale-y-[-1] transition-transform",
+          getBackgroundColor(corDoFooter)
+        )}
+      />
       <div className="relative w-full max-w-wrapper flex flex-col p-4 sm:px-12 sm:py-8 mt-10 mb-20 rounded-3xl shadow-lg">
         <PaperTextureBackground className="bg-app-blue-500 rounded-3xl" />
         <div className="flex justify-between flex-col md:flex-row gap-4">

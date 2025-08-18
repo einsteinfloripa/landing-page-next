@@ -18,7 +18,9 @@ export const SbButton = ({ blok, className, ...rest }: Props) => {
       className={cn("flex gap-2", iconeADireita ? "flex-row-reverse" : "flex-row ", className)}
       {...rest}
     >
-      {icone && <Image src={icone.filename!} alt={icone.alt || ""} width={24} height={24} />}
+      {icone?.filename && (
+        <Image src={icone.filename!} alt={icone.alt || ""} width={24} height={24} />
+      )}
       {title}
     </Button>
   );

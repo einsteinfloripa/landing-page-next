@@ -1,15 +1,17 @@
 import Headline from "@/components/atoms/Headline";
 import PaperTextureBackground from "@/components/molecules/paper-texture-background";
 import { fetchStory } from "@/utils/storyblok";
-import { StoryblokServerComponent } from "@storyblok/react/rsc";
 import { notFound } from "next/navigation";
 import ThreeArrowsDraw from "@/assets/ilustrations/three-arrows-draw.svg";
 import Image from "next/image";
+import SbHeader from "@/components/storyblok/sb-header";
+import { StoryblokFooter, StoryblokHeader } from "@/utils/storyblok-types.generated";
+import SbFooter from "@/components/storyblok/sb-footer";
 
 async function getProps() {
   return Promise.all([
-    fetchStory(`${["layout", "header"].join("/")}`),
-    fetchStory(`${["layout", "footer"].join("/")}`),
+    fetchStory<StoryblokHeader>(`${["layout", "header"].join("/")}`),
+    fetchStory<StoryblokFooter>(`${["layout", "footer"].join("/")}`),
   ])
     .then(([header, footer]) => ({
       header: header.story.content,
@@ -23,7 +25,7 @@ export default async function NotFound() {
 
   return (
     <>
-      {header && <StoryblokServerComponent blok={header} />}
+      {header && <SbHeader blok={header} />}
       <section className="relative w-full flex overflow-hidden min-h-screen items-center justify-center text-white sm:px-auto px-5">
         <PaperTextureBackground className="bg-white" opacity={100} version={2} />
         <div className="flex items-center justify-center flex-col gap-8">
@@ -45,7 +47,7 @@ export default async function NotFound() {
           </Headline>
         </div>
       </section>
-      {footer && <StoryblokServerComponent blok={footer} />}
+      {footer && <SbFooter blok={footer} corDoFooter="branco" />}
     </>
   );
 }
