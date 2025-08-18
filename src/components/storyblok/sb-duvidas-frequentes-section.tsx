@@ -36,23 +36,25 @@ export const SbDuvidasFrequentesSection = ({ blok }: Blok<StoryblokDuvidasFreque
           <RichText className={{ container: "max-w-[620px]" }} richText={subtitulo} />
         </div>
 
-        <Accordion type="multiple">
-          {duvidas.map((d) => (
-            <AccordionItem
-              key={d._uid}
-              value={d._uid}
-              className="border-y border-gray-200 hover:bg-app-neutral-50/20"
-            >
-              <AccordionTrigger className="flex justify-between w-full p-10">
-                <p className="text-lg font-medium text-left">{d.pergunta}</p>
-              </AccordionTrigger>
+        {duvidas && duvidas.length > 0 && (
+          <Accordion type="multiple">
+            {duvidas.map((d) => (
+              <AccordionItem
+                key={d._uid}
+                value={d._uid}
+                className="border-y border-gray-200 hover:bg-app-neutral-50/20"
+              >
+                <AccordionTrigger className="flex justify-between w-full p-10">
+                  <p className="text-lg font-medium text-left">{d.pergunta}</p>
+                </AccordionTrigger>
 
-              <AccordionContent className="flex px-10 w-full text-left">
-                <RichText richText={d.resposta} />
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+                <AccordionContent className="flex px-10 w-full text-left">
+                  <RichText richText={d.resposta} />
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        )}
       </div>
     </section>
   );
