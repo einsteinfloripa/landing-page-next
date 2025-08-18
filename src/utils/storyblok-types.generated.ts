@@ -148,8 +148,10 @@ export interface StoryblokBeneficiosParceriaSection {
 }
 
 export interface StoryblokButton {
+  icone?: StoryblokAsset;
   variant: "default" | "secondary" | "tertiary" | "outline" | "outline-secondary" | "ghost" | "link" | "destructive";
   title: string;
+  iconeADireita?: boolean;
   component: "button";
   _uid: string;
   [k: string]: any;
@@ -274,7 +276,7 @@ export interface StoryblokDuvida {
 
 export interface StoryblokDuvidasFrequentesSection {
   subtitulo: StoryblokRichtext;
-  duvidas: StoryblokDuvida[];
+  duvidas?: StoryblokDuvida[];
   component: "duvidas-frequentes-section";
   _uid: string;
   [k: string]: any;
