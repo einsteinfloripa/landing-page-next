@@ -5,7 +5,7 @@ import { storyblokEditable, StoryblokServerComponent } from "@storyblok/react/rs
 const GenericPage = ({ blok }: Blok<StoryblokPagina>) => {
   return (
     <main {...storyblokEditable(blok)}>
-      {blok.body.map((component, index) => (
+      {blok.body?.map((component, index) => (
         <StoryblokServerComponent key={index} blok={component} />
       ))}
     </main>
