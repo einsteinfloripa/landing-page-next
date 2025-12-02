@@ -22,6 +22,7 @@ import { SbHierarquiaSection } from "@/components/storyblok/sb-hierarquia-sectio
 import SbJoinUsSection from "@/components/storyblok/sb-join-us-section";
 import { SbLinksMateriaisSection } from "@/components/storyblok/sb-links-materiais";
 import { SbMainHero } from "@/components/storyblok/sb-main-hero";
+import SbCursoHero from "@/components/storyblok/sb-curso-hero";
 import SbMetric from "@/components/storyblok/sb-metric";
 import { SbButtonNav } from "@/components/storyblok/sb-nav-button";
 import SbParceirosHero from "@/components/storyblok/sb-parceiros-hero";
@@ -37,6 +38,7 @@ export const getStoryblokApi = storyblokInit({
   use: [apiPlugin],
   components: {
     "main-hero": SbMainHero,
+    "curso-hero": SbCursoHero,
     "button-nav": SbButtonNav,
     pagina: GenericPage,
     button: SbButton,
