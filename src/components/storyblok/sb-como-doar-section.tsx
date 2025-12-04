@@ -6,6 +6,8 @@ import { Blok } from "@/utils/types";
 import PaperTextureBackground from "../molecules/paper-texture-background";
 import { storyblokEditable } from "@storyblok/react";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import { Check } from "lucide-react";
 
 export const SbComoDoarSection = ({ blok }: Blok<StoryblokComoDoarSection>) => {
   const {
@@ -17,15 +19,33 @@ export const SbComoDoarSection = ({ blok }: Blok<StoryblokComoDoarSection>) => {
     chavePix,
     qrCodePix,
   } = blok;
+
+  const [isClipped, setIsClipped] = useState(false);
+
+  useEffect(() => {
+    if (isClipped) {
+      setTimeout(() => {
+        setIsClipped(false);
+      }, 2000);
+    }
+  }, [isClipped]);
+
   return (
     <section
       {...storyblokEditable(blok)}
       className="relative w-full flex overflow-hidden min-h-screen items-center justify-center"
+      id="como-doar"
     >
-      <PaperTextureBackground className="bg-app-blue-500" opacity={80} version={2} />
+      <PaperTextureBackground
+        className="bg-app-blue-500"
+        opacity={80}
+        version={2}
+      />
       <div className="relative w-full flex flex-col sm:px-24 py-24 sm:py-36 text-white gap-10 lg:gap-20 px-5 sm:px-auto">
         <div className="flex flex-col text-center w-full gap-1 items-center justify-center xl:mb-10 z-10">
-          <h4 className="uppercase font-bold text-app-neutral-50">{subtitulo}</h4>
+          <h4 className="uppercase font-bold text-app-neutral-50">
+            {subtitulo}
+          </h4>
           <h1 className="title-4xl">{titulo}</h1>
         </div>
 
@@ -60,13 +80,21 @@ export const SbComoDoarSection = ({ blok }: Blok<StoryblokComoDoarSection>) => {
                 Chave <span className="font-semibold">{chavePix}</span>
               </p>
               <button
-                className="font-semibold"
+                className="font-semibold enabled:hover:cursor-pointer enabled:hover:underline"
                 onClick={() => {
                   navigator.clipboard.writeText(chavePix ?? "");
+                  setIsClipped(true);
                 }}
                 type="button"
+                disabled={isClipped}
               >
-                Copiar chave Pix
+                {isClipped ? (
+                  <span className="flex items-center gap-2">
+                    <Check className="w-4" /> Chave pix copiada
+                  </span>
+                ) : (
+                  "Copiar chave Pix"
+                )}
               </button>
             </div>
             <p className="font-medium">{descricao}</p>

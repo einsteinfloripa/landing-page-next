@@ -131,7 +131,7 @@ export interface StoryblokAmigosEinsteinSection {
 export interface StoryblokAreaAtuacaoSection {
   titulo: string;
   descricao: StoryblokRichtext;
-  acoes: StoryblokButtonNav[];
+  acoes?: StoryblokButtonNav[];
   departamentos: StoryblokDetalhesDepartamento[];
   component: "area-atuacao-section";
   _uid: string;
@@ -152,6 +152,7 @@ export interface StoryblokButton {
   variant: "default" | "secondary" | "tertiary" | "outline" | "outline-secondary" | "ghost" | "link" | "destructive";
   title: string;
   iconeADireita?: boolean;
+  disabled?: boolean;
   component: "button";
   _uid: string;
   [k: string]: any;
@@ -242,6 +243,16 @@ export interface StoryblokContributionSection {
   headlineImagem: StoryblokRichtext;
   imagem: StoryblokAsset;
   component: "contribution-section";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokCursoHero {
+  Titulo?: StoryblokRichtext;
+  Descricao?: StoryblokRichtext;
+  acoes: StoryblokButtonNav[];
+  imagem?: StoryblokAsset;
+  component: "curso-hero";
   _uid: string;
   [k: string]: any;
 }
@@ -396,6 +407,7 @@ export interface StoryblokJoinUsSection {
 export interface StoryblokLabelLink {
   label: string;
   link?: Exclude<StoryblokMultilink, {linktype?: "email"} | {linktype?: "asset"}>;
+  disabled?: boolean;
   component: "label+link";
   _uid: string;
   [k: string]: any;
@@ -418,6 +430,7 @@ export interface StoryblokMainHero {
   cardSubtitulo: string;
   imagem: StoryblokAsset;
   imagemMobile: StoryblokAsset;
+  linkDaNossaDoacao: Exclude<StoryblokMultilink, {linktype?: "email"} | {linktype?: "asset"}>;
   component: "main-hero";
   _uid: string;
   [k: string]: any;
@@ -427,6 +440,24 @@ export interface StoryblokMetric {
   valor: string;
   descricao: string;
   component: "metric";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokOferecemosCard {
+  icone?: StoryblokAsset;
+  Titulo: string;
+  Descricao: string;
+  Imagem?: StoryblokAsset;
+  component: "oferecemos-card";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StoryblokOferecemosSection {
+  titulo: string;
+  cards?: StoryblokOferecemosCard[];
+  component: "oferecemos-section";
   _uid: string;
   [k: string]: any;
 }
@@ -450,6 +481,7 @@ export interface StoryblokPagina {
     | StoryblokConfiguracoesGlobais
     | StoryblokContatoSection
     | StoryblokContributionSection
+    | StoryblokCursoHero
     | StoryblokDetalhesDepartamento
     | StoryblokDoacaoCard
     | StoryblokDoacaoSection
@@ -471,6 +503,8 @@ export interface StoryblokPagina {
     | StoryblokLinksMateriaisSection
     | StoryblokMainHero
     | StoryblokMetric
+    | StoryblokOferecemosCard
+    | StoryblokOferecemosSection
     | StoryblokPagina
     | StoryblokParceirosHero
     | StoryblokPeriodoInscricao
@@ -584,7 +618,7 @@ export interface StoryblokValorContribuicao {
 export interface StoryblokVoluntariadoHero {
   descricao: StoryblokRichtext;
   imagens?: StoryblokPicture[];
-  acoes: StoryblokButtonNav[];
+  acoes?: StoryblokButtonNav[];
   component: "voluntariado-hero";
   _uid: string;
   [k: string]: any;
