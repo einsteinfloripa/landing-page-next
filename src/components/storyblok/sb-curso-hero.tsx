@@ -4,10 +4,7 @@ import { StoryblokServerComponent } from "@storyblok/react/rsc";
 import RichText, { richTextHasContent } from "../atoms/RichText";
 import Image from "next/image";
 
-// Componente simples de Hero para a página de Curso e Inscrição,
-// sem imagem e com formatação de texto e botões igual ao voluntariado-hero.
 const SbCursoHero = ({ blok }: Blok<any>) => {
-  // Suporte a variações de nome de campo no Storyblok (maiúsculas/minúsculas)
   const titulo = blok?.titulo ?? blok?.Titulo ?? blok?.title;
   const descricao = blok?.descricao ?? blok?.Descricao ?? blok?.description;
   const acoes = blok?.acoes ?? blok?.Acoes ?? blok?.actions;
@@ -22,15 +19,15 @@ const SbCursoHero = ({ blok }: Blok<any>) => {
               richText={titulo}
               className={{
                 container: "md:text-center md:mt-28",
-                heading: "title-4xl md:title-6xl",
-                paragraph: "title-4xl md:title-6xl",
+                heading: "title-4xl md:title-6xl xl:!text-7xl",
+                paragraph: "title-4xl md:title-6xl xl:!text-7xl",
               }}
             />
           )}
           {richTextHasContent(descricao) && (
             <RichText
               richText={descricao}
-              className={{ container: "md:text-center" }}
+              className={{ container: "md:text-center lg:text-xl" }}
             />
           )}
           {(acoes ?? []).length > 0 && (
