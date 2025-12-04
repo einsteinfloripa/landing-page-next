@@ -65,7 +65,7 @@ export default function OferecemosGrid({ cards }: Props) {
       onMouseLeave={() => setHoveredIndex(null)}
     >
       {cards.map((card, i) => {
-        const isHovered = hoveredIndex === i && cols >= 3;
+        const isHovered = hoveredIndex === i; // permite hover também em 1-2 colunas
         const isHidden = hiddenSet.has(i);
 
         return (
@@ -82,7 +82,7 @@ export default function OferecemosGrid({ cards }: Props) {
           >
             <SbOferecemosCard blok={card} isHovered={isHovered} />
 
-            {isHovered && (
+            {isHovered && cols >= 3 && (
               <div className="absolute inset-0 z-20 flex"
                    style={{
                      // ajuda o browser a prever movimentação
