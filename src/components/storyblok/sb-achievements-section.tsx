@@ -1,4 +1,3 @@
-import { getWebpVersionFromSBImage } from "@/lib/utils";
 import { StoryblokAchievementsSection } from "@/utils/storyblok-types.generated";
 import { Blok } from "@/utils/types";
 import { StoryblokServerComponent } from "@storyblok/react/rsc";
@@ -22,13 +21,24 @@ const SbAchievementsSection = ({ blok }: Blok<StoryblokAchievementsSection>) => 
         </ul>
 
         <div className="hidden md:block">
-          <Image
-            src={getWebpVersionFromSBImage(imagem.filename!)}
-            alt={imagem.alt!}
-            width={800}
-            height={500}
-            className="mt-20 object-fill"
-          />
+          {(() => {
+            const rawSrc = imagem.filename!;
+            const src = rawSrc.startsWith("//")
+              ? `https:${rawSrc}`
+              : !rawSrc.startsWith("http") && !rawSrc.startsWith("/")
+              ? `/${rawSrc}`
+              : rawSrc;
+
+            return (
+              <Image
+                src={src}
+                alt={imagem.alt!}
+                width={800}
+                height={500}
+                className="mt-20 object-fill"
+              />
+            );
+          })()}
         </div>
       </section>
     </div>

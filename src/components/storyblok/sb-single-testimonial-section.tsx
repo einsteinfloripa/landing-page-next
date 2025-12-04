@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { StoryblokSingleTestimonalSection } from "@/utils/storyblok-types.generated";
 import { Blok } from "@/utils/types";
-import { getWebpVersionFromSBImage } from "@/lib/utils";
 import PaperTextureBackground from "../molecules/paper-texture-background";
 
 export const SbSingleTestimonialSection = ({ blok }: Blok<StoryblokSingleTestimonalSection>) => {
@@ -11,13 +10,23 @@ export const SbSingleTestimonialSection = ({ blok }: Blok<StoryblokSingleTestimo
       <PaperTextureBackground className="bg-app-blue-500 rotate-180" version={2} opacity={70} />
       <div className="flex items-center justify-center min-h-screen px-10 max-w-wrapper text-white">
         <div className="flex flex-col items-center gap-10">
-          <Image
-            src={getWebpVersionFromSBImage(imagem.filename!)}
-            alt={imagem?.alt || ""}
-            width={140}
-            height={140}
-            className="rounded-full border-4 border-app-blue-500"
-          />
+          {(() => {
+            const rawSrc = imagem.filename!;
+            const src = rawSrc.startsWith("//")
+              ? `https:${rawSrc}`
+              : !rawSrc.startsWith("http") && !rawSrc.startsWith("/")
+              ? `/${rawSrc}`
+              : rawSrc;
+            return (
+              <Image
+                src={src}
+                alt={imagem?.alt || ""}
+                width={140}
+                height={140}
+                className="rounded-full border-4 border-app-blue-500"
+              />
+            );
+          })()}
           <h1 className="body-3xl md:body-4xl max-w-[588px] text-center">
             &quot;{testemunho}&quot;
           </h1>

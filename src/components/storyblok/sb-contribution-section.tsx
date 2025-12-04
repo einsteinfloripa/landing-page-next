@@ -3,7 +3,6 @@ import { Button } from "../atoms/button";
 import { StarShape } from "../atoms/svg/star-shape";
 import { StoryblokContributionSection } from "@/utils/storyblok-types.generated";
 import { Blok } from "@/utils/types";
-import { getWebpVersionFromSBImage } from "@/lib/utils";
 import RichText from "../atoms/RichText";
 import { SbButtonNav } from "./sb-nav-button";
 import PaperTextureBackground from "../molecules/paper-texture-background";
@@ -31,13 +30,23 @@ const SbContributionSection = ({ blok }: Blok<StoryblokContributionSection>) => 
           <h1 className="title-4xl lg:w-3/5">{titulo}</h1>
           {subtitulo && <RichText richText={subtitulo} />}
           <div className="flex items-center w-full md:w-4/5 gap-4">
-            <Image
-              className="hidden md:block rounded-lg h-full border border-black"
-              src={getWebpVersionFromSBImage(qrCode.filename!)}
-              alt={qrCode.alt || ""}
-              width={110}
-              height={110}
-            />
+            {(() => {
+              const rawSrc = qrCode.filename!;
+              const src = rawSrc.startsWith("//")
+                ? `https:${rawSrc}`
+                : !rawSrc.startsWith("http") && !rawSrc.startsWith("/")
+                ? `/${rawSrc}`
+                : rawSrc;
+              return (
+                <Image
+                  className="hidden md:block rounded-lg h-full border border-black"
+                  src={src}
+                  alt={qrCode.alt || ""}
+                  width={110}
+                  height={110}
+                />
+              );
+            })()}
 
             <div className="flex flex-col items-start gap-4 md:gap-0">
               <RichText richText={qrCodeDescricao} />
@@ -61,15 +70,23 @@ const SbContributionSection = ({ blok }: Blok<StoryblokContributionSection>) => 
           {headlineImagem && (
             <RichText className={{ container: "font-medium" }} richText={headlineImagem} />
           )}
-          {imagem?.filename && (
-            <Image
-              className="rounded-lg object-fit h-full max-h-[400px] w-auto"
-              src={getWebpVersionFromSBImage(imagem.filename)}
-              alt={imagem.alt || ""}
-              width={640}
-              height={400}
-            />
-          )}
+          {imagem?.filename && (() => {
+            const rawSrc = imagem.filename;
+            const src = rawSrc.startsWith("//")
+              ? `https:${rawSrc}`
+              : !rawSrc.startsWith("http") && !rawSrc.startsWith("/")
+              ? `/${rawSrc}`
+              : rawSrc;
+            return (
+              <Image
+                className="rounded-lg object-fit h-full max-h-[400px] w-auto"
+                src={src}
+                alt={imagem.alt || ""}
+                width={640}
+                height={400}
+              />
+            );
+          })()}
         </div>
 
         <div className="md:hidden mt-4 space-y-8 w-full max-w-[477px]">

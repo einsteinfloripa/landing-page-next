@@ -5,7 +5,6 @@ import DiagonalStripes from "../molecules/diagonal-stripes";
 import { DonateCta } from "../molecules/donate-cta";
 import useScreenSize from "@/hooks/useScreenSize";
 import { StoryblokAsset } from "@/utils/storyblok-types.generated";
-import { getWebpVersionFromSBImage } from "@/lib/utils";
 
 type ImageSectionProps = Readonly<{
   desktopImage: StoryblokAsset;
@@ -16,6 +15,12 @@ export const ImageSection: React.FC<ImageSectionProps> = ({ desktopImage, mobile
   const { isMobile } = useScreenSize();
 
   const image = isMobile ? mobileImage : desktopImage;
+  const rawSrc = image?.filename || "";  
+  const resolvedSrc = rawSrc.startsWith("//")
+    ? `https:${rawSrc}`
+    : !rawSrc.startsWith("http") && !rawSrc.startsWith("/")
+    ? `/${rawSrc}`
+    : rawSrc;
 
   return (
     <section className="relative w-full flex items-center justify-center mt-16 lg:mt-28">
@@ -24,11 +29,11 @@ export const ImageSection: React.FC<ImageSectionProps> = ({ desktopImage, mobile
           <Image
             width={1273}
             height={491}
-            src={getWebpVersionFromSBImage(image.filename!)}
-            alt={image.alt || ""}
-            priority={true} // Load this image with high priority
-            loading="eager" // Load the image eagerly
-            sizes="(max-width: 768px) 100vw, 1273px" // Specify different sizes for different viewport widths
+            src={resolvedSrc}
+            alt={image?.alt || ""}
+            priority={true}
+            loading="eager"
+            sizes="(max-width: 768px) 100vw, 1273px"
           />
           <div className="absolute -top-8 -right-0 lg:-top-16 lg:right-8 flex items-center justify-center">
             <DonateCta />

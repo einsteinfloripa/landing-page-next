@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Blok } from "@/utils/types";
 import { StoryblokJoinUsSection } from "@/utils/storyblok-types.generated";
-import { getWebpVersionFromSBImage } from "@/lib/utils";
 import { storyblokEditable } from "@storyblok/react";
 import PaperTextureBackground from "../molecules/paper-texture-background";
 import { SbButton } from "./sb-button";
@@ -36,13 +35,23 @@ const SbJoinUsSection = ({ blok }: Blok<StoryblokJoinUsSection>) => {
               >
                 <div className="relative w-full h-[300px] flex items-end">
                   <div style={{ backgroundColor: c.cor }} className="w-full h-[222px]"></div>
-                  <Image
-                    src={getWebpVersionFromSBImage(c.image.filename!)}
-                    alt={c.image.alt ?? ""}
-                    fill
-                    sizes="600px"
-                    className="object-cover"
-                  />
+                  {(() => {
+                    const rawSrc = c.image.filename!;
+                    const src = rawSrc.startsWith("//")
+                      ? `https:${rawSrc}`
+                      : !rawSrc.startsWith("http") && !rawSrc.startsWith("/")
+                      ? `/${rawSrc}`
+                      : rawSrc;
+                    return (
+                      <Image
+                        src={src}
+                        alt={c.image.alt ?? ""}
+                        fill
+                        sizes="600px"
+                        className="object-cover"
+                      />
+                    );
+                  })()}
                 </div>
                 <div className="flex flex-col gap-6 max-w-[300px]">
                   <h1 className="title-4xl text-center">{c.titulo}</h1>
