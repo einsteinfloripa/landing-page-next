@@ -22,6 +22,7 @@ import { SbHierarquiaSection } from "@/components/storyblok/sb-hierarquia-sectio
 import SbJoinUsSection from "@/components/storyblok/sb-join-us-section";
 import { SbLinksMateriaisSection } from "@/components/storyblok/sb-links-materiais";
 import { SbMainHero } from "@/components/storyblok/sb-main-hero";
+import SbCursoHero from "@/components/storyblok/sb-curso-hero";
 import SbMetric from "@/components/storyblok/sb-metric";
 import { SbButtonNav } from "@/components/storyblok/sb-nav-button";
 import SbParceirosHero from "@/components/storyblok/sb-parceiros-hero";
@@ -30,6 +31,8 @@ import { SbSingleTestimonialSection } from "@/components/storyblok/sb-single-tes
 import SbTextStripe from "@/components/storyblok/sb-text-stripe";
 import { SbTiposParceriaSection } from "@/components/storyblok/sb-tipos-parceria-section";
 import SbVoluntariadoHero from "@/components/storyblok/sb-voluntariado-hero";
+import SbOferecemosSection from "@/components/storyblok/sb-oferecemos-section";
+import SbOferecemosCard from "@/components/storyblok/sb-oferecemos-card";
 import { apiPlugin, storyblokInit } from "@storyblok/react/rsc";
 
 export const getStoryblokApi = storyblokInit({
@@ -37,6 +40,7 @@ export const getStoryblokApi = storyblokInit({
   use: [apiPlugin],
   components: {
     "main-hero": SbMainHero,
+    "curso-hero": SbCursoHero,
     "button-nav": SbButtonNav,
     pagina: GenericPage,
     button: SbButton,
@@ -67,6 +71,8 @@ export const getStoryblokApi = storyblokInit({
     "contato-section": SbContatoSection,
     "etapas-section": SbEtapasSection,
     "links-materiais-section": SbLinksMateriaisSection,
+    "oferecemos-section": SbOferecemosSection,
+    "oferecemos-card": SbOferecemosCard,
   },
   apiOptions: {
     region: "us",
