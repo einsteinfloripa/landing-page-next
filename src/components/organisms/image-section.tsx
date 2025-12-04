@@ -39,9 +39,6 @@ export const ImageSection: React.FC<ImageSectionProps> = ({
             <DonateCta href={ctaLink} />
           </div>
         </div>
-        <div>
-          <DiagonalStripes />
-        </div>
       </div>
     </section>
   );
