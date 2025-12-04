@@ -9,7 +9,6 @@ const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
-// Usando os nomes exatos dos seus certificados
 const httpsOptions = {
   key: fs.readFileSync(path.resolve(__dirname, './.certs/localhost+2-key.pem')),
   cert: fs.readFileSync(path.resolve(__dirname, './.certs/localhost+2.pem')),

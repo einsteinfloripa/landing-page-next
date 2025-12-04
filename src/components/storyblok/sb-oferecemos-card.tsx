@@ -47,11 +47,10 @@ const SbOferecemosCard = ({ blok, isHovered = false }: Props) => {
         />
       )}
 
-      {/* Overlay de gradiente para legibilidade quando houver imagem */}
       {isHovered && safeImagem?.filename && (
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/40 to-transparent" />
       )}
-      {/* Ícone no topo esquerdo */}
+      {/* icone no topo esquerdo */}
       {icone?.filename && (
         <Image
           src={getWebpVersionFromSBImage(icone.filename)}
@@ -63,7 +62,7 @@ const SbOferecemosCard = ({ blok, isHovered = false }: Props) => {
         />
       )}
 
-      {/* Conteúdo ancorado na base do card */}
+      {/* conteudo ancora base do card */}
       <div className="mt-auto flex flex-col gap-1 relative z-10">
         {safeTitulo && <h3 className="body-2xl">{safeTitulo}</h3>}
         {isRichTextDescricao ? (

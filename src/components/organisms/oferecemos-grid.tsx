@@ -32,7 +32,6 @@ export default function OferecemosGrid({ cards }: Props) {
         const url = getWebpVersionFromSBImage(filename);
         const preload = new window.Image();
         preload.decoding = "async";
-        // força carregamento imediato para cache local
         preload.loading = "eager" as any;
         preload.src = url;
       });
@@ -85,7 +84,6 @@ export default function OferecemosGrid({ cards }: Props) {
             {isHovered && cols >= 3 && (
               <div className="absolute inset-0 z-20 flex"
                    style={{
-                     // ajuda o browser a prever movimentação
                      willChange: "transform",
                    }}
               >
