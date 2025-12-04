@@ -26,23 +26,45 @@ export const SbTiposParceriaSection = ({
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8">
-          {cards?.map((c) => (
-            <div
-              key={c._uid}
-              className="flex-1 flex flex-col gap-8 border-[12px] rounded-xl border-white p-5 md:p-12"
-              style={{ backgroundColor: c.cor }}
-            >
-              <h3 className="title-3xl">{c.titulo}</h3>
-              <RichText
-                richText={c.descricao}
-                className={{ paragraph: "text-app-blue-900" }}
-              />
+          {cards?.map((c) => {
+            const partnershipSlug = createSlug(c.titulo);
+            const queryParams = partnershipSlug
+              ? { parceria: partnershipSlug }
+              : undefined;
 
-              <SbButtonNav blok={c.botao[0]} className="w-fit border-2" />
-            </div>
-          ))}
+            return (
+              <div
+                key={c._uid}
+                className="flex-1 flex flex-col gap-8 border-[12px] rounded-xl border-white p-5 md:p-12"
+                style={{ backgroundColor: c.cor }}
+              >
+                <h3 className="title-3xl">{c.titulo}</h3>
+                <RichText
+                  richText={c.descricao}
+                  className={{ paragraph: "text-app-blue-900" }}
+                />
+
+                <SbButtonNav
+                  blok={c.botao[0]}
+                  className="w-fit border-2"
+                  queryParams={queryParams}
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
   );
+};
+
+const createSlug = (value?: string) => {
+  if (!value) return undefined;
+
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)+/g, "");
 };
