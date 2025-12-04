@@ -152,6 +152,7 @@ export interface StoryblokButton {
   variant: "default" | "secondary" | "tertiary" | "outline" | "outline-secondary" | "ghost" | "link" | "destructive";
   title: string;
   iconeADireita?: boolean;
+  disabled?: boolean;
   component: "button";
   _uid: string;
   [k: string]: any;
@@ -406,6 +407,7 @@ export interface StoryblokJoinUsSection {
 export interface StoryblokLabelLink {
   label: string;
   link?: Exclude<StoryblokMultilink, {linktype?: "email"} | {linktype?: "asset"}>;
+  disabled?: boolean;
   component: "label+link";
   _uid: string;
   [k: string]: any;

@@ -20,8 +20,17 @@ type FooterProps = {
   corDoFooter: StoryblokPagina["corDoFooter"];
 };
 
-const Footer = ({ logo, title, social, linkscol, copyright, corDoFooter }: FooterProps) => {
-  const getBackgroundColor = (color: StoryblokPagina["corDoFooter"] | undefined) => {
+const Footer = ({
+  logo,
+  title,
+  social,
+  linkscol,
+  copyright,
+  corDoFooter,
+}: FooterProps) => {
+  const getBackgroundColor = (
+    color: StoryblokPagina["corDoFooter"] | undefined,
+  ) => {
     switch (color) {
       case "branco":
         return "bg-white";
@@ -40,7 +49,7 @@ const Footer = ({ logo, title, social, linkscol, copyright, corDoFooter }: Foote
         opacity={100}
         className={cn(
           "transform scale-y-[-1] transition-transform",
-          getBackgroundColor(corDoFooter)
+          getBackgroundColor(corDoFooter),
         )}
       />
       <div className="relative w-full max-w-wrapper flex flex-col p-4 sm:px-12 sm:py-8 mt-10 mb-20 rounded-3xl shadow-lg">
@@ -58,7 +67,11 @@ const Footer = ({ logo, title, social, linkscol, copyright, corDoFooter }: Foote
           <div className="flex gap-4">
             {social?.map((s, index) => {
               return (
-                <Link key={s._uid} href={getUrlFromSBLink(s.link!)} className="flex items-center">
+                <Link
+                  key={s._uid}
+                  href={getUrlFromSBLink(s.link!)}
+                  className="flex items-center"
+                >
                   <Image
                     aria-label={`Rede social ${index + 1}`}
                     src={getWebpVersionFromSBImage(s.image.filename!)}

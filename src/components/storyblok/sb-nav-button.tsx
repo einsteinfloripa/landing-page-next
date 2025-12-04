@@ -10,10 +10,27 @@ interface Props extends Omit<SbButtonProps, "blok"> {
 
 export const SbButtonNav = ({ blok, className, ...rest }: Props) => {
   const { button, link } = blok;
+  const blokButton = button?.[0];
+
+  if (!blokButton) return null;
+
+  const isDisabled = blokButton.disabled;
+  const buttonElement = (
+    <SbButton
+      blok={blokButton}
+      className={className}
+      disabled={isDisabled}
+      {...rest}
+    />
+  );
+
+  if (isDisabled) {
+    return <span {...storyblokEditable(blok)}>{buttonElement}</span>;
+  }
 
   return (
     <Link {...storyblokEditable(blok)} href={getUrlFromSBLink(link)}>
-      <SbButton blok={button[0]} className={className} {...rest} />
+      {buttonElement}
     </Link>
   );
 };
