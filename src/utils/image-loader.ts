@@ -1,8 +1,8 @@
 import type { ImageLoaderProps } from "next/image";
 
 export default function imageLoader({ src, width, quality }: ImageLoaderProps) {
-  // Use the Storyblok image service for images from Storyblok
-  if (src.includes("a.storyblok.com")) {
+  // Use the Storyblok image service for images from Storyblok (any region)
+  if (src.includes("storyblok.com")) {
     return [`${src}/m/${width}x0`, quality && `filters:quality(${quality})`]
       .filter(Boolean)
       .join("/");

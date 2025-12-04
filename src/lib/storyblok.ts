@@ -31,6 +31,8 @@ import { SbSingleTestimonialSection } from "@/components/storyblok/sb-single-tes
 import SbTextStripe from "@/components/storyblok/sb-text-stripe";
 import { SbTiposParceriaSection } from "@/components/storyblok/sb-tipos-parceria-section";
 import SbVoluntariadoHero from "@/components/storyblok/sb-voluntariado-hero";
+import SbOferecemosSection from "@/components/storyblok/sb-oferecemos-section";
+import SbOferecemosCard from "@/components/storyblok/sb-oferecemos-card";
 import { apiPlugin, storyblokInit } from "@storyblok/react/rsc";
 
 export const getStoryblokApi = storyblokInit({
@@ -69,6 +71,8 @@ export const getStoryblokApi = storyblokInit({
     "contato-section": SbContatoSection,
     "etapas-section": SbEtapasSection,
     "links-materiais-section": SbLinksMateriaisSection,
+    "oferecemos-section": SbOferecemosSection,
+    "oferecemos-card": SbOferecemosCard,
   },
   apiOptions: {
     region: "us",
