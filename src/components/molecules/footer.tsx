@@ -97,7 +97,9 @@ const Footer = ({
                       aria-label={link.label}
                       className="flex items-center"
                     >
-                      <span className="max-w-32 text-neutral-50 opacity-70">{link.label}</span>
+                      <span className="max-w-32 text-neutral-50 opacity-70">
+                        {link.label}
+                      </span>
                     </Link>
                   );
                 })}
