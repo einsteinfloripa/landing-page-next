@@ -10,9 +10,14 @@ import { getWebpVersionFromSBImage } from "@/lib/utils";
 type ImageSectionProps = Readonly<{
   desktopImage: StoryblokAsset;
   mobileImage: StoryblokAsset;
+  ctaLink: string;
 }>;
 
-export const ImageSection: React.FC<ImageSectionProps> = ({ desktopImage, mobileImage }) => {
+export const ImageSection: React.FC<ImageSectionProps> = ({
+  desktopImage,
+  mobileImage,
+  ctaLink,
+}) => {
   const { isMobile } = useScreenSize();
 
   const image = isMobile ? mobileImage : desktopImage;
@@ -31,7 +36,7 @@ export const ImageSection: React.FC<ImageSectionProps> = ({ desktopImage, mobile
             sizes="(max-width: 768px) 100vw, 1273px" // Specify different sizes for different viewport widths
           />
           <div className="absolute -top-8 -right-0 lg:-top-16 lg:right-8 flex items-center justify-center">
-            <DonateCta />
+            <DonateCta href={ctaLink} />
           </div>
         </div>
         <div>

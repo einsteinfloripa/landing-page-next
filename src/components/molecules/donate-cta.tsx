@@ -1,9 +1,13 @@
 import Image from "next/image";
-import Link from "next/link";
+import Link, { LinkProps } from "next/link";
 
-export const DonateCta = () => {
+type DonateProps = LinkProps & {
+  href?: string;
+};
+
+export const DonateCta = ({ href = "/", ...props }: DonateProps) => {
   return (
-    <Link href={"/"}>
+    <Link href={href} {...props}>
       <div className="lg:size-36 md:size-32 size-24 rounded-full bg-app-orange-400 hover:bg-app-orange-500 transition-all duration-150 relative flex items-center justify-center shadow-custom">
         <Image
           alt="Seja um apoiador"
