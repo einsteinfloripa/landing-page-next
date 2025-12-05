@@ -34,7 +34,9 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const paramsResolved = await params;
   const slug =
-    paramsResolved && Array.isArray(paramsResolved.slug) ? paramsResolved.slug : ["home"];
+    paramsResolved && Array.isArray(paramsResolved.slug)
+      ? paramsResolved.slug
+      : ["home"];
   const content = await fetchStory<StoryblokPagina>(`${[slug[0]].join("/")}`)
     .then((res) => res.story.content)
     .catch(notFound);
@@ -74,10 +76,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function RootLayout({ children }: Readonly<Props>) {
   return (
-    <html lang="pt-br" className={`${roboto.variable} ${anton.variable} ${kalam.variable}`}>
+    <html
+      lang="pt-br"
+      className={`${roboto.variable} ${anton.variable} ${kalam.variable}`}
+    >
       <StoryblokProvider>
         <body className="font-roboto antialiased bg-app-neutral-10">
           {children}
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-8TRNQ52WJC"
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-8TRNQ52WJC');
+            `}
+          </Script>
           <Script id="clarity-script" strategy="afterInteractive">
             {`
               (function(c,l,a,r,i,t,y){
