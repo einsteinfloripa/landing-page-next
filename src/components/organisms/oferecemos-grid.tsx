@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import SbOferecemosCard from "@/components/storyblok/sb-oferecemos-card";
 import { getWebpVersionFromSBImage } from "@/lib/utils";
 
@@ -13,6 +13,8 @@ const getCols = (w: number) => (w >= 1280 ? 5 : w >= 1024 ? 3 : w >= 640 ? 2 : 1
 export default function OferecemosGrid({ cards }: Props) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [cols, setCols] = useState<number>(5);
+  const [exitingIndex, setExitingIndex] = useState<number | null>(null);
+  const exitTimerRef = useRef<number | null>(null);
 
   useEffect(() => {
     const handler = () => setCols(getCols(window.innerWidth));
@@ -66,6 +68,7 @@ export default function OferecemosGrid({ cards }: Props) {
       {cards.map((card, i) => {
         const isHovered = hoveredIndex === i; // permite hover também em 1-2 colunas
         const isHidden = hiddenSet.has(i);
+        const isExiting = exitingIndex === i;
 
         return (
           <div
@@ -77,9 +80,18 @@ export default function OferecemosGrid({ cards }: Props) {
               (isHidden ? " hidden " : " ") +
               " relative transition-all duration-500 ease-out"
             }
-            onMouseEnter={() => setHoveredIndex(i)}
+            onMouseEnter={() => {
+              setExitingIndex(hoveredIndex);
+              if (exitTimerRef.current) {
+                window.clearTimeout(exitTimerRef.current);
+              }
+              exitTimerRef.current = window.setTimeout(() => {
+                setExitingIndex(null);
+              }, 220);
+              setHoveredIndex(i);
+            }}
           >
-            <SbOferecemosCard blok={card} isHovered={isHovered} />
+            <SbOferecemosCard blok={card} isHovered={isHovered} isExiting={isExiting} />
 
             {isHovered && cols >= 3 && (
               <div className="absolute inset-0 z-20 flex"
