@@ -26,7 +26,10 @@ function SbCursoHero({ blok }: Blok<StoryblokCursoHero>) {
             />
           )}
           {richTextHasContent(descricao) && (
-            <RichText richText={descricao} className={{ container: "md:text-center lg:text-xl" }} />
+            <RichText
+              richText={descricao}
+              className={{ container: "md:text-center lg:text-xl" }}
+            />
           )}
           {(acoes ?? []).length > 0 && (
             <div className="flex gap-2 [&_button]:px-6 md:[&_button]:px-12">

@@ -32,7 +32,8 @@ interface Props {
 }
 
 function RichText({ className = {}, richText }: Props) {
-  const { bold, container, heading, paragraph, anchor, unorderedList, link } = className;
+  const { bold, container, heading, paragraph, anchor, unorderedList, link } =
+    className;
 
   const content = render(richText, {
     markResolvers: {
@@ -52,7 +53,12 @@ function RichText({ className = {}, richText }: Props) {
 
         const isCircle = ["circle", "circulo"].includes(k);
         const isArrows = ["arrows", "setas", "flechas"].includes(k);
-        const isUnderline = ["underline", "sublinhado", "risco", "risk"].includes(k);
+        const isUnderline = [
+          "underline",
+          "sublinhado",
+          "risco",
+          "risk",
+        ].includes(k);
 
         if (isCircle) {
           return (
@@ -133,19 +139,23 @@ function RichText({ className = {}, richText }: Props) {
         const isEmpty =
           !c ||
           (Array.isArray(c) &&
-            c.every((child) => (typeof child === "string" ? child.trim() === "" : false)));
+            c.every((child) =>
+              typeof child === "string" ? child.trim() === "" : false,
+            ));
 
         return isEmpty ? <br /> : <p className={cn("mb-2", paragraph)}>{c}</p>;
       },
 
       [NODE_UL]: (c) => (
-        <ul className={cn("mb-4 mt-4 pl-6 [&>li]:list-disc", unorderedList)}>{c}</ul>
+        <ul className={cn("mb-4 mt-4 pl-6 [&>li]:list-disc", unorderedList)}>
+          {c}
+        </ul>
       ),
       [NODE_OL]: (c) => (
         <ol
           className={cn(
             "mb-4 mt-4 pl-4 [&>li]:list-decimal [&_li]:marker:font-bold [&_li>p]:m-0",
-            unorderedList
+            unorderedList,
           )}
         >
           {c}
@@ -172,7 +182,7 @@ export const richTextHasContent = (richText?: StoryblokRichtext) => {
 export const replaceWildCard = (
   richText: StoryblokRichtext,
   wildcardIdentifier: string,
-  replacement: string
+  replacement: string,
 ): StoryblokRichtext => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const replaceName = (obj: any) => {

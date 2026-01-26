@@ -9,11 +9,17 @@ function Stripe({ className }: StripeProps) {
     <div
       className={cn(
         "absolute bottom-0 left-0 overflow-hidden flex items-center justify-center gap-16 w-full transform text-center text-2xl py-3 whitespace-nowrap",
-        className
+        className,
       )}
     >
       {[...Array(8)].map((_, index) => (
-        <Image key={index} src="/pipefy.svg" alt="Logo da Pipefy" width={75} height={32} />
+        <Image
+          key={index}
+          src="/pipefy.svg"
+          alt="Logo da Pipefy"
+          width={75}
+          height={32}
+        />
       ))}
     </div>
   );

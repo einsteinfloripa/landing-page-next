@@ -37,7 +37,10 @@ function Headline({ id, children, className, element, visualElement }: Props) {
   const Element = element;
 
   return (
-    <Element id={id} className={cn(getStyles(visualElement || element), className)}>
+    <Element
+      id={id}
+      className={cn(getStyles(visualElement || element), className)}
+    >
       {children}
     </Element>
   );

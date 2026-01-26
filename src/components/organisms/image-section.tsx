@@ -11,7 +11,11 @@ type ImageSectionProps = Readonly<{
   ctaLink: string;
 }>;
 
-export function ImageSection({ desktopImage, mobileImage, ctaLink }: ImageSectionProps) {
+export function ImageSection({
+  desktopImage,
+  mobileImage,
+  ctaLink,
+}: ImageSectionProps) {
   const { isMobile } = useScreenSize();
 
   const image = isMobile ? mobileImage : desktopImage;

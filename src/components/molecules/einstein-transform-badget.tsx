@@ -5,7 +5,9 @@ type EinsteinTransformBadgetProps = {
   readonly className?: string;
 };
 
-export function EinsteinTransformBadget({ className }: EinsteinTransformBadgetProps) {
+export function EinsteinTransformBadget({
+  className,
+}: EinsteinTransformBadgetProps) {
   return (
     <div className={cn(className)}>
       <div className="size-18 md:size-24 bg-app-blue-500 rounded-full flex items-center justify-center">

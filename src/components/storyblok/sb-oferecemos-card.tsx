@@ -4,7 +4,10 @@ import Image from "next/image";
 import { Blok } from "@/utils/types";
 import { storyblokEditable } from "@storyblok/react";
 import { getWebpVersionFromSBImage } from "@/lib/utils";
-import type { StoryblokOferecemosCard, StoryblokRichtext } from "@/utils/storyblok-types.generated";
+import type {
+  StoryblokOferecemosCard,
+  StoryblokRichtext,
+} from "@/utils/storyblok-types.generated";
 import RichText from "@/components/atoms/RichText";
 
 type Props = Blok<StoryblokOferecemosCard>;
@@ -15,7 +18,9 @@ function SbOferecemosCard({ blok }: Props) {
   const safeTitulo = blok.Titulo || blok["titulo"] || "";
   const rawDescricao = blok.Descricao || blok["descricao"] || "";
   const isRichTextDescricao =
-    typeof rawDescricao === "object" && rawDescricao && "content" in rawDescricao;
+    typeof rawDescricao === "object" &&
+    rawDescricao &&
+    "content" in rawDescricao;
 
   return (
     <div
@@ -45,7 +50,9 @@ function SbOferecemosCard({ blok }: Props) {
         ) : (
           typeof rawDescricao === "string" &&
           rawDescricao.trim() !== "" && (
-            <p className="body-small text-white/90 max-w-[280px]">{rawDescricao}</p>
+            <p className="body-small text-white/90 max-w-[280px]">
+              {rawDescricao}
+            </p>
           )
         )}
       </div>

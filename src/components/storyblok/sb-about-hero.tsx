@@ -37,7 +37,7 @@ function SbAboutHero({ blok }: Blok<StoryblokAboutHero>) {
           key={index}
           className={cn(
             imagePositions[index % imagePositions.length],
-            "w-auto w-[200px] min-h-[120px] xl:w-[20vw] h-auto xl:max-w-[320px] xl:min-w-[200px] xl:min-h-[180px] xl:max-h-[200px] transition-all duration-300"
+            "w-auto w-[200px] min-h-[120px] xl:w-[20vw] h-auto xl:max-w-[320px] xl:min-w-[200px] xl:min-h-[180px] xl:max-h-[200px] transition-all duration-300",
           )}
           style={{ aspectRatio: "2.4/1" }}
         >

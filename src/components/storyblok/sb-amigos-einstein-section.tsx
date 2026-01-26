@@ -9,14 +9,20 @@ import ScribbleDraw from "@/assets/ilustrations/scribble-draw.svg";
 import HeartsDraw from "@/assets/ilustrations/hearts-draw.svg";
 import Image from "next/image";
 
-export function SbAmigosEinsteinSection({ blok }: Blok<StoryblokAmigosEinsteinSection>) {
+export function SbAmigosEinsteinSection({
+  blok,
+}: Blok<StoryblokAmigosEinsteinSection>) {
   const { descricao, cards } = blok;
   return (
     <section
       {...storyblokEditable(blok)}
       className="relative w-full flex overflow-hidden min-h-screen items-center justify-center"
     >
-      <PaperTextureBackground className="bg-app-blue-500" opacity={100} version={2} />
+      <PaperTextureBackground
+        className="bg-app-blue-500"
+        opacity={100}
+        version={2}
+      />
       <div className="w-full flex flex-col sm:px-24 py-24 sm:py-36 gap-10 p-5">
         <div className="flex flex-col text-center w-full gap-6 items-center justify-center xl:mb-10 z-10 px-5 sm:px-auto text-white">
           <div className="relative">
@@ -28,7 +34,10 @@ export function SbAmigosEinsteinSection({ blok }: Blok<StoryblokAmigosEinsteinSe
               unoptimized
             />
           </div>
-          <RichText className={{ container: "max-w-[620px]" }} richText={descricao} />
+          <RichText
+            className={{ container: "max-w-[620px]" }}
+            richText={descricao}
+          />
         </div>
 
         <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
@@ -43,7 +52,7 @@ export function SbAmigosEinsteinSection({ blok }: Blok<StoryblokAmigosEinsteinSe
               <div
                 className={cn(
                   "flex-1 flex flex-col gap-4 border-[12px] w-full rounded-xl border-white py-[72px] px-[60px] text-center items-center justify-center",
-                  c.corTexto === "light" ? "text-white" : "text-[##001840]"
+                  c.corTexto === "light" ? "text-white" : "text-[##001840]",
                 )}
                 style={{ backgroundColor: c.cor }}
               >

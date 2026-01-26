@@ -1,18 +1,29 @@
 "use client";
 
-import { forwardRef, type ElementRef, type ComponentPropsWithoutRef } from "react";
-import { Root, Item, Header, Trigger, Content } from "@radix-ui/react-accordion";
+import {
+  forwardRef,
+  type ElementRef,
+  type ComponentPropsWithoutRef,
+} from "react";
+import {
+  Root,
+  Item,
+  Header,
+  Trigger,
+  Content,
+} from "@radix-ui/react-accordion";
 import { ChevronDown } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
 const Accordion = Root;
 
-const AccordionItem = forwardRef<ElementRef<typeof Item>, ComponentPropsWithoutRef<typeof Item>>(
-  ({ className, ...props }, ref) => (
-    <Item ref={ref} className={cn("border-b", className)} {...props} />
-  )
-);
+const AccordionItem = forwardRef<
+  ElementRef<typeof Item>,
+  ComponentPropsWithoutRef<typeof Item>
+>(({ className, ...props }, ref) => (
+  <Item ref={ref} className={cn("border-b", className)} {...props} />
+));
 AccordionItem.displayName = "AccordionItem";
 
 const AccordionTrigger = forwardRef<
@@ -24,7 +35,7 @@ const AccordionTrigger = forwardRef<
       ref={ref}
       className={cn(
         "flex flex-1 items-center justify-between py-4 font-medium transition-all [&[data-state=open]>svg]:rotate-180",
-        className
+        className,
       )}
       {...props}
     >
