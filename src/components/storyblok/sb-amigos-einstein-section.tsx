@@ -9,7 +9,7 @@ import ScribbleDraw from "@/assets/ilustrations/scribble-draw.svg";
 import HeartsDraw from "@/assets/ilustrations/hearts-draw.svg";
 import Image from "next/image";
 
-export const SbAmigosEinsteinSection = ({ blok }: Blok<StoryblokAmigosEinsteinSection>) => {
+export function SbAmigosEinsteinSection({ blok }: Blok<StoryblokAmigosEinsteinSection>) {
   const { descricao, cards } = blok;
   return (
     <section
@@ -62,4 +62,4 @@ export const SbAmigosEinsteinSection = ({ blok }: Blok<StoryblokAmigosEinsteinSe
       </div>
     </section>
   );
-};
+}

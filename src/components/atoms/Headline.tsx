@@ -1,14 +1,14 @@
 import { cn } from "@/lib/utils";
-import { FC, ReactNode } from "react";
+import { ReactNode } from "react";
 
 type Element = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 
 export interface Props {
-  id?: string;
-  children?: ReactNode;
-  className?: string;
-  element: Element;
-  visualElement?: Element;
+  readonly id?: string;
+  readonly children?: ReactNode;
+  readonly className?: string;
+  readonly element: Element;
+  readonly visualElement?: Element;
 }
 
 const getStyles = (element: Element) => {
@@ -33,7 +33,7 @@ const getStyles = (element: Element) => {
   }
 };
 
-const Headline: FC<Props> = ({ id, children, className, element, visualElement }) => {
+function Headline({ id, children, className, element, visualElement }: Props) {
   const Element = element;
 
   return (
@@ -41,6 +41,6 @@ const Headline: FC<Props> = ({ id, children, className, element, visualElement }
       {children}
     </Element>
   );
-};
+}
 
 export default Headline;

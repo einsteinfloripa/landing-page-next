@@ -5,7 +5,7 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 export interface Props extends Omit<ButtonProps, "variant" | "children"> {
-  blok: StoryblokButton;
+  readonly blok: StoryblokButton;
 }
 
 export const SbButton = ({ blok, className, ...rest }: Props) => {

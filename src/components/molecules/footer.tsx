@@ -12,25 +12,16 @@ import Link from "next/link";
 import PaperTextureBackground from "./paper-texture-background";
 
 type FooterProps = {
-  logo: StoryblokAsset;
-  title: string;
-  social?: StoryblokFooterColLink["links"];
-  linkscol: StoryblokFooter["linkscol"];
-  copyright: string;
-  corDoFooter: StoryblokPagina["corDoFooter"];
+  readonly logo: StoryblokAsset;
+  readonly title: string;
+  readonly social?: StoryblokFooterColLink["links"];
+  readonly linkscol: StoryblokFooter["linkscol"];
+  readonly copyright: string;
+  readonly corDoFooter: StoryblokPagina["corDoFooter"];
 };
 
-const Footer = ({
-  logo,
-  title,
-  social,
-  linkscol,
-  copyright,
-  corDoFooter,
-}: FooterProps) => {
-  const getBackgroundColor = (
-    color: StoryblokPagina["corDoFooter"] | undefined,
-  ) => {
+function Footer({ logo, title, social, linkscol, copyright, corDoFooter }: FooterProps) {
+  const getBackgroundColor = (color: StoryblokPagina["corDoFooter"] | undefined) => {
     switch (color) {
       case "branco":
         return "bg-white";
@@ -49,7 +40,7 @@ const Footer = ({
         opacity={100}
         className={cn(
           "transform scale-y-[-1] transition-transform",
-          getBackgroundColor(corDoFooter),
+          getBackgroundColor(corDoFooter)
         )}
       />
       <div className="relative w-full max-w-wrapper flex flex-col p-4 sm:px-12 sm:py-8 mt-10 mb-20 rounded-3xl shadow-lg">
@@ -67,11 +58,7 @@ const Footer = ({
           <div className="flex gap-4">
             {social?.map((s, index) => {
               return (
-                <Link
-                  key={s._uid}
-                  href={getUrlFromSBLink(s.link!)}
-                  className="flex items-center"
-                >
+                <Link key={s._uid} href={getUrlFromSBLink(s.link!)} className="flex items-center">
                   <Image
                     aria-label={`Rede social ${index + 1}`}
                     src={getWebpVersionFromSBImage(s.image.filename!)}
@@ -97,9 +84,7 @@ const Footer = ({
                       aria-label={link.label}
                       className="flex items-center"
                     >
-                      <span className="max-w-32 text-neutral-50 opacity-70">
-                        {link.label}
-                      </span>
+                      <span className="max-w-32 text-neutral-50 opacity-70">{link.label}</span>
                     </Link>
                   );
                 })}
@@ -113,6 +98,6 @@ const Footer = ({
       </div>
     </section>
   );
-};
+}
 
 export default Footer;

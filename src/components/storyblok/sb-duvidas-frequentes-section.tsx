@@ -13,11 +13,20 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-export const SbDuvidasFrequentesSection = ({ blok }: Blok<StoryblokDuvidasFrequentesSection>) => {
+export const SbDuvidasFrequentesSection = ({
+  blok,
+}: Blok<StoryblokDuvidasFrequentesSection>) => {
   const { subtitulo, duvidas } = blok;
   return (
-    <section {...storyblokEditable(blok)} className="relative w-full flex overflow-hidden">
-      <PaperTextureBackground className="bg-app-neutral-10" opacity={30} version={2} />
+    <section
+      {...storyblokEditable(blok)}
+      className="relative w-full flex overflow-hidden"
+    >
+      <PaperTextureBackground
+        className="bg-app-neutral-10"
+        opacity={30}
+        version={2}
+      />
       <div className="relative w-full flex flex-col sm:px-24 py-24 sm:py-36">
         <div className="flex flex-col text-center w-full gap-8 items-center justify-center xl:mb-10 z-10 px-5 sm:px-auto">
           <div className="relative">
@@ -33,7 +42,10 @@ export const SbDuvidasFrequentesSection = ({ blok }: Blok<StoryblokDuvidasFreque
               className="absolute -bottom-[30%] -left-[30%] max-w-[224px] max-h-[27px] w-[30vw] block"
             />
           </div>
-          <RichText className={{ container: "max-w-[620px]" }} richText={subtitulo} />
+          <RichText
+            className={{ container: "max-w-[620px]" }}
+            richText={subtitulo}
+          />
         </div>
 
         {duvidas && duvidas.length > 0 && (

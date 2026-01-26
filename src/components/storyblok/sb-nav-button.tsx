@@ -5,8 +5,8 @@ import { getUrlFromSBLink } from "@/lib/utils";
 import { SbButton, Props as SbButtonProps } from "./sb-button";
 
 interface Props extends Omit<SbButtonProps, "blok"> {
-  blok: StoryblokButtonNav;
-  queryParams?: Record<string, string | number | boolean | undefined>;
+  readonly blok: StoryblokButtonNav;
+  readonly queryParams?: Record<string, string | number | boolean | undefined>;
 }
 
 export const SbButtonNav = ({

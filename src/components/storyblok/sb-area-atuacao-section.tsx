@@ -6,7 +6,7 @@ import { storyblokEditable } from "@storyblok/react";
 import { SbButtonNav } from "./sb-nav-button";
 import { SbDepartamentos } from "./sb-departamentos";
 
-export const SbAreaAtuacaoSection = ({ blok }: Blok<StoryblokAreaAtuacaoSection>) => {
+export function SbAreaAtuacaoSection({ blok }: Blok<StoryblokAreaAtuacaoSection>) {
   const { titulo, descricao, acoes, departamentos } = blok;
   return (
     <section {...storyblokEditable(blok)} className="relative w-full flex overflow-hidden">
@@ -26,4 +26,4 @@ export const SbAreaAtuacaoSection = ({ blok }: Blok<StoryblokAreaAtuacaoSection>
       </div>
     </section>
   );
-};
+}

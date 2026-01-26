@@ -26,7 +26,7 @@ const config = [
 
     rules: {
       "prettier/prettier": "error",
-      "func-style": ["error", "declaration"],
+      "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
       "import/no-namespace": "error",
       "@typescript-eslint/no-unused-vars": [
         "error",

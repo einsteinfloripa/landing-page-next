@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link, { LinkProps } from "next/link";
 
 type DonateProps = LinkProps & {
-  href?: string;
+  readonly href?: string;
 };
 
-export const DonateCta = ({ href = "/", ...props }: DonateProps) => {
+export function DonateCta({ href = "/", ...props }: DonateProps) {
   return (
     <Link href={href} {...props}>
       <div className="lg:size-36 md:size-32 size-24 rounded-full bg-app-orange-400 hover:bg-app-orange-500 transition-all duration-150 relative flex items-center justify-center shadow-custom">
@@ -26,4 +26,4 @@ export const DonateCta = ({ href = "/", ...props }: DonateProps) => {
       </div>
     </Link>
   );
-};
+}

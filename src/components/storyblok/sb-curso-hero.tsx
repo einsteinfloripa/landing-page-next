@@ -3,12 +3,13 @@ import { storyblokEditable } from "@storyblok/react";
 import { StoryblokServerComponent } from "@storyblok/react/rsc";
 import RichText, { richTextHasContent } from "../atoms/RichText";
 import Image from "next/image";
+import { StoryblokCursoHero } from "@/utils/storyblok-types.generated";
 
-const SbCursoHero = ({ blok }: Blok<any>) => {
-  const titulo = blok?.titulo ?? blok?.Titulo ?? blok?.title;
-  const descricao = blok?.descricao ?? blok?.Descricao ?? blok?.description;
-  const acoes = blok?.acoes ?? blok?.Acoes ?? blok?.actions;
-  const imagem = blok?.imagem ?? blok?.Imagem ?? blok?.image;
+function SbCursoHero({ blok }: Blok<StoryblokCursoHero>) {
+  const titulo = blok?.Titulo || blok?.["titulo"];
+  const descricao = blok?.Descricao || blok?.["descricao"];
+  const acoes = blok?.acoes || blok?.["Acoes"];
+  const imagem = blok?.imagem || blok?.["Imagem"];
 
   return (
     <div {...storyblokEditable(blok)} className="w-full px-5 sm:px-auto">
@@ -25,14 +26,11 @@ const SbCursoHero = ({ blok }: Blok<any>) => {
             />
           )}
           {richTextHasContent(descricao) && (
-            <RichText
-              richText={descricao}
-              className={{ container: "md:text-center lg:text-xl" }}
-            />
+            <RichText richText={descricao} className={{ container: "md:text-center lg:text-xl" }} />
           )}
           {(acoes ?? []).length > 0 && (
             <div className="flex gap-2 [&_button]:px-6 md:[&_button]:px-12">
-              {(acoes ?? []).map((acao: any, index: number) => (
+              {(acoes ?? []).map((acao, index: number) => (
                 <StoryblokServerComponent key={index} blok={acao} />
               ))}
             </div>
@@ -54,6 +52,6 @@ const SbCursoHero = ({ blok }: Blok<any>) => {
       )}
     </div>
   );
-};
+}
 
 export default SbCursoHero;

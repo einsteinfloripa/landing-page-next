@@ -1,9 +1,12 @@
-import { StoryblokFooter, StoryblokPagina } from "@/utils/storyblok-types.generated";
+import {
+  StoryblokFooter,
+  StoryblokPagina,
+} from "@/utils/storyblok-types.generated";
 import { Blok } from "@/utils/types";
 import Footer from "../molecules/footer";
 
 interface Props extends Blok<StoryblokFooter> {
-  corDoFooter?: StoryblokPagina["corDoFooter"];
+  readonly corDoFooter?: StoryblokPagina["corDoFooter"];
 }
 
 const SbFooter = ({ blok, corDoFooter }: Props) => {

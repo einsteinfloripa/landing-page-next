@@ -27,8 +27,8 @@ const kalam = Kalam({
 });
 
 interface Props {
-  children: ReactNode;
-  params: Promise<{ slug: string[] }>;
+  readonly children: ReactNode;
+  readonly params: Promise<{ readonly slug?: string[] }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

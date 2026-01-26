@@ -1,17 +1,17 @@
 // server.js
-const { createServer } = require('https');
-const { parse } = require('url');
-const next = require('next');
-const fs = require('fs');
-const path = require('path');
+const { createServer } = require("https");
+const { parse } = require("url");
+const next = require("next");
+const fs = require("fs");
+const path = require("path");
 
-const dev = process.env.NODE_ENV !== 'production';
+const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
 const httpsOptions = {
-  key: fs.readFileSync(path.resolve(__dirname, './.certs/localhost+2-key.pem')),
-  cert: fs.readFileSync(path.resolve(__dirname, './.certs/localhost+2.pem')),
+  key: fs.readFileSync(path.resolve(__dirname, "./.certs/localhost+2-key.pem")),
+  cert: fs.readFileSync(path.resolve(__dirname, "./.certs/localhost+2.pem")),
 };
 
 const port = 3000;

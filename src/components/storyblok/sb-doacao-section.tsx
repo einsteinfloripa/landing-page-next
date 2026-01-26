@@ -11,10 +11,16 @@ export const SbDoacaoSection = ({ blok }: Blok<StoryblokDoacaoSection>) => {
       {...storyblokEditable(blok)}
       className="relative w-full flex overflow-hidden min-h-screen items-center justify-center"
     >
-      <PaperTextureBackground className="bg-app-neutral-10" opacity={50} version={2} />
+      <PaperTextureBackground
+        className="bg-app-neutral-10"
+        opacity={50}
+        version={2}
+      />
       <div className="relative w-full flex flex-col sm:px-24 py-24 sm:py-36 px-4">
         <div className="flex flex-col text-center w-full gap-1 items-center justify-center xl:mb-10 z-10 px-5 sm:px-auto">
-          <h4 className="uppercase text-app-neutral-200 font-bold">{subtitulo}</h4>
+          <h4 className="uppercase text-app-neutral-200 font-bold">
+            {subtitulo}
+          </h4>
           <h1 className="title-4xl">{titulo}</h1>
         </div>
 
@@ -30,7 +36,10 @@ export const SbDoacaoSection = ({ blok }: Blok<StoryblokDoacaoSection>) => {
               </div>
 
               <h3 className="text-lg font-medium">{valor.titulo}</h3>
-              <RichText richText={valor.descricao} className={{ paragraph: "text-app-blue-900" }} />
+              <RichText
+                richText={valor.descricao}
+                className={{ paragraph: "text-app-blue-900" }}
+              />
             </div>
           ))}
         </div>

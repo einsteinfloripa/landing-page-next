@@ -1,9 +1,5 @@
-import {
-  StoryblokDetalhesDepartamento,
-  StoryblokEquipeDepartamento,
-} from "@/utils/storyblok-types.generated";
+import { StoryblokDetalhesDepartamento } from "@/utils/storyblok-types.generated";
 import {} from "@radix-ui/react-accordion";
-import Image from "next/image";
 import {
   Accordion,
   AccordionContent,
@@ -40,7 +36,10 @@ export const SbDepartamentos: React.FC<Readonly<Props>> = ({ departamentos, vari
           <AccordionContent className="flex w-full">
             <RichText
               richText={d.descricao}
-              className={{ container: "w-full", paragraph: "text-white text-lg px-10 w-full" }}
+              className={{
+                container: "w-full",
+                paragraph: "text-white text-lg px-10 w-full",
+              }}
             />
           </AccordionContent>
         </AccordionItem>

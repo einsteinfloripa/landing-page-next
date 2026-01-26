@@ -1,4 +1,3 @@
-import { FC } from "react";
 import {
   MARK_BOLD,
   NODE_HEADING,
@@ -20,7 +19,7 @@ import ThreeRightArrowsDraw from "@/assets/ilustrations/three-right-arrows.svg";
 import UnderlineYellow from "@/assets/ilustrations/underline-yellow-draw.svg";
 
 interface Props {
-  className?: {
+  readonly className?: {
     bold?: string;
     container?: string;
     heading?: string;
@@ -29,10 +28,10 @@ interface Props {
     link?: string;
     anchor?: string; // Optional className for anchor styling
   };
-  richText: StoryblokRichtext;
+  readonly richText: StoryblokRichtext;
 }
 
-const RichText: FC<Props> = ({ className = {}, richText }) => {
+function RichText({ className = {}, richText }: Props) {
   const { bold, container, heading, paragraph, anchor, unorderedList, link } = className;
 
   const content = render(richText, {
@@ -43,7 +42,10 @@ const RichText: FC<Props> = ({ className = {}, richText }) => {
 
         // Normalize id and support both "decor:<kind>" and plain "<kind>"
         const normalize = (str: string) =>
-          str.toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "");
+          str
+            .toLowerCase()
+            .normalize("NFD")
+            .replace(/\p{Diacritic}/gu, "");
 
         const raw = id.includes(":") ? id.split(":").pop() || id : id;
         const k = normalize(raw);
@@ -157,7 +159,7 @@ const RichText: FC<Props> = ({ className = {}, richText }) => {
   });
 
   return <div className={container}>{content}</div>;
-};
+}
 
 export const richTextHasContent = (richText?: StoryblokRichtext) => {
   if (!richText) return false;

@@ -3,7 +3,7 @@ import { Blok } from "@/utils/types";
 import { StoryblokServerComponent } from "@storyblok/react/rsc";
 import Image from "next/image";
 
-const SbAchievementsSection = ({ blok }: Blok<StoryblokAchievementsSection>) => {
+function SbAchievementsSection({ blok }: Blok<StoryblokAchievementsSection>) {
   const { metricas, imagem } = blok;
 
   return (
@@ -26,8 +26,8 @@ const SbAchievementsSection = ({ blok }: Blok<StoryblokAchievementsSection>) => 
             const src = rawSrc.startsWith("//")
               ? `https:${rawSrc}`
               : !rawSrc.startsWith("http") && !rawSrc.startsWith("/")
-              ? `/${rawSrc}`
-              : rawSrc;
+                ? `/${rawSrc}`
+                : rawSrc;
 
             return (
               <Image
@@ -43,6 +43,6 @@ const SbAchievementsSection = ({ blok }: Blok<StoryblokAchievementsSection>) => 
       </section>
     </div>
   );
-};
+}
 
 export default SbAchievementsSection;

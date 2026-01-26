@@ -14,7 +14,10 @@ interface Props {
   variant: "light" | "dark";
 }
 
-export const SbEquipeDepartamento: React.FC<Readonly<Props>> = ({ departamentos, variant }) => {
+export const SbEquipeDepartamento: React.FC<Readonly<Props>> = ({
+  departamentos,
+  variant,
+}) => {
   return (
     <Accordion type="multiple">
       {departamentos.map((d) => (
@@ -35,7 +38,10 @@ export const SbEquipeDepartamento: React.FC<Readonly<Props>> = ({ departamentos,
 
           <AccordionContent className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 sm:gap-12 xl:gap-16 items-center justify-center">
             {d.membros.map((m) => (
-              <div key={m._uid} className="flex flex-col items-center gap-5 w-full ">
+              <div
+                key={m._uid}
+                className="flex flex-col items-center gap-5 w-full "
+              >
                 <Image
                   src={m.imagem.filename!}
                   alt={m.nome}
@@ -49,10 +55,13 @@ export const SbEquipeDepartamento: React.FC<Readonly<Props>> = ({ departamentos,
                 <div className="flex flex-col gap-2 items-center justify-center">
                   <h3 className="text-xl">{m.nome}</h3>
                   <p
-                    className={cn("text-center uppercase text-sm font-semibold", {
-                      "text-app-blue-400": variant === "light",
-                      "text-app-blue-900": variant === "dark",
-                    })}
+                    className={cn(
+                      "text-center uppercase text-sm font-semibold",
+                      {
+                        "text-app-blue-400": variant === "light",
+                        "text-app-blue-900": variant === "dark",
+                      },
+                    )}
                   >
                     {m.cargo}
                   </p>

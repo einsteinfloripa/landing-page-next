@@ -12,7 +12,11 @@ export const SbCardGridSection = ({ blok }: Blok<StoryblokCardGridSection>) => {
       {...storyblokEditable(blok)}
       className="relative w-full flex overflow-hidden min-h-screen items-center justify-center"
     >
-      <PaperTextureBackground className="bg-app-neutral-10" opacity={50} version={2} />
+      <PaperTextureBackground
+        className="bg-app-neutral-10"
+        opacity={50}
+        version={2}
+      />
       <div className="relative w-full flex flex-col px-8 sm:px-24 py-24 sm:py-36 lg:gap-20">
         <h1 className="title-4xl text-center">{titulo}</h1>
 

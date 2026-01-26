@@ -4,7 +4,7 @@ import { Blok } from "@/utils/types";
 import RichText from "../atoms/RichText";
 import { StoryblokServerComponent } from "@storyblok/react/rsc";
 
-export const SbAboutSection = ({ blok }: Blok<StoryblokAboutSection>) => {
+export function SbAboutSection({ blok }: Blok<StoryblokAboutSection>) {
   const { titulo, descricao, acoes } = blok;
   return (
     <div className="w-full sm:px-auto px-5 items-center justify-center flex">
@@ -24,4 +24,4 @@ export const SbAboutSection = ({ blok }: Blok<StoryblokAboutSection>) => {
       </section>
     </div>
   );
-};
+}

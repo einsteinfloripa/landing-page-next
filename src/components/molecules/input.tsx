@@ -1,8 +1,8 @@
 import { InputHTMLAttributes } from "react";
 
 type Props = InputHTMLAttributes<HTMLInputElement> & {
-  label: string;
-  error?: string;
+  readonly label: string;
+  readonly error?: string;
 };
 
 export default function Input({ label, error, ...props }: Props) {

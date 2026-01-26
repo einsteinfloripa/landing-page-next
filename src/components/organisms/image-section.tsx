@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import DiagonalStripes from "../molecules/diagonal-stripes";
 import { DonateCta } from "../molecules/donate-cta";
 import useScreenSize from "@/hooks/useScreenSize";
 import { StoryblokAsset } from "@/utils/storyblok-types.generated";
@@ -12,20 +11,16 @@ type ImageSectionProps = Readonly<{
   ctaLink: string;
 }>;
 
-export const ImageSection: React.FC<ImageSectionProps> = ({
-  desktopImage,
-  mobileImage,
-  ctaLink,
-}) => {
+export function ImageSection({ desktopImage, mobileImage, ctaLink }: ImageSectionProps) {
   const { isMobile } = useScreenSize();
 
   const image = isMobile ? mobileImage : desktopImage;
-  const rawSrc = image?.filename || "";  
+  const rawSrc = image?.filename || "";
   const resolvedSrc = rawSrc.startsWith("//")
     ? `https:${rawSrc}`
     : !rawSrc.startsWith("http") && !rawSrc.startsWith("/")
-    ? `/${rawSrc}`
-    : rawSrc;
+      ? `/${rawSrc}`
+      : rawSrc;
 
   return (
     <section className="relative w-full flex items-center justify-center mt-16 lg:mt-28">
@@ -47,4 +42,4 @@ export const ImageSection: React.FC<ImageSectionProps> = ({
       </div>
     </section>
   );
-};
+}

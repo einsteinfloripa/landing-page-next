@@ -32,8 +32,14 @@ export function getWebpVersionFromSBImage(src: string) {
  * @param values - An object containing key-value pairs for interpolation.
  * @returns The interpolated string.
  */
-export function interpolateString(template: string, values: { [key: string]: string }): string {
-  const a = template.replace(/\{(\w+)\}/g, (_, key) => values[key] || `{${key}}`);
+export function interpolateString(
+  template: string,
+  values: { [key: string]: string },
+): string {
+  const a = template.replace(
+    /\{(\w+)\}/g,
+    (_, key) => values[key] || `{${key}}`,
+  );
   console.log(template, a, values);
   return a;
 }

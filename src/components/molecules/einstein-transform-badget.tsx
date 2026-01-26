@@ -2,10 +2,10 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 type EinsteinTransformBadgetProps = {
-  className?: string;
+  readonly className?: string;
 };
 
-export const EinsteinTransformBadget = ({ className }: EinsteinTransformBadgetProps) => {
+export function EinsteinTransformBadget({ className }: EinsteinTransformBadgetProps) {
   return (
     <div className={cn(className)}>
       <div className="size-18 md:size-24 bg-app-blue-500 rounded-full flex items-center justify-center">
@@ -25,4 +25,4 @@ export const EinsteinTransformBadget = ({ className }: EinsteinTransformBadgetPr
       </div>
     </div>
   );
-};
+}

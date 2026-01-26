@@ -4,7 +4,9 @@ import { Blok } from "@/utils/types";
 import PaperTextureBackground from "../molecules/paper-texture-background";
 import { storyblokEditable } from "@storyblok/react";
 
-export const SbProcessoParceriaSection = ({ blok }: Blok<StoryblokProcessoParceriaSection>) => {
+export const SbProcessoParceriaSection = ({
+  blok,
+}: Blok<StoryblokProcessoParceriaSection>) => {
   const { subtitulo, titulo, etapas } = blok;
 
   return (
@@ -12,10 +14,16 @@ export const SbProcessoParceriaSection = ({ blok }: Blok<StoryblokProcessoParcer
       {...storyblokEditable(blok)}
       className="relative w-full flex overflow-hidden min-h-screen items-center justify-center  text-white"
     >
-      <PaperTextureBackground className="bg-app-blue-500 rotate-180" opacity={50} version={2} />
+      <PaperTextureBackground
+        className="bg-app-blue-500 rotate-180"
+        opacity={50}
+        version={2}
+      />
       <div className="relative w-full flex flex-col sm:px-24 py-24 sm:py-36 gap-10 p-5">
         <div className="flex flex-col text-center w-full gap-1 items-center justify-center xl:mb-10 z-10 px-5 sm:px-auto">
-          <h3 className="font-semibold uppercase text-app-neutral-50">{subtitulo}</h3>
+          <h3 className="font-semibold uppercase text-app-neutral-50">
+            {subtitulo}
+          </h3>
           <h1 className="title-4xl">{titulo}</h1>
         </div>
 
@@ -30,7 +38,10 @@ export const SbProcessoParceriaSection = ({ blok }: Blok<StoryblokProcessoParcer
                 <h4 className="text-app-blue-700 title-3xl">{index + 1}</h4>
               </div>
               <h3 className="text-lg font-medium">{e.titulo}</h3>
-              <RichText richText={e.descricao} className={{ paragraph: "text-white" }} />
+              <RichText
+                richText={e.descricao}
+                className={{ paragraph: "text-white" }}
+              />
             </div>
           ))}
         </div>

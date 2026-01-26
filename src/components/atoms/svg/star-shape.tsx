@@ -1,10 +1,14 @@
 type StarShapeProps = {
-  color?: string;
-  width?: string;
-  height?: string;
+  readonly color?: string;
+  readonly width?: string;
+  readonly height?: string;
 };
 
-export const StarShape = ({ color = "#0085C1", width = "186", height = "186" }: StarShapeProps) => {
+export const StarShape = ({
+  color = "#0085C1",
+  width = "186",
+  height = "186",
+}: StarShapeProps) => {
   return (
     <>
       <svg

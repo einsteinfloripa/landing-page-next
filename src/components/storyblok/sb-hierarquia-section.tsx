@@ -6,11 +6,20 @@ import Image from "next/image";
 import PaperTextureBackground from "../molecules/paper-texture-background";
 import { storyblokEditable } from "@storyblok/react";
 
-export const SbHierarquiaSection = ({ blok }: Blok<StoryblokHierarquiaSection>) => {
+export const SbHierarquiaSection = ({
+  blok,
+}: Blok<StoryblokHierarquiaSection>) => {
   const { titulo, descricao, organograma } = blok;
   return (
-    <section {...storyblokEditable(blok)} className="relative w-full flex overflow-hidden">
-      <PaperTextureBackground className="bg-app-neutral-10" opacity={40} version={2} />
+    <section
+      {...storyblokEditable(blok)}
+      className="relative w-full flex overflow-hidden"
+    >
+      <PaperTextureBackground
+        className="bg-app-neutral-10"
+        opacity={40}
+        version={2}
+      />
       <div className="relative w-full max-w-wrapper flex flex-col lg:flex-row sm:px-24 py-24 sm:py-36 justify-between gap-10">
         <div className="flex lg:w-1/2 flex-col gap-8 justify-center xl:mb-10 z-10 px-5 sm:px-auto">
           <h1 className="title-4xl">{titulo}</h1>

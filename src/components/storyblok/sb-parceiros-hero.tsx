@@ -15,7 +15,11 @@ const SbParceirosHero = ({ blok }: Blok<StoryblokParceirosHero>) => {
       {...storyblokEditable(blok)}
       className="relative flex justify-between min-h-screen flex-col"
     >
-      <PaperTextureBackground className="bg-app-blue-500" version={2} opacity={50} />
+      <PaperTextureBackground
+        className="bg-app-blue-500"
+        version={2}
+        opacity={50}
+      />
       <div className="relative flex justify-between min-h-screen flex-col mt-28">
         <div className="relative flex flex-1 items-center justify-center my-10 px-5 sm:px-auto lg:min-h-[70vh]">
           <div className="max-w-[420px] text-center flex flex-col gap-8 text-white">
@@ -42,7 +46,11 @@ const SbParceirosHero = ({ blok }: Blok<StoryblokParceirosHero>) => {
 
             <div className="flex flex-row flex-wrap gap-4 items-center justify-center">
               {(acoes ?? []).map((acao, index) => (
-                <SbButtonNav key={index} blok={acao} className="min-w-[150px]" />
+                <SbButtonNav
+                  key={index}
+                  blok={acao}
+                  className="min-w-[150px]"
+                />
               ))}
             </div>
           </div>
@@ -77,9 +85,14 @@ const SbParceirosHero = ({ blok }: Blok<StoryblokParceirosHero>) => {
             Somos uma{" "}
             <div className="inline-block relative w-[64px]">
               <span>ONG</span>
-              <Image src={CircleDraw} alt="" className="absolute min-w-[72px] -top-2 -left-2" />
+              <Image
+                src={CircleDraw}
+                alt=""
+                className="absolute min-w-[72px] -top-2 -left-2"
+              />
             </div>
-            formada por estudantes e dedicada a transformar sonhos em realidade. Nossa missão é{" "}
+            formada por estudantes e dedicada a transformar sonhos em realidade.
+            Nossa missão é{" "}
             <span
               className="relative font-bold text-4xl text-app-blue-500"
               style={{
@@ -89,8 +102,10 @@ const SbParceirosHero = ({ blok }: Blok<StoryblokParceirosHero>) => {
               apoiar jovens de baixa renda
             </span>
             , abrindo portas para que{" "}
-            <span className="text-app-yellow-500">conquistem seu lugar na universidade</span> e
-            possam construir um futuro brilhante.
+            <span className="text-app-yellow-500">
+              conquistem seu lugar na universidade
+            </span>{" "}
+            e possam construir um futuro brilhante.
           </h1>
 
           <div className="absolute left-[60%] lg:size-36 md:size-32 size-24 rounded-full bg-app-violet-400 hover:bg-app-violet-500 transition-all duration-150 relative flex items-center justify-center shadow-custom">

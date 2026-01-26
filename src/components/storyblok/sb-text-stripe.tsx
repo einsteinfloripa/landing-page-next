@@ -20,7 +20,10 @@ const SbTextStripe = ({ blok }: Blok<StoryblokTextStripe>) => {
         }
       >
         {Array.from({ length: 20 }).map((_, i) => (
-          <span key={i} className="mx-4 text-white text-3xl font-semibold font-anton">
+          <span
+            key={i}
+            className="mx-4 text-white text-3xl font-semibold font-anton"
+          >
             {texto}
           </span>
         ))}

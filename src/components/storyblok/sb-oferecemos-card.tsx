@@ -4,25 +4,16 @@ import Image from "next/image";
 import { Blok } from "@/utils/types";
 import { storyblokEditable } from "@storyblok/react";
 import { getWebpVersionFromSBImage } from "@/lib/utils";
-import type { StoryblokAsset, StoryblokRichtext } from "@/utils/storyblok-types.generated";
+import type { StoryblokOferecemosCard, StoryblokRichtext } from "@/utils/storyblok-types.generated";
 import RichText from "@/components/atoms/RichText";
-
-interface StoryblokOferecemosCard {
-  icone?: StoryblokAsset;
-  titulo: string;
-  descricao?: string;
-  imagem?: StoryblokAsset;
-  component: "oferecemos-card";
-  _uid: string;
-  [k: string]: any;
-}
 
 type Props = Blok<StoryblokOferecemosCard>;
 
-const SbOferecemosCard = ({ blok }: Props) => {
-  const { icone } = blok;
-  const safeTitulo = (blok as any).titulo || (blok as any).Titulo || (blok as any).title || "";
-  const rawDescricao = (blok as any).Descricao || "";
+function SbOferecemosCard({ blok }: Props) {
+  const icone = blok.icone || blok["Icone"];
+  // Algumas vezes o Storyblok retorna o campo com a primeira letra maiúscula ou minuscula dependendo da versão do componente
+  const safeTitulo = blok.Titulo || blok["titulo"] || "";
+  const rawDescricao = blok.Descricao || blok["descricao"] || "";
   const isRichTextDescricao =
     typeof rawDescricao === "object" && rawDescricao && "content" in rawDescricao;
 
@@ -60,6 +51,6 @@ const SbOferecemosCard = ({ blok }: Props) => {
       </div>
     </div>
   );
-};
+}
 
 export default SbOferecemosCard;

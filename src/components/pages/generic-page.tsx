@@ -2,7 +2,7 @@ import { Blok } from "@/utils/types";
 import { StoryblokPagina } from "@/utils/storyblok-types.generated";
 import { storyblokEditable, StoryblokServerComponent } from "@storyblok/react/rsc";
 
-const GenericPage = ({ blok }: Blok<StoryblokPagina>) => {
+function GenericPage({ blok }: Blok<StoryblokPagina>) {
   return (
     <main {...storyblokEditable(blok)}>
       {blok.body?.map((component, index) => (
@@ -10,6 +10,6 @@ const GenericPage = ({ blok }: Blok<StoryblokPagina>) => {
       ))}
     </main>
   );
-};
+}
 
 export default GenericPage;

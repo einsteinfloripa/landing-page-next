@@ -18,7 +18,7 @@ const imagePositions = [
   "absolute hidden lg:block top-[10%] right-[10%] -rotate-2",
 ];
 
-const SbAboutHero = ({ blok }: Blok<StoryblokAboutHero>) => {
+function SbAboutHero({ blok }: Blok<StoryblokAboutHero>) {
   const { titulo, descricao, imagens } = blok;
   return (
     <section
@@ -66,6 +66,6 @@ const SbAboutHero = ({ blok }: Blok<StoryblokAboutHero>) => {
       />
     </section>
   );
-};
+}
 
 export default SbAboutHero;

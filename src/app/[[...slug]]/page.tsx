@@ -23,7 +23,11 @@ async function getProps(slug: string[]) {
     .catch(notFound);
 }
 
-export default async function DynamicPage({ params }: { params: Promise<{ slug: string[] }> }) {
+export default async function DynamicPage({
+  params,
+}: {
+  readonly params: Promise<{ slug?: string[] }>;
+}) {
   const { slug: slugParams } = await params;
   const slug = slugParams && Array.isArray(slugParams) ? slugParams : ["home"];
   const { body, header, footer } = await getProps(slug);

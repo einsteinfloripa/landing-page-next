@@ -11,7 +11,9 @@ const SbFraseImpacto = ({ blok }: Blok<StoryblokFraseImpactoSection>) => {
           <span className="absolute left-0 -ml-10 top-8 md:left-4 md:-ml-20 md:top-12 text-[80px] md:text-[178px] font-anton text-app-blue-100 -translate-y-1/2 z-0">
             “
           </span>
-          <h1 className="text-2xl md:text-5xl font-kalam relative z-10">{title}</h1>
+          <h1 className="text-2xl md:text-5xl font-kalam relative z-10">
+            {title}
+          </h1>
           <span className="absolute -right-10 top-12  md:-right-14 md:top-24 text-[80px] md:text-[178px] font-anton text-app-blue-100 -translate-y-1/2 z-0">
             ”
           </span>

@@ -5,7 +5,10 @@ import { notFound } from "next/navigation";
 import ThreeArrowsDraw from "@/assets/ilustrations/three-arrows-draw.svg";
 import Image from "next/image";
 import SbHeader from "@/components/storyblok/sb-header";
-import { StoryblokFooter, StoryblokHeader } from "@/utils/storyblok-types.generated";
+import {
+  StoryblokFooter,
+  StoryblokHeader,
+} from "@/utils/storyblok-types.generated";
 import SbFooter from "@/components/storyblok/sb-footer";
 
 async function getProps() {
@@ -27,7 +30,11 @@ export default async function NotFound() {
     <>
       {header && <SbHeader blok={header} />}
       <section className="relative w-full flex overflow-hidden min-h-screen items-center justify-center text-white sm:px-auto px-5">
-        <PaperTextureBackground className="bg-white" opacity={100} version={2} />
+        <PaperTextureBackground
+          className="bg-white"
+          opacity={100}
+          version={2}
+        />
         <div className="flex items-center justify-center flex-col gap-8">
           <div className="relative w-fit">
             <Headline

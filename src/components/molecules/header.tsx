@@ -1,5 +1,5 @@
 "use client";
-import { cn, getUrlFromSBLink, getWebpVersionFromSBImage } from "@/lib/utils";
+import { getUrlFromSBLink, getWebpVersionFromSBImage } from "@/lib/utils";
 import {
   StoryblokAsset,
   StoryblokHeader,
@@ -13,15 +13,15 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 type HeaderProps = {
-  links: {
+  readonly links: {
     link: StoryblokMultilink;
     title: string;
   }[];
-  logo: StoryblokAsset;
-  acoes: StoryblokHeader["acoes"];
+  readonly logo: StoryblokAsset;
+  readonly acoes: StoryblokHeader["acoes"];
 };
 
-const Header = ({ links, logo, acoes }: HeaderProps) => {
+function Header({ links, logo, acoes }: HeaderProps) {
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -165,6 +165,6 @@ const Header = ({ links, logo, acoes }: HeaderProps) => {
       )}
     </>
   );
-};
+}
 
 export default Header;

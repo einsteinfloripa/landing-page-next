@@ -2,9 +2,9 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 type StripeProps = {
-  className: string;
+  readonly className: string;
 };
-const Stripe = ({ className }: StripeProps) => {
+function Stripe({ className }: StripeProps) {
   return (
     <div
       className={cn(
@@ -17,14 +17,15 @@ const Stripe = ({ className }: StripeProps) => {
       ))}
     </div>
   );
-};
-const DiagonalStripes = () => {
+}
+
+function DiagonalStripes() {
   return (
     <>
       <Stripe className="bg-app-blue-100 lg:-rotate-3 -rotate-6" />
       <Stripe className="bg-app-blue-500 rotate-6" />
     </>
   );
-};
+}
 
 export default DiagonalStripes;

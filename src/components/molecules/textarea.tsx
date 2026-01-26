@@ -1,8 +1,8 @@
 import { TextareaHTMLAttributes } from "react";
 
 type Props = TextareaHTMLAttributes<HTMLTextAreaElement> & {
-  label: string;
-  error?: string;
+  readonly label: string;
+  readonly error?: string;
 };
 
 export default function Textarea({ label, error, ...props }: Props) {

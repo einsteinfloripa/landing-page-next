@@ -4,9 +4,9 @@ import PaperTexture2 from "@/assets/paper-texture-2.png";
 import { cn } from "@/lib/utils";
 
 interface Props {
-  className?: string;
-  opacity?: number;
-  version?: 1 | 2;
+  readonly className?: string;
+  readonly opacity?: number;
+  readonly version?: 1 | 2;
 }
 
 /**
@@ -15,7 +15,7 @@ interface Props {
  *
  * Existem 2 imagens disponíveis: versão 1 e 2. Use a propriedade `version` para escolher entre elas.
  */
-const PaperTextureBackground: React.FC<Props> = ({ opacity, className, version }) => {
+function PaperTextureBackground({ opacity, className, version }: Props) {
   const image = version === 2 ? PaperTexture2 : PaperTexture1;
   return (
     <div className={cn("absolute inset-[-2px] -z-10", className)}>
@@ -30,6 +30,6 @@ const PaperTextureBackground: React.FC<Props> = ({ opacity, className, version }
       />
     </div>
   );
-};
+}
 
 export default PaperTextureBackground;

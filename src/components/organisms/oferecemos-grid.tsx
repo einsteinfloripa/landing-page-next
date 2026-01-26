@@ -1,9 +1,10 @@
 "use client";
 
 import SbOferecemosCard from "@/components/storyblok/sb-oferecemos-card";
+import { StoryblokOferecemosCard } from "@/utils/storyblok-types.generated";
 
 type Props = {
-  cards: any[];
+  readonly cards: StoryblokOferecemosCard[];
 };
 
 export default function OferecemosGrid({ cards }: Props) {

@@ -11,7 +11,11 @@ const SbJoinUsSection = ({ blok }: Blok<StoryblokJoinUsSection>) => {
 
   return (
     <section {...storyblokEditable(blok)} className="relative w-full flex">
-      <PaperTextureBackground className="bg-app-dark-blue-500" version={2} opacity={100} />
+      <PaperTextureBackground
+        className="bg-app-dark-blue-500"
+        version={2}
+        opacity={100}
+      />
       <div className="text-app-neutral-900 px-5 sm:px-24 py-24 sm:py-36 w-full gap-28 flex flex-col overflow-hidden">
         <h1 className="title-4xl text-white text-center">
           Faça parte da transform
@@ -34,14 +38,17 @@ const SbJoinUsSection = ({ blok }: Blok<StoryblokJoinUsSection>) => {
                 className="flex w-full flex-col justify-center items-center gap-8 p-5 pb-16 bg-white border border-black rounded-lg"
               >
                 <div className="relative w-full h-[300px] flex items-end">
-                  <div style={{ backgroundColor: c.cor }} className="w-full h-[222px]"></div>
+                  <div
+                    style={{ backgroundColor: c.cor }}
+                    className="w-full h-[222px]"
+                  ></div>
                   {(() => {
                     const rawSrc = c.image.filename!;
                     const src = rawSrc.startsWith("//")
                       ? `https:${rawSrc}`
                       : !rawSrc.startsWith("http") && !rawSrc.startsWith("/")
-                      ? `/${rawSrc}`
-                      : rawSrc;
+                        ? `/${rawSrc}`
+                        : rawSrc;
                     return (
                       <Image
                         src={src}
@@ -63,8 +70,12 @@ const SbJoinUsSection = ({ blok }: Blok<StoryblokJoinUsSection>) => {
                     acao.component === "button" ? (
                       <SbButton key={index} blok={acao} />
                     ) : (
-                      <SbButtonNav key={index} blok={acao} style={{ backgroundColor: c.cor }} />
-                    )
+                      <SbButtonNav
+                        key={index}
+                        blok={acao}
+                        style={{ backgroundColor: c.cor }}
+                      />
+                    ),
                   )}
                 </div>
               </li>
