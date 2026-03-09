@@ -110,35 +110,37 @@ function Header({ links, logo, acoes, faixaDestaque }: HeaderProps) {
           </button>
         </div>
 
-        {faixaDestaque && faixaDestaque.length > 0 && isFaixaDestaqueVisible && (
-          <div className="w-full bg-app-yellow-500 py-1.5 px-6 lg:px-10 text-sm relative">
-            <div className="flex flex-row items-center text-xs sm:text-sm justify-center gap-2 sm:gap-3 text-app-neutral-900 w-full max-w-[85%] sm:max-w-wrapper mx-auto text-center flex-wrap">
-              <div className="flex flex-row items-center gap-2 sm:gap-3 justify-center">
-                <div className="hidden sm:block">
-                  <PulsingDot color="green" />
+        {faixaDestaque &&
+          faixaDestaque.length > 0 &&
+          isFaixaDestaqueVisible && (
+            <div className="w-full bg-app-yellow-500 py-1.5 px-6 lg:px-10 text-sm relative">
+              <div className="flex flex-row items-center text-xs sm:text-sm justify-center gap-2 sm:gap-3 text-app-neutral-900 w-full max-w-[85%] sm:max-w-wrapper mx-auto text-center flex-wrap">
+                <div className="flex flex-row items-center gap-2 sm:gap-3 justify-center">
+                  <div className="hidden sm:block">
+                    <PulsingDot color="green" />
+                  </div>
+                  <span className="line-clamp-1 sm:line-clamp-none text-left">
+                    {faixaDestaque[0].label}
+                  </span>
                 </div>
-                <span className="line-clamp-1 sm:line-clamp-none text-left">
-                  {faixaDestaque[0].label}
-                </span>
+                {faixaDestaque[0].link && (
+                  <Link
+                    href={getUrlFromSBLink(faixaDestaque[0].link)}
+                    className="font-semibold underline hover:no-underline text-app-neutral-900 whitespace-nowrap"
+                  >
+                    Saiba mais
+                  </Link>
+                )}
               </div>
-              {faixaDestaque[0].link && (
-                <Link
-                  href={getUrlFromSBLink(faixaDestaque[0].link)}
-                  className="font-semibold underline hover:no-underline text-app-neutral-900 whitespace-nowrap"
-                >
-                  Saiba mais
-                </Link>
-              )}
+              <button
+                onClick={() => setIsFaixaDestaqueVisible(false)}
+                className="absolute right-4 top-1/2 -translate-y-1/2 p-1 rounded-full hover:bg-black/10 transition-colors sm:hidden"
+                aria-label="Fechar aviso"
+              >
+                <X weight="bold" size={14} />
+              </button>
             </div>
-            <button
-              onClick={() => setIsFaixaDestaqueVisible(false)}
-              className="absolute right-4 top-1/2 -translate-y-1/2 p-1 rounded-full hover:bg-black/10 transition-colors sm:hidden"
-              aria-label="Fechar aviso"
-            >
-              <X weight="bold" size={14} />
-            </button>
-          </div>
-        )}
+          )}
       </motion.nav>
 
       {/* Mobile menu (aberto) */}
