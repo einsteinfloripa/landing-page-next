@@ -3,7 +3,7 @@ import { Blok } from "@/utils/types";
 import Header from "../molecules/header";
 
 const SbHeader = ({ blok }: Blok<StoryblokHeader>) => {
-  const { logo, links, acoes } = blok;
+  const { logo, links, acoes, faixaDestaque } = blok;
 
   return (
     <Header
@@ -13,6 +13,7 @@ const SbHeader = ({ blok }: Blok<StoryblokHeader>) => {
       }))}
       logo={logo}
       acoes={acoes}
+      faixaDestaque={faixaDestaque}
     />
   );
 };

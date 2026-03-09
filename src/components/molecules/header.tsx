@@ -4,7 +4,9 @@ import {
   StoryblokAsset,
   StoryblokHeader,
   StoryblokMultilink,
+  StoryblokLabelLink,
 } from "@/utils/storyblok-types.generated";
+import { PulsingDot } from "../atoms/pulsing-dot";
 import { List, X } from "@phosphor-icons/react/dist/ssr";
 import { StoryblokServerComponent } from "@storyblok/react/rsc";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
@@ -19,12 +21,14 @@ type HeaderProps = {
   }[];
   readonly logo: StoryblokAsset;
   readonly acoes: StoryblokHeader["acoes"];
+  readonly faixaDestaque?: StoryblokLabelLink[];
 };
 
-function Header({ links, logo, acoes }: HeaderProps) {
+function Header({ links, logo, acoes, faixaDestaque }: HeaderProps) {
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isFaixaDestaqueVisible, setIsFaixaDestaqueVisible] = useState(true);
 
   // Bloqueia o scroll do body quando o menu mobile está aberto
   useEffect(() => {
@@ -61,7 +65,7 @@ function Header({ links, logo, acoes }: HeaderProps) {
           duration: 0.35,
           ease: "easeInOut",
         }}
-        className="fixed z-50 w-full backdrop-blur-md bg-white/20"
+        className="fixed z-50 w-full backdrop-blur-md bg-white/20 flex flex-col items-center"
       >
         <div className="flex items-center justify-between w-full px-6 lg:px-10 py-4 max-w-wrapper">
           <Link href="/">
@@ -105,6 +109,36 @@ function Header({ links, logo, acoes }: HeaderProps) {
             <List color="#001840" weight="regular" size={20} />
           </button>
         </div>
+
+        {faixaDestaque && faixaDestaque.length > 0 && isFaixaDestaqueVisible && (
+          <div className="w-full bg-app-yellow-500 py-1.5 px-6 lg:px-10 text-sm relative">
+            <div className="flex flex-row items-center text-xs sm:text-sm justify-center gap-2 sm:gap-3 text-app-neutral-900 w-full max-w-[85%] sm:max-w-wrapper mx-auto text-center flex-wrap">
+              <div className="flex flex-row items-center gap-2 sm:gap-3 justify-center">
+                <div className="hidden sm:block">
+                  <PulsingDot color="green" />
+                </div>
+                <span className="line-clamp-1 sm:line-clamp-none text-left">
+                  {faixaDestaque[0].label}
+                </span>
+              </div>
+              {faixaDestaque[0].link && (
+                <Link
+                  href={getUrlFromSBLink(faixaDestaque[0].link)}
+                  className="font-semibold underline hover:no-underline text-app-neutral-900 whitespace-nowrap"
+                >
+                  Saiba mais
+                </Link>
+              )}
+            </div>
+            <button
+              onClick={() => setIsFaixaDestaqueVisible(false)}
+              className="absolute right-4 top-1/2 -translate-y-1/2 p-1 rounded-full hover:bg-black/10 transition-colors sm:hidden"
+              aria-label="Fechar aviso"
+            >
+              <X weight="bold" size={14} />
+            </button>
+          </div>
+        )}
       </motion.nav>
 
       {/* Mobile menu (aberto) */}

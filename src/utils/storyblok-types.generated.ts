@@ -2,12 +2,7 @@
 // DO NOT MODIFY THIS FILE BY HAND.
 import type { ISbStoryData } from "@storyblok/js";
 
-type StoryblokPropertyType =
-  | "asset"
-  | "multiasset"
-  | "multilink"
-  | "table"
-  | "richtext";
+type StoryblokPropertyType = "asset" | "multiasset" | "multilink" | "table" | "richtext";
 interface StoryblokAsset {
   alt: string | null;
   copyright: string | null;
@@ -188,10 +183,7 @@ export interface StoryblokButtonNav {
 export interface StoryblokCardAmigosEinstein {
   titulo: string;
   descricao: StoryblokRichtext;
-  link: Exclude<
-    StoryblokMultilink,
-    { linktype?: "email" } | { linktype?: "asset" }
-  >;
+  link: Exclude<StoryblokMultilink, { linktype?: "email" } | { linktype?: "asset" }>;
   cor: "#00283A" | "#005E89" | "#0079B0" | "#54ADD5" | "#B0D9EC" | "#74C3CC";
   corTexto: "light" | "dark";
   component: "card-amigos-einstein";
@@ -396,6 +388,7 @@ export interface StoryblokHeader {
   logo: StoryblokAsset;
   links: StoryblokButtonNav[];
   acoes?: StoryblokButtonNav[];
+  faixaDestaque?: StoryblokLabelLink[];
   component: "header";
   _uid: string;
   [k: string]: any;
@@ -428,11 +421,7 @@ export interface StoryblokJoinUsSection {
 
 export interface StoryblokLabelLink {
   label: string;
-  link?: Exclude<
-    StoryblokMultilink,
-    { linktype?: "email" } | { linktype?: "asset" }
-  >;
-  disabled?: boolean;
+  link?: Exclude<StoryblokMultilink, { linktype?: "email" } | { linktype?: "asset" }>;
   component: "label+link";
   _uid: string;
   [k: string]: any;
@@ -455,10 +444,7 @@ export interface StoryblokMainHero {
   cardSubtitulo: string;
   imagem: StoryblokAsset;
   imagemMobile: StoryblokAsset;
-  linkDaNossaDoacao: Exclude<
-    StoryblokMultilink,
-    { linktype?: "email" } | { linktype?: "asset" }
-  >;
+  linkDaNossaDoacao: Exclude<StoryblokMultilink, { linktype?: "email" } | { linktype?: "asset" }>;
   component: "main-hero";
   _uid: string;
   [k: string]: any;
@@ -603,10 +589,7 @@ export interface StoryblokSingleTestimonalSection {
 
 export interface StoryblokSocialButton {
   image?: StoryblokAsset;
-  link?: Exclude<
-    StoryblokMultilink,
-    { linktype?: "email" } | { linktype?: "asset" }
-  >;
+  link?: Exclude<StoryblokMultilink, { linktype?: "email" } | { linktype?: "asset" }>;
   component: "social-button";
   _uid: string;
   [k: string]: any;
