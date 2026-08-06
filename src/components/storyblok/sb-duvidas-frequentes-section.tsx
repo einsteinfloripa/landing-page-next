@@ -42,21 +42,17 @@ export const SbDuvidasFrequentesSection = ({
               className="absolute -bottom-[30%] -left-[30%] max-w-[224px] max-h-[27px] w-[30vw] block"
             />
           </div>
-          <RichText
-            className={{ container: "max-w-[620px]" }}
-            richText={subtitulo}
-          />
         </div>
 
         {duvidas && duvidas.length > 0 && (
-          <Accordion type="multiple">
+          <Accordion type="multiple" className="my-8">
             {duvidas.map((d) => (
               <AccordionItem
-                key={d._uid}
-                value={d._uid}
-                className="border-y border-gray-200 hover:bg-app-neutral-50/20"
+              key={d._uid}
+              value={d._uid}
+              className="border-y border-gray-200 hover:bg-app-neutral-50/20"
               >
-                <AccordionTrigger className="flex justify-between w-full p-10">
+                <AccordionTrigger className="flex justify-between w-full p-6">
                   <p className="text-lg font-medium text-left">{d.pergunta}</p>
                 </AccordionTrigger>
 
@@ -67,6 +63,12 @@ export const SbDuvidasFrequentesSection = ({
             ))}
           </Accordion>
         )}
+        <div className="flex flex-col text-center w-full gap-8 items-center justify-center xl:mb-10 z-10 px-5 sm:px-auto">
+          <RichText
+            className={{ container: "max-w-[620px]" }}
+            richText={subtitulo}
+          />
+        </div>
       </div>
     </section>
   );
