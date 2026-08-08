@@ -128,6 +128,10 @@ O escopo do projeto inclui o desenvolvimento completo do site institucional e in
    ```bash
    npm run dev
    ```
+6. Rode o projeto no StoryBlock
+   ```bash
+   nnpm run dev -- --experimental-https
+   ```
 
 ## Notas para membros futuros
 
