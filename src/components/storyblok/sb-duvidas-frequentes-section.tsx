@@ -48,9 +48,9 @@ export const SbDuvidasFrequentesSection = ({
           <Accordion type="multiple" className="my-8">
             {duvidas.map((d) => (
               <AccordionItem
-              key={d._uid}
-              value={d._uid}
-              className="border-y border-gray-200 hover:bg-app-neutral-50/20"
+                key={d._uid}
+                value={d._uid}
+                className="border-y border-gray-200 hover:bg-app-neutral-50/20"
               >
                 <AccordionTrigger className="flex justify-between w-full p-6">
                   <p className="text-lg font-medium text-left">{d.pergunta}</p>
