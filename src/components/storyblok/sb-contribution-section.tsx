@@ -35,33 +35,36 @@ const SbContributionSection = ({
         <div className="flex flex-col gap-10 flex-shrink-1">
           <h1 className="title-4xl lg:w-3/5">{titulo}</h1>
           {subtitulo && <RichText richText={subtitulo} />}
-          <div className="flex items-center w-full md:w-4/5 gap-4">
-            {(() => {
-              const rawSrc = qrCode.filename!;
-              const src = rawSrc.startsWith("//")
-                ? `https:${rawSrc}`
-                : !rawSrc.startsWith("http") && !rawSrc.startsWith("/")
-                  ? `/${rawSrc}`
-                  : rawSrc;
-              return (
-                <Image
-                  className="hidden md:block rounded-lg h-full border border-black"
-                  src={src}
-                  alt={qrCode.alt || ""}
-                  width={110}
-                  height={110}
-                />
-              );
-            })()}
 
-            <div className="flex flex-col items-start gap-4 md:gap-0">
-              <RichText richText={qrCodeDescricao} />
-              <div className="flex flex-wrap gap-4">
-                <Button className="md:hidden">Copiar chave PIX</Button>
-                <SbButtonNav blok={botaoPix[0]} />
+          {qrCode?.filename && qrCodeDescricao && botaoPix?.length > 0 && (
+            <div className="flex items-center w-full md:w-4/5 gap-4">
+              {(() => {
+                const rawSrc = qrCode.filename!;
+                const src = rawSrc.startsWith("//")
+                  ? `https:${rawSrc}`
+                  : !rawSrc.startsWith("http") && !rawSrc.startsWith("/")
+                    ? `/${rawSrc}`
+                    : rawSrc;
+                return (
+                  <Image
+                    className="hidden md:block rounded-lg h-full border border-black"
+                    src={src}
+                    alt={qrCode.alt || ""}
+                    width={110}
+                    height={110}
+                  />
+                );
+              })()}
+
+              <div className="flex flex-col items-start gap-4 md:gap-0">
+                <RichText richText={qrCodeDescricao} />
+                <div className="flex flex-wrap gap-4">
+                  <Button className="md:hidden">Copiar chave PIX</Button>
+                  <SbButtonNav blok={botaoPix[0]} />
+                </div>
               </div>
             </div>
-          </div>
+          )}
 
           <div className="hidden md:flex flex-col mt-4 gap-8 w-full max-w-[477px]">
             <RichText richText={descricao} />
