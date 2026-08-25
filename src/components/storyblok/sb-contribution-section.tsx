@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "../atoms/button";
 import { StarShape } from "../atoms/svg/star-shape";
 import { StoryblokContributionSection } from "@/utils/storyblok-types.generated";
 import { Blok } from "@/utils/types";
@@ -13,8 +12,6 @@ const SbContributionSection = ({
 }: Blok<StoryblokContributionSection>) => {
   const {
     titulo,
-    qrCode,
-    qrCodeDescricao,
     botaoNav,
     descricao,
     acoes,

@@ -1,13 +1,12 @@
 "use client";
 
 import { StoryblokComoDoarSection } from "@/utils/storyblok-types.generated";
-import RichText from "../atoms/RichText";
 import { Blok } from "@/utils/types";
 import PaperTextureBackground from "../molecules/paper-texture-background";
 import { storyblokEditable } from "@storyblok/react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { Check, ArrowRight, ClipboardList, CreditCard, Heart, Star } from "lucide-react";
+import { Check, ArrowRight, ClipboardList, Heart, Star } from "lucide-react";
 export const SbComoDoarSection = ({ blok }: Blok<StoryblokComoDoarSection>) => {
   const {
     titulo,
@@ -92,8 +91,12 @@ export const SbComoDoarSection = ({ blok }: Blok<StoryblokComoDoarSection>) => {
           <div className="flex-1 flex flex-col w-full">
             <div className="p-5 max-w-400 rounded-xl border border-app-yellow-900 bg-app-yellow-500 text-app-neutral-700 flex flex-col gap-6">
               <div className="flex flex-col items-center gap-2">
-                <h2 className="title-4xl text-center">Seja um Amigo do Einstein</h2>
-                <h3 className="title-3xl text-center">FAZENDO DOAÇÕES RECORRENTES</h3>
+                <h2 className="title-4xl text-center">
+                  Seja um Amigo do Einstein
+                </h2>
+                <h3 className="title-3xl text-center">
+                  FAZENDO DOAÇÕES RECORRENTES
+                </h3>
               </div>
 
               <p className="title-xl text-left pl-1">Escolha como:</p>
@@ -102,15 +105,19 @@ export const SbComoDoarSection = ({ blok }: Blok<StoryblokComoDoarSection>) => {
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                   <div className="flex items-center gap-4">
                     <Image
-                      src='/icons/credit-card.svg'
+                      src="/icons/credit-card.svg"
                       width={40}
                       height={40}
-                      alt='Ícone de cartão de crédito'
+                      alt="Ícone de cartão de crédito"
                       className="shrink-0"
                     />
                     <div className="flex flex-col">
-                      <h4 className="font-bold text-lg leading-tight">Via Cartão de Crédito</h4>
-                      <p className="text-sm opacity-90">Sua doação transforma vidas!</p>
+                      <h4 className="font-bold text-lg leading-tight">
+                        Via Cartão de Crédito
+                      </h4>
+                      <p className="text-sm opacity-90">
+                        Sua doação transforma vidas!
+                      </p>
                     </div>
                   </div>
                   <a
@@ -125,22 +132,36 @@ export const SbComoDoarSection = ({ blok }: Blok<StoryblokComoDoarSection>) => {
 
                 <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-3 sm:gap-2 text-sm font-medium mt-2">
                   <div className="flex flex-row sm:flex-col items-center gap-4 sm:gap-3 w-full sm:flex-1 text-left sm:text-center">
-                    <div className="w-8 h-8 sm:w-7 sm:h-7 shrink-0 bg-app-blue-700 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-sm">1</div>
-                    <p className="leading-tight">Acesse o link<br className="hidden sm:block" /> de pagamento</p>
+                    <div className="w-8 h-8 sm:w-7 sm:h-7 shrink-0 bg-app-blue-700 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-sm">
+                      1
+                    </div>
+                    <p className="leading-tight">
+                      Acesse o link
+                      <br className="hidden sm:block" /> de pagamento
+                    </p>
                   </div>
 
                   <ArrowRight className="w-5 h-5 opacity-40 shrink-0 rotate-90 sm:rotate-0" />
 
                   <div className="flex flex-row sm:flex-col items-center gap-4 sm:gap-3 w-full sm:flex-1 text-left sm:text-center">
-                    <div className="w-8 h-8 sm:w-7 sm:h-7 shrink-0 bg-app-blue-700 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-sm">2</div>
-                    <p className="leading-tight">Selecione <br className="hidden sm:block" /> o valor</p>
+                    <div className="w-8 h-8 sm:w-7 sm:h-7 shrink-0 bg-app-blue-700 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-sm">
+                      2
+                    </div>
+                    <p className="leading-tight">
+                      Selecione <br className="hidden sm:block" /> o valor
+                    </p>
                   </div>
 
                   <ArrowRight className="w-5 h-5 opacity-40 shrink-0 rotate-90 sm:rotate-0" />
 
                   <div className="flex flex-row sm:flex-col items-center gap-4 sm:gap-3 w-full sm:flex-1 text-left sm:text-center">
-                    <div className="w-8 h-8 sm:w-7 sm:h-7 shrink-0 bg-app-blue-700 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-sm">3</div>
-                    <p className="leading-tight">Preencha o forms<br className="hidden sm:block" /> de benefícios abaixo</p>
+                    <div className="w-8 h-8 sm:w-7 sm:h-7 shrink-0 bg-app-blue-700 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-sm">
+                      3
+                    </div>
+                    <p className="leading-tight">
+                      Preencha o forms
+                      <br className="hidden sm:block" /> de benefícios abaixo
+                    </p>
                   </div>
                 </div>
               </div>
@@ -148,10 +169,10 @@ export const SbComoDoarSection = ({ blok }: Blok<StoryblokComoDoarSection>) => {
               <div className="flex flex-col gap-6 p-5 sm:p-6 bg-white/40 rounded-xl border border-black/5 shadow-sm">
                 <div className="flex items-center gap-4">
                   <Image
-                    src='/icons/pix.svg'
+                    src="/icons/pix.svg"
                     width={40}
                     height={40}
-                    alt='Ícone de Pix'
+                    alt="Ícone de Pix"
                     className="shrink-0"
                   />
                   <h4 className="font-bold text-lg leading-tight">Via Pix</h4>
@@ -159,22 +180,37 @@ export const SbComoDoarSection = ({ blok }: Blok<StoryblokComoDoarSection>) => {
 
                 <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-3 sm:gap-2 text-sm font-medium mt-2">
                   <div className="flex flex-row sm:flex-col items-center gap-4 sm:gap-3 w-full sm:flex-1 text-left sm:text-center">
-                    <div className="w-8 h-8 sm:w-7 sm:h-7 shrink-0 bg-app-blue-700 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-sm">1</div>
-                    <p className="leading-tight">Leia o QRCode<br className="hidden sm:block" /> ao lado</p>
+                    <div className="w-8 h-8 sm:w-7 sm:h-7 shrink-0 bg-app-blue-700 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-sm">
+                      1
+                    </div>
+                    <p className="leading-tight">
+                      Leia o QRCode
+                      <br className="hidden sm:block" /> ao lado
+                    </p>
                   </div>
 
                   <ArrowRight className="w-5 h-5 opacity-40 shrink-0 rotate-90 sm:rotate-0" />
 
                   <div className="flex flex-row sm:flex-col items-center gap-4 sm:gap-3 w-full sm:flex-1 text-left sm:text-center">
-                    <div className="w-8 h-8 sm:w-7 sm:h-7 shrink-0 bg-app-blue-700 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-sm">2</div>
-                    <p className="leading-tight">Escolha Pix<br className="hidden sm:block" /> recorrente</p>
+                    <div className="w-8 h-8 sm:w-7 sm:h-7 shrink-0 bg-app-blue-700 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-sm">
+                      2
+                    </div>
+                    <p className="leading-tight">
+                      Escolha Pix
+                      <br className="hidden sm:block" /> recorrente
+                    </p>
                   </div>
 
                   <ArrowRight className="w-5 h-5 opacity-40 shrink-0 rotate-90 sm:rotate-0" />
 
                   <div className="flex flex-row sm:flex-col items-center gap-4 sm:gap-3 w-full sm:flex-1 text-left sm:text-center">
-                    <div className="w-8 h-8 sm:w-7 sm:h-7 shrink-0 bg-app-blue-700 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-sm">3</div>
-                    <p className="leading-tight">Preencha o forms<br className="hidden sm:block" /> de benefícios abaixo</p>
+                    <div className="w-8 h-8 sm:w-7 sm:h-7 shrink-0 bg-app-blue-700 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-sm">
+                      3
+                    </div>
+                    <p className="leading-tight">
+                      Preencha o forms
+                      <br className="hidden sm:block" /> de benefícios abaixo
+                    </p>
                   </div>
                 </div>
               </div>
@@ -184,14 +220,17 @@ export const SbComoDoarSection = ({ blok }: Blok<StoryblokComoDoarSection>) => {
                   <div className="flex items-start gap-3 text-sm sm:text-base text-app-neutral-800">
                     <Heart className="w-5 h-5 mt-0.5 shrink-0 text-app-blue-700" />
                     <p className="leading-tight">
-                      <span className="font-semibold">Pronto!</span> Todos os meses você apoiará nosso projeto sem esforço.
+                      <span className="font-semibold">Pronto!</span> Todos os
+                      meses você apoiará nosso projeto sem esforço.
                     </p>
                   </div>
 
                   <div className="flex items-start gap-3 text-sm sm:text-base text-app-neutral-800">
                     <Star className="w-5 h-5 mt-0.5 shrink-0 text-app-blue-700 fill-app-blue-700" />
                     <p className="leading-tight">
-                      <span className="font-semibold">Benefícios:</span> Você ganha acesso à nossa newsletter exclusiva com atualizações sobre o impacto da sua doação.
+                      <span className="font-semibold">Benefícios:</span> Você
+                      ganha acesso à nossa newsletter exclusiva com atualizações
+                      sobre o impacto da sua doação.
                     </p>
                   </div>
                 </div>
@@ -202,7 +241,9 @@ export const SbComoDoarSection = ({ blok }: Blok<StoryblokComoDoarSection>) => {
                   <div className="flex items-start gap-3 text-sm sm:text-base text-app-neutral-800">
                     <ClipboardList className="w-5 h-5 mt-0.5 shrink-0 text-app-blue-700" />
                     <p className="leading-tight font-medium">
-                      Para validar sua doação (Cartão ou Pix) e garantir seus benefícios, precisamos que você preencha o formulário abaixo:
+                      Para validar sua doação (Cartão ou Pix) e garantir seus
+                      benefícios, precisamos que você preencha o formulário
+                      abaixo:
                     </p>
                   </div>
 
