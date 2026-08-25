@@ -251,7 +251,7 @@ export interface StoryblokContributionSection {
   subtitulo?: StoryblokRichtext;
   qrCode: StoryblokAsset;
   qrCodeDescricao: StoryblokRichtext;
-  botaoPix: StoryblokButtonNav[];
+  botaoNav: StoryblokButtonNav[];
   descricao: StoryblokRichtext;
   acoes?: (StoryblokButtonNav | StoryblokButton)[];
   headlineImagem: StoryblokRichtext;
