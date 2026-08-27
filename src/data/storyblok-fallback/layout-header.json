@@ -1,0 +1,207 @@
+{
+  "story": {
+    "name": "header",
+    "parent_id": 20516517,
+    "group_id": "13ea2f00-70bf-4da3-8ba2-ca8b98e9ff3f",
+    "alternates": [],
+    "created_at": "2025-01-20T17:58:29.329Z",
+    "deleted_at": null,
+    "sort_by_date": null,
+    "tag_list": [],
+    "updated_at": "2026-05-15T20:32:17.797Z",
+    "published_at": "2026-05-15T20:32:17.783Z",
+    "id": 20516518,
+    "uuid": "98c8cf33-9796-4984-980b-6138bf6c3727",
+    "is_folder": false,
+    "content": {
+      "_uid": "30b68a1b-2375-4ac5-9a0f-88683103cdae",
+      "logo": {
+        "id": 1059429,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a-us.storyblok.com/f/1022982/212x101/cd60e149e5/logo-horizontal.svg",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "acoes": [
+        {
+          "_uid": "fe75441b-d0b8-4ea6-a42f-59357fb1262b",
+          "link": {
+            "id": "8606c0ba-e3c7-4f0b-aa3b-12baea3601aa",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "contato"
+          },
+          "button": [
+            {
+              "_uid": "0c461934-a831-4480-955f-509d945a9397",
+              "icone": {
+                "id": null,
+                "alt": null,
+                "name": "",
+                "focus": null,
+                "title": null,
+                "filename": null,
+                "copyright": null,
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "title": "Contato",
+              "variant": "link",
+              "component": "button",
+              "iconeADireita": false
+            }
+          ],
+          "component": "button-nav"
+        }
+      ],
+      "links": [
+        {
+          "_uid": "3b16e3cb-0a17-41cc-b2ac-e39b6f7c8202",
+          "link": {
+            "id": "245e7af7-4299-480f-85af-4a8653c3697a",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "sobre-nos"
+          },
+          "button": [
+            {
+              "_uid": "6a3e8488-8559-4b6e-825a-efe0ec434687",
+              "title": "Sobre",
+              "variant": "link",
+              "component": "button"
+            }
+          ],
+          "component": "button-nav"
+        },
+        {
+          "_uid": "8b46b530-c401-4f84-8e2c-b451bb483a80",
+          "link": {
+            "id": "5f509d1f-0b41-4169-825d-a4a6833c2b56",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "curso-e-inscricao"
+          },
+          "button": [
+            {
+              "_uid": "1a03ba12-54be-4312-a658-0613a8b60e80",
+              "title": "Curso e Inscrição",
+              "variant": "link",
+              "component": "button"
+            }
+          ],
+          "component": "button-nav"
+        },
+        {
+          "_uid": "2d71dea2-b68c-44a7-abc0-89f75ac0f592",
+          "link": {
+            "id": "841be562-89ab-4ca5-a595-2e6b6febb828",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "voluntariado"
+          },
+          "button": [
+            {
+              "_uid": "295ffa80-eaf6-47a0-b92a-2856ae61df0d",
+              "title": "Voluntariado",
+              "variant": "link",
+              "component": "button"
+            }
+          ],
+          "component": "button-nav"
+        },
+        {
+          "_uid": "4adedeab-4d4f-4a2c-93cf-fdfcc84ed0ca",
+          "link": {
+            "id": "9381ae01-7ca9-41f1-b33e-dd8b785663eb",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "quer-nos-ajudar"
+          },
+          "button": [
+            {
+              "_uid": "10797685-8105-4a62-8e96-0bffa156b39c",
+              "title": "Quer nos ajudar?",
+              "variant": "link",
+              "component": "button"
+            }
+          ],
+          "component": "button-nav"
+        }
+      ],
+      "component": "header",
+      "faixaDestaque": []
+    },
+    "published": true,
+    "slug": "header",
+    "path": null,
+    "full_slug": "layout/header",
+    "default_root": null,
+    "disble_fe_editor": false,
+    "disable_fe_editor": false,
+    "parent": {
+      "id": 20516517,
+      "uuid": "ff0d772d-d4ad-40c6-979c-275424b22aff",
+      "name": "layout",
+      "slug": "layout",
+      "disble_fe_editor": false
+    },
+    "is_startpage": false,
+    "unpublished_changes": false,
+    "meta_data": null,
+    "imported_at": null,
+    "preview_token": {
+      "token": "236e71cd5c4e8e2ef26b49f32c0ca518676cfac8",
+      "timestamp": "1787836382"
+    },
+    "pinned": false,
+    "breadcrumbs": [
+      {
+        "id": 20516517,
+        "name": "layout",
+        "parent_id": 0,
+        "disble_fe_editor": false,
+        "disable_fe_editor": false,
+        "path": null,
+        "slug": "layout",
+        "translated_slugs": []
+      }
+    ],
+    "publish_at": null,
+    "expire_at": null,
+    "first_published_at": "2025-06-15T16:06:41.741Z",
+    "last_author": {
+      "id": 273894,
+      "userid": "einstein-website@einsteinfloripa.com.br",
+      "friendly_name": "Einstein Floripa"
+    },
+    "last_author_id": 273894,
+    "user_ids": [],
+    "space_role_ids": [],
+    "translated_slugs": [],
+    "localized_paths": [],
+    "position": 0,
+    "translated_stories": [],
+    "can_not_view": false,
+    "is_scheduled": null,
+    "scheduled_dates": null,
+    "ideas": [],
+    "current_version_id": 176896154622278,
+    "variant_type": null,
+    "experiment_ids": [],
+    "stage": null,
+    "stages": [],
+    "favourite_for_user_ids": []
+  }
+}
