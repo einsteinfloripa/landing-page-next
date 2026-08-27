@@ -62,6 +62,20 @@ export async function fetchStory<T>(slug: string) {
   }
 }
 
+function listFallbackStories<T>(): ISbStoryData<T>[] {
+  return fs
+    .readdirSync(FALLBACK_DIR)
+    .filter((file) => file.endsWith(".json"))
+    .map(
+      (file) =>
+        (
+          JSON.parse(
+            fs.readFileSync(path.join(FALLBACK_DIR, file), "utf-8"),
+          ) as { story: ISbStoryData<T> }
+        ).story,
+    );
+}
+
 export async function fetchStories<T>(
   storyUrl: string,
   apiParams: Omit<ISbStoriesParams, "version">,
@@ -69,10 +83,29 @@ export async function fetchStories<T>(
   const storyblokApi = getStoryblokApi();
   const version = process.env.NODE_ENV === "production" ? "published" : "draft";
 
-  return storyblokApi
-    .get(storyUrl, {
+  try {
+    return (await storyblokApi.get(storyUrl, {
       ...apiParams,
       version,
-    })
-    .then((res) => res as ISbStories<T>);
+    })) as ISbStories<T>;
+  } catch (err) {
+    // Mesma lógica de fallback do fetchStory (veja o comentário acima). Como
+    // hoje só existe um chamador (o sitemap, buscando todas as stories), o
+    // fallback ignora apiParams e devolve tudo que temos no snapshot local.
+    try {
+      const stories = listFallbackStories<T>();
+      console.warn(
+        `[storyblok] fetchStories("${storyUrl}") falhou, servindo snapshot local (${stories.length} stories). Motivo:`,
+        err,
+      );
+      return {
+        data: { cv: 0, links: [], rels: [], stories },
+        perPage: stories.length,
+        total: stories.length,
+        headers: {},
+      } as unknown as ISbStories<T>;
+    } catch {
+      throw err;
+    }
+  }
 }
