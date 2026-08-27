@@ -1,0 +1,936 @@
+{
+  "story": {
+    "name": "Sobre",
+    "parent_id": null,
+    "group_id": "ca863365-f67c-4720-b03d-0de190d2b8ab",
+    "alternates": [],
+    "created_at": "2025-01-20T20:41:18.362Z",
+    "deleted_at": null,
+    "sort_by_date": null,
+    "tag_list": [],
+    "updated_at": "2026-08-21T00:08:46.536Z",
+    "published_at": "2026-08-21T00:08:46.523Z",
+    "id": 20516629,
+    "uuid": "245e7af7-4299-480f-85af-4a8653c3697a",
+    "is_folder": false,
+    "content": {
+      "_uid": "73b8b085-a2a8-4804-8550-be1c6a3a2f4b",
+      "body": [
+        {
+          "_uid": "2b6792a5-e3ec-41df-b749-ad6325526914",
+          "titulo": "Nossa Historia",
+          "imagens": [
+            {
+              "_uid": "67583b09-5082-4085-b912-65f8c60aaa30",
+              "asset": {
+                "id": 1467295,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/4032x3024/e87c036c24/piquenique-aprovados.png",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "component": "picture"
+            },
+            {
+              "_uid": "d6b95da6-7e38-4d17-b366-e1fe8e02f800",
+              "asset": {
+                "id": 1467306,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/4096x2713/39f0ee57a7/aulao.jpg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "component": "picture"
+            },
+            {
+              "_uid": "95424a2e-b4cc-428d-99b8-da1c2ee16fd4",
+              "asset": {
+                "id": 1467308,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/4032x3024/8d45caf155/feira-profissoes.jpg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "component": "picture"
+            },
+            {
+              "_uid": "92c388f1-4dcc-40a1-875f-8b13dfb84325",
+              "asset": {
+                "id": 1467309,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/4096x2732/d4ec0ca123/show-talentos.jpg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "component": "picture"
+            },
+            {
+              "_uid": "222aacbc-194f-499e-814c-f17a84724788",
+              "asset": {
+                "id": 1467306,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/4096x2713/39f0ee57a7/aulao.jpg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "component": "picture"
+            },
+            {
+              "_uid": "33b204dd-3192-4ccf-8a45-03ee6bb3348e",
+              "asset": {
+                "id": 1467318,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/4096x2731/75fa68c895/olimpeinstein.jpg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "component": "picture"
+            }
+          ],
+          "component": "about-hero",
+          "descricao": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "O Einstein Floripa nasceu em 14 de julho de 2015, fruto da inquietação de jovens universitários que perceberam a disparidade de oportunidades na educação brasileira. Inicialmente, foi criado como um cursinho pré-vestibular social, gratuito e gerido por voluntários, com o propósito de preparar alunos de baixa renda para os desafios do vestibular. Ao longo dos anos, evoluímos com a estruturação de departamentos e a profissionalização dos nossos processos, sempre mantendo uma cultura baseada no acolhimento, na parceria e no protagonismo. Cada etapa da nossa trajetória reflete o duplo impacto de transformar vidas – tanto dos alunos quanto dos voluntários.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "_uid": "3925c8d6-4248-4e16-ac16-3578860ec743",
+          "cards": [
+            {
+              "_uid": "b7824fc5-56ab-45ed-aa32-55f3ad7414a8",
+              "imagem": {
+                "id": 1500053,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/80x80/3b55e4a596/hope.svg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "titulo": "Missão",
+              "component": "imagem-card",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "“Viabilizar o acesso de pessoas de baixa renda à educação superior de qualidade e fomentar o desenvolvimento de graduandos através de um cursinho pré-vestibular social, voluntário e gratuito.”",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "1462733d-cccd-4e38-b6e5-e4a7a0e40d1f",
+              "imagem": {
+                "id": 1500058,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/80x80/9e14590ece/stairs.svg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "titulo": "Visão",
+              "component": "imagem-card",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "“Compor um Brasil onde todos tenham acesso a um ensino superior de qualidade, atuando como modelo de excelência em gestão, desenvolvimento universitário, e impacto social.”",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "1f24d51c-e265-443a-b5da-82c01af6d220",
+              "imagem": {
+                "id": 1500055,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/84x80/178df8dac8/5-dots.svg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "titulo": "Valores",
+              "component": "imagem-card",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Compromisso com o sonho de Einsteinianos; Não precisamos usar terno para sermos levados a sério; Ser a mudança que queremos ver no mundo; Ninguém faz nada grande sozinho; Não ter medo de errar.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "titulo": "O QUE NOS GUIA",
+          "component": "card-grid-section"
+        },
+        {
+          "_uid": "0bf2f1e2-8aa1-4f31-b965-17a26b777db1",
+          "texto": "SOMOS EINSTEIN",
+          "animar": true,
+          "component": "text-stripe"
+        },
+        {
+          "_uid": "ccb58731-7570-44bb-8f51-27e1acdc9989",
+          "titulo": "Nossa equipe",
+          "component": "equipe-section",
+          "descricao": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Aqui no Einstein Floripa, nos organizamos em diferentes áreas, cada um com papéis específicos que, juntos, contribuem para nossa missão. Essa divisão permite que cada voluntário atue em áreas alinhadas às suas habilidades e interesses, promovendo um ambiente colaborativo e de aprendizado contínuo. O coração do Einstein Floripa está na docência, composta por professores e monitores que atuam em frentes específicas dentro de cada disciplina, permitindo que cada docente se concentre nas áreas que melhor refletem suas competências.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "departamentos": [
+            {
+              "_uid": "8dd0c1c5-56d9-4a5e-ad2f-8c98a1321f1a",
+              "titulo": "Conselho",
+              "membros": [
+                {
+                  "_uid": "323d019f-08fb-474a-8685-dd0e1d83dcfb",
+                  "nome": "Matheus Neumann",
+                  "cargo": "Conselheiro",
+                  "imagem": {
+                    "id": 1497162,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a-us.storyblok.com/f/1022982/63x60/c47f2a0633/logo-pequena.svg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "component": "equipe-card"
+                },
+                {
+                  "_uid": "6e2107c3-84b8-4ac0-9071-6b0aa32304a0",
+                  "nome": "Murilo Stein",
+                  "cargo": "Conselheiro",
+                  "imagem": {
+                    "id": 1497162,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a-us.storyblok.com/f/1022982/63x60/c47f2a0633/logo-pequena.svg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "component": "equipe-card"
+                },
+                {
+                  "_uid": "e8dde561-8882-4319-9325-b0dbaecc1c9d",
+                  "nome": "Karim Cruz",
+                  "cargo": "Conselheira",
+                  "imagem": {
+                    "id": 1497162,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a-us.storyblok.com/f/1022982/63x60/c47f2a0633/logo-pequena.svg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "component": "equipe-card"
+                },
+                {
+                  "_uid": "3d6f93aa-faf1-4c43-89b1-445b3cb52ff9",
+                  "nome": "Vicente Silva",
+                  "cargo": "Conselheiro",
+                  "imagem": {
+                    "id": 1497162,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a-us.storyblok.com/f/1022982/63x60/c47f2a0633/logo-pequena.svg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "component": "equipe-card"
+                },
+                {
+                  "_uid": "350f1595-07e8-4f67-a5be-e307897ca7cb",
+                  "nome": "Olívia Pacheco",
+                  "cargo": "Conselheira",
+                  "imagem": {
+                    "id": 1497162,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a-us.storyblok.com/f/1022982/63x60/c47f2a0633/logo-pequena.svg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "component": "equipe-card"
+                }
+              ],
+              "component": "equipe-departamento",
+              "subtitulo": "Conselho administrativo da instituição"
+            },
+            {
+              "_uid": "48ce0fc2-92b6-4ce2-b7d1-33e297233cd6",
+              "titulo": "Capital",
+              "membros": [
+                {
+                  "_uid": "8a1dce7b-102e-46fe-83b4-ca05698d21dc",
+                  "nome": "Pedro Henrique N. Rocha",
+                  "cargo": "Presidente",
+                  "imagem": {
+                    "id": 1497162,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a-us.storyblok.com/f/1022982/63x60/c47f2a0633/logo-pequena.svg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "component": "equipe-card"
+                },
+                {
+                  "_uid": "c1410602-1bcd-4952-9eda-06aa1ea2efd2",
+                  "nome": "Júlia Teixeira ",
+                  "cargo": "Vice-Presidente",
+                  "imagem": {
+                    "id": 1497162,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a-us.storyblok.com/f/1022982/63x60/c47f2a0633/logo-pequena.svg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "component": "equipe-card"
+                },
+                {
+                  "_uid": "e0a959bd-7d5a-4788-815e-5c01852dc85f",
+                  "nome": "Ana Beatriz Giehl",
+                  "cargo": "Diretora de Hogwarts",
+                  "imagem": {
+                    "id": 1497162,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a-us.storyblok.com/f/1022982/63x60/c47f2a0633/logo-pequena.svg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "component": "equipe-card"
+                },
+                {
+                  "_uid": "8fd68225-b868-4aa5-a0b3-e9873cd44cb6",
+                  "nome": "Maria Luiza Longo",
+                  "cargo": "Diretora da Times Square",
+                  "imagem": {
+                    "id": 1497162,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a-us.storyblok.com/f/1022982/63x60/c47f2a0633/logo-pequena.svg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "component": "equipe-card"
+                },
+                {
+                  "_uid": "ed612c20-8c4c-4346-8e63-60d51041005f",
+                  "nome": "Otávio Teixeira",
+                  "cargo": "Gestor do Ministério",
+                  "imagem": {
+                    "id": 1497162,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a-us.storyblok.com/f/1022982/63x60/c47f2a0633/logo-pequena.svg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "component": "equipe-card"
+                },
+                {
+                  "_uid": "ecf062c0-6f60-4453-a8af-8ae5b52c9bf0",
+                  "nome": "Vitor Valandro",
+                  "cargo": "Gestor do Vale do Silício",
+                  "imagem": {
+                    "id": 1497162,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a-us.storyblok.com/f/1022982/63x60/c47f2a0633/logo-pequena.svg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "component": "equipe-card"
+                }
+              ],
+              "component": "equipe-departamento",
+              "subtitulo": "Diretoria Administrativa"
+            },
+            {
+              "_uid": "6d25255a-3066-44b3-a51d-6bb84b3354f1",
+              "titulo": "Docência",
+              "membros": [
+                {
+                  "_uid": "1ee6ea6d-b2a2-409b-b682-ac5a156d0638",
+                  "nome": "Henrique Gon",
+                  "cargo": "Docente-líder de Matemática",
+                  "imagem": {
+                    "id": 1497162,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a-us.storyblok.com/f/1022982/63x60/c47f2a0633/logo-pequena.svg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "component": "equipe-card"
+                },
+                {
+                  "_uid": "2e38f3a5-a9fc-48c1-b2f8-687a6c3fa9b0",
+                  "nome": "Thomaz Henrique",
+                  "cargo": "Docente-líder de Química",
+                  "imagem": {
+                    "id": 1497162,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a-us.storyblok.com/f/1022982/63x60/c47f2a0633/logo-pequena.svg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "component": "equipe-card"
+                },
+                {
+                  "_uid": "86c9322a-cd7c-4190-93f4-656718072cc3",
+                  "nome": "Carmen Rocha",
+                  "cargo": "Docente-líder de Física",
+                  "imagem": {
+                    "id": 1497162,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a-us.storyblok.com/f/1022982/63x60/c47f2a0633/logo-pequena.svg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "component": "equipe-card"
+                },
+                {
+                  "_uid": "4ca1d42f-be7d-4591-992d-1a42f1d30330",
+                  "nome": "Rafael Gomes",
+                  "cargo": "Docente-líder de Biologia",
+                  "imagem": {
+                    "id": 1497162,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a-us.storyblok.com/f/1022982/63x60/c47f2a0633/logo-pequena.svg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "component": "equipe-card"
+                },
+                {
+                  "_uid": "18f06739-9863-43fa-bfd5-00523577b7a5",
+                  "nome": "Emmanuel Rodrigues",
+                  "cargo": "Docente-líder de História",
+                  "imagem": {
+                    "id": 1497162,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a-us.storyblok.com/f/1022982/63x60/c47f2a0633/logo-pequena.svg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "component": "equipe-card"
+                },
+                {
+                  "_uid": "adc21b61-20c1-4cb7-ad83-a78b721bbd45",
+                  "nome": "Guilherme Scorbaiolli",
+                  "cargo": "Docente-líder de Geografia",
+                  "imagem": {
+                    "id": 1497162,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a-us.storyblok.com/f/1022982/63x60/c47f2a0633/logo-pequena.svg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "component": "equipe-card"
+                },
+                {
+                  "_uid": "45cf072c-0bb4-4ebc-b2eb-1aa3ff14603b",
+                  "nome": "Maria Helena",
+                  "cargo": "Docente-líder de Filosofia e Sociologia",
+                  "imagem": {
+                    "id": 1497162,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a-us.storyblok.com/f/1022982/63x60/c47f2a0633/logo-pequena.svg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "component": "equipe-card"
+                },
+                {
+                  "_uid": "1b2c14d2-99c1-4dd7-84c8-e596d1ca15fb",
+                  "nome": "Ana Elizabete",
+                  "cargo": "Docente-líder de Linguagens",
+                  "imagem": {
+                    "id": 1497162,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a-us.storyblok.com/f/1022982/63x60/c47f2a0633/logo-pequena.svg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "component": "equipe-card"
+                }
+              ],
+              "component": "equipe-departamento",
+              "subtitulo": "Professores líderes das disciplinas ministradas"
+            }
+          ]
+        },
+        {
+          "_uid": "b826a1dd-3772-47dc-ad60-5689f4ef291b",
+          "titulo": "ORGANOGRAMA",
+          "component": "hierarquia-section",
+          "descricao": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Para garantir o funcionamento eficiente e o alinhamento entre as equipes, seguimos uma estrutura hierárquica clara, conforme mostrado na figura.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hard_break",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hard_break",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Presidência:",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": " No topo da estrutura, a Presidência lidera e supervisiona o projeto, guiando toda a organização em direção aos nossos objetivos.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hard_break",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hard_break",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Diretoria e Docentes Líderes: ",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Logo abaixo da Presidência, a estrutura se divide em duas áreas principais. A Diretoria é responsável por funções administrativas e de apoio, englobando os Assessores e a equipe de Organização, que coordenam a logística e o planejamento do projeto. Em paralelo, os Docentes Líderes orientam e apoiam os Professores e Monitores, que trabalham diretamente com os alunos na área de Docência.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hard_break",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hard_break",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Voluntários: ",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Na base, estão todos os voluntários que, compondo as diferentes funções acima, são a força essencial para o sucesso do Einstein Floripa.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "organograma": {
+            "id": 1495538,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a-us.storyblok.com/f/1022982/808x904/b808e27a8d/hierarquia.png",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          }
+        }
+      ],
+      "footer": "114e01b4-2100-44a2-9179-16f26a2486a3",
+      "header": "98c8cf33-9796-4984-980b-6138bf6c3727",
+      "imagem": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null,
+        "source": null,
+        "filename": "",
+        "copyright": null,
+        "fieldtype": "asset",
+        "meta_data": {}
+      },
+      "titulo": "Einstein Floripa | Sobre Nós",
+      "component": "pagina",
+      "descricao": "O Einstein Floripa é uma ONG educacional criado como um cursinho pré-vestibular social, gratuito e gerido por voluntários, com o propósito de auxiliar alunos de baixa renda a ingressarem no ensino superior.",
+      "corDoFooter": "branco"
+    },
+    "published": true,
+    "slug": "sobre-nos",
+    "path": null,
+    "full_slug": "sobre-nos",
+    "default_root": null,
+    "disble_fe_editor": false,
+    "disable_fe_editor": false,
+    "parent": null,
+    "is_startpage": false,
+    "unpublished_changes": false,
+    "meta_data": null,
+    "imported_at": null,
+    "preview_token": {
+      "token": "236e71cd5c4e8e2ef26b49f32c0ca518676cfac8",
+      "timestamp": "1787836382"
+    },
+    "pinned": false,
+    "breadcrumbs": [],
+    "publish_at": null,
+    "expire_at": null,
+    "first_published_at": "2025-06-15T16:06:42.287Z",
+    "last_author": {
+      "id": 273894,
+      "userid": "einstein-website@einsteinfloripa.com.br",
+      "friendly_name": "Einstein Floripa"
+    },
+    "last_author_id": 273894,
+    "user_ids": [],
+    "space_role_ids": [],
+    "translated_slugs": [],
+    "localized_paths": [],
+    "position": 0,
+    "translated_stories": [],
+    "can_not_view": false,
+    "is_scheduled": null,
+    "scheduled_dates": null,
+    "ideas": [],
+    "current_version_id": 211277113326303,
+    "variant_type": null,
+    "experiment_ids": [],
+    "stage": null,
+    "stages": [],
+    "favourite_for_user_ids": []
+  }
+}

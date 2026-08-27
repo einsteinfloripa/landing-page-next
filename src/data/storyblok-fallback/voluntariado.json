@@ -1,0 +1,1055 @@
+{
+  "story": {
+    "name": "Voluntariado",
+    "parent_id": 0,
+    "group_id": "525d4268-9405-493e-9cc7-5bd5d1f49d54",
+    "alternates": [],
+    "created_at": "2025-05-29T19:47:45.255Z",
+    "deleted_at": null,
+    "sort_by_date": null,
+    "tag_list": [],
+    "updated_at": "2026-08-10T12:35:30.103Z",
+    "published_at": "2026-08-10T12:35:30.086Z",
+    "id": 35322172,
+    "uuid": "841be562-89ab-4ca5-a595-2e6b6febb828",
+    "is_folder": false,
+    "content": {
+      "_uid": "73b8b085-a2a8-4804-8550-be1c6a3a2f4b",
+      "body": [
+        {
+          "_uid": "aceaf241-3f93-4acb-a2b3-3173ea6d36e3",
+          "acoes": [
+            {
+              "_uid": "e1a0439c-ac5e-4f85-826e-afb28f6f1f50",
+              "link": {
+                "id": "",
+                "url": "https://app.pipefy.com/public/form/SxdS4xjs",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "https://app.pipefy.com/public/form/SxdS4xjs"
+              },
+              "button": [
+                {
+                  "_uid": "3e3aa200-c412-4276-aea7-90438acb5afb",
+                  "icone": {
+                    "id": null,
+                    "alt": null,
+                    "name": "",
+                    "focus": null,
+                    "title": null,
+                    "source": null,
+                    "filename": "",
+                    "copyright": null,
+                    "fieldtype": "asset",
+                    "meta_data": {}
+                  },
+                  "title": "Inscrição para docência",
+                  "variant": "default",
+                  "disabled": false,
+                  "component": "button",
+                  "iconeADireita": false
+                }
+              ],
+              "component": "button-nav"
+            },
+            {
+              "_uid": "8ac2e4f0-4e98-43fa-9d82-4d604d717e5b",
+              "link": {
+                "id": "",
+                "url": "https://app.pipefy.com/public/form/evl3ycuR",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "https://app.pipefy.com/public/form/evl3ycuR"
+              },
+              "button": [
+                {
+                  "_uid": "98266b7f-9d8e-46aa-a311-1507ea4c1452",
+                  "icone": {
+                    "id": null,
+                    "alt": null,
+                    "name": "",
+                    "focus": null,
+                    "title": null,
+                    "source": null,
+                    "filename": "",
+                    "copyright": null,
+                    "fieldtype": "asset",
+                    "meta_data": {}
+                  },
+                  "title": "Inscrição para organização",
+                  "variant": "default",
+                  "disabled": false,
+                  "component": "button",
+                  "iconeADireita": false
+                }
+              ],
+              "component": "button-nav"
+            }
+          ],
+          "imagens": [
+            {
+              "_uid": "af723571-5a52-4c50-9ccf-14ce908e9558",
+              "asset": {
+                "id": 1467295,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/4032x3024/e87c036c24/piquenique-aprovados.png",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "component": "picture"
+            },
+            {
+              "_uid": "ca0d1824-e6b4-4f81-91e5-488272311430",
+              "asset": {
+                "id": 1467306,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/4096x2713/39f0ee57a7/aulao.jpg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "component": "picture"
+            },
+            {
+              "_uid": "68db9cbc-d573-492c-9d3b-84b030fc1a08",
+              "asset": {
+                "id": 1467308,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/4032x3024/8d45caf155/feira-profissoes.jpg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "component": "picture"
+            },
+            {
+              "_uid": "975bdfce-3a95-4ef3-8c9d-56ce72815874",
+              "asset": {
+                "id": 1467309,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/4096x2732/d4ec0ca123/show-talentos.jpg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "component": "picture"
+            }
+          ],
+          "component": "voluntariado-hero",
+          "descricao": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Ser voluntário no Einstein Floripa é acreditar no poder da educação como agente de transformação — é mais do que doar tempo ou habilidades; é criar oportunidades, inspirar sonhos e tornar o impossível possível. Ao mesmo tempo em que ajudamos alunos de baixa renda a alcançarem uma educação superior de qualidade, nós também crescemos, desenvolvendo habilidades, ampliando perspectivas e nos conectando com pessoas incríveis que compartilham o propósito de transformar vidas.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "_uid": "b3ca53eb-9b36-425c-92fb-7114061b3902",
+          "title": "Ninguém faz nada grande sozinho",
+          "component": "frase-impacto-section",
+          "description": "Aqui, somos a prova de que, juntos, podemos transformar desafios em oportunidades e sonhos em conquistas."
+        },
+        {
+          "_uid": "e4b7161d-e663-49ac-b4d2-b5be5874478c",
+          "cards": [
+            {
+              "_uid": "6e012371-7703-4427-abaf-6edc59f82785",
+              "imagem": {
+                "id": 1500053,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/80x80/3b55e4a596/hope.svg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "titulo": "Desenvolvimento",
+              "component": "imagem-card",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Aqui você tem a chance de aplicar o que já sabe para impactar diretamente a vida de outros, enquanto desenvolve novas competências. Liderança, organização e trabalho em equipe se tornam ferramentas não só para ajudar, mas para crescer junto.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "f4b2ad96-9307-470d-b6f6-5079dd38c2d3",
+              "imagem": {
+                "id": 1500055,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/84x80/178df8dac8/5-dots.svg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "titulo": "Conexão",
+              "component": "imagem-card",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Fazer parte do Einstein Floripa é se conectar com uma comunidade que compartilha sonhos e valores. Cada ação, cada ideia e cada desafio é compartilhado com pessoas que acreditam no poder da união para criar impacto social.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "08035c9a-2baa-450e-a889-518becc8d19d",
+              "imagem": {
+                "id": 1500056,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/98x80/f12d72d079/butterfly.svg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "titulo": "Resultados",
+              "component": "imagem-card",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Os números falam, mas as histórias inspiram. No Einstein Floripa, cada aluno aprovado e cada vida transformada representa o resultado de um trabalho coletivo, feito com dedicação e carinho. Você pode ser agente desta transformação.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "titulo": "por que ser voluntário?",
+          "component": "card-grid-section"
+        },
+        {
+          "_uid": "ba420889-30e5-48bc-88a7-2d40c2a5e1bd",
+          "texto": "SOMOS EINSTEIN",
+          "animar": true,
+          "component": "text-stripe"
+        },
+        {
+          "_uid": "9a760efc-cccc-4025-a4ea-96d39499f260",
+          "acoes": [],
+          "titulo": "Areas de Atuação",
+          "component": "area-atuacao-section",
+          "descricao": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Nossa equipe é o coração do Einstein Floripa, e cada voluntário tem um papel essencial. Atuamos em duas frentes: Organização e Docência. Na Organização, cuidamos da estrutura do curso, promovendo eventos, desenvolvendo ferramentas, garantindo a logística e oferecendo suporte emocional. Já na Docência, professores e monitores estão lado a lado com os alunos, ensinando, motivando e mostrando que sonhar grande é o primeiro passo para tornar o impossível possível.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "departamentos": [
+            {
+              "_uid": "0ef60676-7a7f-480e-a043-0ae366fabab4",
+              "titulo": "Capital (Gestão)",
+              "component": "detalhes-departamento",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Formada pela diretoria de cada um dos departamentos, são responsáveis por planejar e monitorar o departamento no qual é responsável e por discutir o planejamento geral da instituição EinsteinFloripa.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "aa451737-2ee3-49d2-a367-e698715d1c4d",
+              "titulo": "Ministério (Jurídico e Financeiro)",
+              "component": "detalhes-departamento",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "É responsável por cuidar de toda a área jurídica e financeira do Einstein. Controlam todo o patrimônio einsteiniano, analisam e aprovam gastos, além de realizar o planejamento de orçamentos e análises financeiras. Também possibilitam que o Einstein esteja sempre alinhado com a legislação vigente, permitindo um maior desenvolvimento e segurança jurídica, através da análise e elaboração de contratos internos e editais, conversando, sempre, com as leis do terceiro setor.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "85d977b3-8078-439a-b6a1-511f7ab9ebd1",
+              "titulo": "Embaixada do Amor (Gestão de Pessoas)",
+              "component": "detalhes-departamento",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "É responsável por cuidar da experiência de todos os que fazem parte do Einstein: organizadores, docentes e alunos! A área trabalha para que todos consigam se desenvolver e cumprir os seus propósitos, da maneira mais harmoniosa possível. Além disso, os embaixadores são os guardiões da cultura einsteiniana, promovendo eventos e sempre guiando os nossos membros por meio dos nossos valores, missão e visão!",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "da0424b0-01fa-4cbe-9abd-d71a5adb77cd",
+              "titulo": "Vale do Silício (Tecnologia e Informação)",
+              "component": "detalhes-departamento",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Trabalha com programação e estatística para aprimorar os processos através de tecnologia e automatizações, facilitando o dia a dia na instituição. Do frontend e backend, passando por ciência de dados, o Vale garante a infraestrutura tecnológica do projeto. Responsabilidades e projetos incluem leitores de gabarito, correção de provas, e manutenção do site, bem como o fornecimento e realização de análises, junto aos outros departamentos, proporcionando uma compreensão estatística de processos e decisões.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "90941b40-101e-459e-88c3-c52dff32fa9a",
+              "titulo": "Times Square (Marketing e Captação de Recursos)",
+              "component": "detalhes-departamento",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "A área de Marketing promove a imagem da instituição, gerencia a identidade visual e planeja a comunicação com o público externo; fica responsável também por produzir conteúdos para divulgações internas e externas, além de gerenciar as mídias sociais. Por outro lado, a área de Captação de Recursos é responsável por buscar empresas e firmar parcerias, captar doações e realizar eventos de arrecadação, de modo a conseguir capital político e financeiro que garantam a sustentabilidade da instituição.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "8ac9cccd-4340-4577-aac2-c34618951f3f",
+              "titulo": "Hogwarts (Gestão de Ensino)",
+              "component": "detalhes-departamento",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "A qualidade de ensino que o Einstein proporciona é fruto do trabalho dos Bruxos que trabalham em Hogwarts, responsáveis desde a organização do calendário anual, atividades extraclasse de ensino, dinâmica de aulas, até gerenciamento da equipe de docentes. Através de diversos indicadores das atividades que medem a qualidade, buscamos analisá-los com o objetivo de proporcionar a melhor experiência possível para os alunos!",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "7010dc47-604c-4c7c-b1dc-11c017395bc0",
+              "titulo": "Docência",
+              "component": "detalhes-departamento",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Responsável pela gestão pedagógica da instituição, desenvolvendo materiais didáticos, elaborando questões para simulados e organizando eventos acadêmicos como o \"Roda Viva\".",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "_uid": "df0c8ec3-78d3-4558-8feb-f549ce594a1d",
+          "etapas": [
+            {
+              "_uid": "695ec319-a1ab-49ce-a14d-ffa24b4a1b94",
+              "titulo": " Inscrição",
+              "component": "card-texto",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Consulte os links de inscrição no topo da página, depois é só preencher o formulário com seus dados pessoais e informações!",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "7e6007fc-ff46-46a7-bb6c-ad44f5a73f40",
+              "titulo": "Case/Aula teste",
+              "component": "card-texto",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Organizadores receberão uma proposta de case para resolver e docentes um tema para lecionar na aula teste.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "0c0ed54f-3b69-45b4-9d05-2722e82273b0",
+              "titulo": "Entrevista",
+              "component": "card-texto",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Os candidatos passarão por uma entrevista, na qual conheceremos melhor sua trajetória, motivações e objetivos.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "f383817b-0b72-4134-9033-281ca70442c1",
+              "titulo": "... Bem-vindo?",
+              "component": "card-texto",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Passou na análise conjunta do case e entrevista? Seja bem vindo ao Einstein Floripa!! Nos ajude a transformar o futuro de aluno para aluno!",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "titulo": "Processo Seletivo",
+          "component": "etapas-section",
+          "subtitulo": "Etapas"
+        },
+        {
+          "_uid": "e2f6b657-98b0-4c93-b09d-0f0f5d902928",
+          "texto": "INSCREVA-SE",
+          "animar": true,
+          "component": "text-stripe"
+        },
+        {
+          "_uid": "b1833aa2-81a3-459d-bf2e-a4826dcb464b",
+          "links": [
+            {
+              "_uid": "dfe8ad73-73e9-4752-9e9b-9a585621258e",
+              "link": {
+                "id": "",
+                "url": "https://drive.google.com/file/d/1-XynkiQ0vx1niXKYAGZ3z6UpE5ZGumWU/view",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "https://drive.google.com/file/d/1-XynkiQ0vx1niXKYAGZ3z6UpE5ZGumWU/view"
+              },
+              "button": [
+                {
+                  "_uid": "995e064a-8211-4390-abb1-979247bae8f9",
+                  "title": "Edital Docentes 2026",
+                  "variant": "secondary",
+                  "component": "button"
+                }
+              ],
+              "component": "button-nav"
+            },
+            {
+              "_uid": "2ab3e96d-6d8f-4ab8-8ab2-a94a35e365dd",
+              "link": {
+                "id": "",
+                "url": "https://drive.google.com/file/d/1izYGbdUe1Sj7ogjhcH6WQ8tJWxt7CLIe/view",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "https://drive.google.com/file/d/1izYGbdUe1Sj7ogjhcH6WQ8tJWxt7CLIe/view"
+              },
+              "button": [
+                {
+                  "_uid": "31a6f47e-dcd0-43d7-8f49-c8401d1ac032",
+                  "title": "Edital Organizadores 2026",
+                  "variant": "secondary",
+                  "component": "button"
+                }
+              ],
+              "component": "button-nav"
+            }
+          ],
+          "titulo": "Vai se inscrever?",
+          "component": "links-materiais-section",
+          "descricao": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Estamos com o processo fechado no momento.",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Que tal se preparar lendo o edital do último processo?",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "_uid": "17e7bb7e-36f7-4db1-ad4a-ea41de991c54",
+          "duvidas": [
+            {
+              "_uid": "e3077aba-c223-49c8-a083-b54b3897b776",
+              "pergunta": "Quem pode se candidatar para ser voluntário no Einstein?",
+              "resposta": {
+                "type": "doc",
+                "attrs": {
+                  "backgroundColor": null
+                },
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Podem participar do nosso processo seletivo estudantes que estejam atualmente matriculados em cursos de graduação (seja licenciatura ou bacharelado) ou em programas de pós-graduação.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#000000"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "duvida"
+            },
+            {
+              "_uid": "c809d4ac-d996-427f-9b3a-ffd4c964b59e",
+              "pergunta": "Qual é a carga horária semanal exigida?",
+              "resposta": {
+                "type": "doc",
+                "attrs": {
+                  "backgroundColor": null
+                },
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "A dedicação mínima exigida varia de acordo com a função escolhida:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#000000"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Organização:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#000000"
+                            }
+                          },
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Mínimo de 13 horas semanais.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#000000"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Docência (Professores):",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#000000"
+                            }
+                          },
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Mínimo de 10 horas semanais.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#000000"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Monitoria:",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#000000"
+                            }
+                          },
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Mínimo de 8 horas semanais.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#000000"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "duvida"
+            },
+            {
+              "_uid": "d800dbcf-4f2c-4cd2-8525-68c89fbe2b97",
+              "pergunta": "O voluntariado no Einstein dá certificado?",
+              "resposta": {
+                "type": "doc",
+                "attrs": {
+                  "backgroundColor": null
+                },
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Sim! Todo o tempo dedicado ao Einstein conta como atividade complementar e nós emitimos atestado de horas para os voluntários.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#000000"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "duvida"
+            },
+            {
+              "_uid": "b11124b2-c8af-4e5c-930a-1c00830f2cb0",
+              "pergunta": "Como vou ficar sabendo do resultado do processo seletivo?",
+              "resposta": {
+                "type": "doc",
+                "attrs": {
+                  "backgroundColor": null
+                },
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Todos os resultados (aprovação para as próximas fases e resultado final) serão divulgados e enviados para o e-mail que você cadastrar na sua ficha de inscrição. Fique de olho na caixa de entrada e no spam!",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#000000"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "duvida"
+            }
+          ],
+          "component": "duvidas-frequentes-section",
+          "subtitulo": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Ainda tem dúvidas? Nós mande um email para ",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "processo.seletivo-organizadores@einsteinfloripa.com.br",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "attrs": {
+                          "href": "mailto:processo.seletivo-organizadores@einsteinfloripa.com.br",
+                          "uuid": null,
+                          "anchor": null,
+                          "target": "_blank",
+                          "linktype": "url"
+                        }
+                      },
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": "#000000"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "ou para",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "processo.seletivo-docentes@einsteinfloripa.com.br",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "attrs": {
+                          "href": "mailto:processo.seletivo-docentes@einsteinfloripa.com.br",
+                          "uuid": null,
+                          "anchor": null,
+                          "target": "_blank",
+                          "linktype": "url"
+                        }
+                      },
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": "#000000"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "footer": "114e01b4-2100-44a2-9179-16f26a2486a3",
+      "header": "98c8cf33-9796-4984-980b-6138bf6c3727",
+      "imagem": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null,
+        "source": null,
+        "filename": "",
+        "copyright": null,
+        "fieldtype": "asset",
+        "meta_data": {}
+      },
+      "titulo": "Einstein Floripa | Voluntariado",
+      "component": "pagina",
+      "descricao": "Ao mesmo tempo em que ajudamos alunos de baixa renda a alcançarem uma educação superior de qualidade, nós também crescemos, desenvolvendo habilidades, ampliando perspectivas e nos conectando com pessoas incríveis que compartilham o propósito de transformar vidas.",
+      "corDoFooter": "branco"
+    },
+    "published": true,
+    "slug": "voluntariado",
+    "path": null,
+    "full_slug": "voluntariado",
+    "default_root": null,
+    "disble_fe_editor": false,
+    "disable_fe_editor": false,
+    "parent": null,
+    "is_startpage": false,
+    "unpublished_changes": false,
+    "meta_data": null,
+    "imported_at": null,
+    "preview_token": {
+      "token": "236e71cd5c4e8e2ef26b49f32c0ca518676cfac8",
+      "timestamp": "1787836382"
+    },
+    "pinned": false,
+    "breadcrumbs": [],
+    "publish_at": null,
+    "expire_at": null,
+    "first_published_at": "2025-06-04T16:57:27.068Z",
+    "last_author": {
+      "id": 273894,
+      "userid": "einstein-website@einsteinfloripa.com.br",
+      "friendly_name": "Einstein Floripa"
+    },
+    "last_author_id": 273894,
+    "user_ids": [],
+    "space_role_ids": [],
+    "translated_slugs": [],
+    "localized_paths": [],
+    "position": 10,
+    "translated_stories": [],
+    "can_not_view": false,
+    "is_scheduled": null,
+    "scheduled_dates": null,
+    "ideas": [],
+    "current_version_id": 207567790269549,
+    "variant_type": null,
+    "experiment_ids": [],
+    "stage": null,
+    "stages": [],
+    "favourite_for_user_ids": []
+  }
+}

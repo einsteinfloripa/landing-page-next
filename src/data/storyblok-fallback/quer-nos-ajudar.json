@@ -1,0 +1,1255 @@
+{
+  "story": {
+    "name": "Quer nos ajudar?",
+    "parent_id": 0,
+    "group_id": "f2417ca4-86b3-4d6e-97d7-9814f24b279c",
+    "alternates": [],
+    "created_at": "2025-05-30T23:23:59.425Z",
+    "deleted_at": null,
+    "sort_by_date": null,
+    "tag_list": [],
+    "updated_at": "2026-08-25T23:51:16.368Z",
+    "published_at": "2026-08-25T23:51:16.353Z",
+    "id": 35498928,
+    "uuid": "9381ae01-7ca9-41f1-b33e-dd8b785663eb",
+    "is_folder": false,
+    "content": {
+      "_uid": "73b8b085-a2a8-4804-8550-be1c6a3a2f4b",
+      "body": [
+        {
+          "_uid": "73b24c47-7c29-462b-bdc3-160af701f3ca",
+          "acoes": [
+            {
+              "_uid": "27fbfd71-1678-43a6-a131-1588751a17ca",
+              "link": {
+                "id": "9381ae01-7ca9-41f1-b33e-dd8b785663eb",
+                "url": "",
+                "anchor": "como-doar",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": "quer-nos-ajudar"
+              },
+              "button": [
+                {
+                  "_uid": "43159557-8e71-4e3f-870d-e60c3d64786f",
+                  "title": "Doe agora",
+                  "variant": "tertiary",
+                  "component": "button"
+                }
+              ],
+              "component": "button-nav"
+            },
+            {
+              "_uid": "98156784-976c-4d91-99f3-a1709be74fd2",
+              "link": {
+                "id": "8606c0ba-e3c7-4f0b-aa3b-12baea3601aa",
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": "contato"
+              },
+              "button": [
+                {
+                  "_uid": "f38c6eb5-35ca-4dc1-9acf-22e5bed861c1",
+                  "title": "Seja nosso parceiro",
+                  "variant": "outline-secondary",
+                  "component": "button"
+                }
+              ],
+              "component": "button-nav"
+            }
+          ],
+          "imagens": [
+            {
+              "_uid": "e043b1a2-aa9a-48a9-8132-d3756b499ed9",
+              "asset": {
+                "id": 1467318,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/4096x2731/75fa68c895/olimpeinstein.jpg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "component": "picture"
+            },
+            {
+              "_uid": "37e907af-1d56-4487-88a4-95e101f00d7e",
+              "asset": {
+                "id": 1467308,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/4032x3024/8d45caf155/feira-profissoes.jpg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "component": "picture"
+            },
+            {
+              "_uid": "7bb980a2-d524-4562-a7db-af1ce878c09e",
+              "asset": {
+                "id": 1467306,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/4096x2713/39f0ee57a7/aulao.jpg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "component": "picture"
+            },
+            {
+              "_uid": "169722cc-f95d-453e-8bc9-8557349351d4",
+              "asset": {
+                "id": 1467309,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/4096x2732/d4ec0ca123/show-talentos.jpg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "component": "picture"
+            }
+          ],
+          "component": "parceiros-hero",
+          "descricao": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Acreditamos que a educação tem o poder de mudar vidas e construir um futuro mais justo.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "_uid": "ba420889-30e5-48bc-88a7-2d40c2a5e1bd",
+          "texto": "SOMOS EINSTEIN",
+          "animar": true,
+          "component": "text-stripe"
+        },
+        {
+          "_uid": "d80d4a2a-66b3-44f8-8a17-dc918a8944d6",
+          "cards": [
+            {
+              "_uid": "fa5297d4-1a4f-4d2a-b2a0-43b962ab9936",
+              "imagem": {
+                "id": 1500053,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/80x80/3b55e4a596/hope.svg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "titulo": "Materiais",
+              "component": "imagem-card",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "As doações nos ajudam a fornecer materiais didáticos essenciais para nossos alunos, além de recursos de aula que apoiam professores e monitores em suas atividades. Com sua ajuda, garantimos que todos tenham acesso às ferramentas necessárias para um aprendizado completo.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "464a591c-0db6-4fb5-a364-fe1500c35296",
+              "imagem": {
+                "id": 1500055,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/84x80/178df8dac8/5-dots.svg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "titulo": "Eventos Educativos",
+              "component": "imagem-card",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Organizamos eventos que enriquecem o aprendizado e promovem o engajamento dos nossos alunos. Esses momentos complementam os estudos e fortalecem a troca de experiências, mas demandam recursos como decoração, alimentação e outros itens importantes para sua realização.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "4e8f616c-b932-4c65-a50c-467a0c432c47",
+              "imagem": {
+                "id": 1500058,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/80x80/9e14590ece/stairs.svg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "titulo": "Recursos Básicos",
+              "component": "imagem-card",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "As doações também são fundamentais para manter o funcionamento do Einstein Floripa. Desde despesas administrativas até custos com infraestrutura e tecnologia, cada contribuição é um passo para sustentar nossas iniciativas e ampliar nosso impacto.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "titulo": "Por que precisamos de ajuda?",
+          "component": "card-grid-section"
+        },
+        {
+          "_uid": "d35823e0-bbe2-4e11-a455-50aacc57a3ea",
+          "titulo": "Sua doação vai muito além de números",
+          "valores": [
+            {
+              "_uid": "c5186485-3f53-42ea-b8fc-8426b28eca14",
+              "valor": "10",
+              "titulo": "Um aluno, um passo mais perto",
+              "component": "doacao-card",
+              "descricao": {
+                "type": "doc",
+                "attrs": {
+                  "backgroundColor": null
+                },
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Ajude a imprimir simulados e materiais de estudo que fazem a diferença na preparação para o vestibular",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "03a770a2-ce9c-49db-a918-41aa8f040ba1",
+              "valor": "25",
+              "titulo": "Todos os simulados garantidos para um estudante",
+              "component": "doacao-card",
+              "descricao": {
+                "type": "doc",
+                "attrs": {
+                  "backgroundColor": null
+                },
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Sua doação garante a participação de um aluno em todos os simulados do ano, essenciais para o aprendizado e confiança.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "905c43c0-b50b-4be9-9bbf-47e0505199f3",
+              "valor": "50",
+              "titulo": "Aulas que constroem sonhos",
+              "component": "doacao-card",
+              "descricao": {
+                "type": "doc",
+                "attrs": {
+                  "backgroundColor": null
+                },
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Ajude a financiar materiais utilizados nas aulas, aulões e revisões que preparam nossos alunos para o desafio do vestibular.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "66245495-3baf-41c9-ba0d-52b6256fd7fa",
+              "valor": "100",
+              "titulo": "Mais tempo, mais oportunidades",
+              "component": "doacao-card",
+              "descricao": {
+                "type": "doc",
+                "attrs": {
+                  "backgroundColor": null
+                },
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Sua contribuição ajuda a manter um estudante no Einstein por mais de três meses, garantindo estudo e suporte contínuo.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "5051ae1c-b89a-4b26-b67d-4603a5c9fffe",
+              "valor": "200",
+              "titulo": "Um ano de preparação, um futuro de possibilidades",
+              "component": "doacao-card",
+              "descricao": {
+                "type": "doc",
+                "attrs": {
+                  "backgroundColor": null
+                },
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Você ajuda um estudante a permanecer no Einstein durante todo o ano, transformando sonhos em conquistas.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "component": "doacao-section",
+          "subtitulo": "Como ajudar?"
+        },
+        {
+          "_uid": "abddc820-e142-477b-99a9-613c456a4a14",
+          "cartao": {
+            "id": 1497153,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a-us.storyblok.com/f/1022982/33x32/f79321d028/insta.svg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "titulo": "ESCOLHA A MELHOR FORMA",
+          "chavePix": " 23.637.930/0001-56",
+          "linkForm": {
+            "id": "",
+            "url": "https://forms.gle/6cw7iFiM7e9Xps5u5",
+            "target": "_blank",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": "https://forms.gle/6cw7iFiM7e9Xps5u5"
+          },
+          "component": "como-doar-section",
+          "descricao": "Cada real investido é convertido em oportunidades – de aulas, simulados, eventos e materiais que tornam possível o acesso à educação de qualidade!",
+          "qrCodePix": {
+            "id": 210560580288367,
+            "alt": "QRCode Pix",
+            "name": "",
+            "focus": "",
+            "title": "qrcode-pix",
+            "source": "",
+            "filename": "https://a-us.storyblok.com/f/1022982/3141x4961/0448cfab04/my_qrcode_pagbank.png",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {
+              "alt": "QRCode Pix",
+              "size": "3141x4961",
+              "title": "qrcode-pix"
+            },
+            "is_external_url": false
+          },
+          "subtitulo": "Como ajudar?",
+          "linkCredito": {
+            "id": "",
+            "url": "https://amigosdoeinstein.sualojaonline.app/linknabiopagbank",
+            "target": "_blank",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": "https://amigosdoeinstein.sualojaonline.app/linknabiopagbank"
+          },
+          "infoTransferencia": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "CNPJ ",
+                    "type": "text"
+                  },
+                  {
+                    "text": "23.637.930/0001-56",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Agência ",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": "4550-0",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Conta ",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": "8894-3",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Projeto Einstein Pre-Vest (Banco do Brasil)",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "infoDoacaoRecorrente": {
+            "type": "doc",
+            "attrs": {
+              "backgroundColor": null
+            },
+            "content": [
+              {
+                "type": "paragraph",
+                "attrs": {
+                  "textAlign": null
+                },
+                "content": [
+                  {
+                    "type": "emoji",
+                    "attrs": {
+                      "name": "credit_card",
+                      "emoji": "💳",
+                      "fallbackImage": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple/img/apple/64/1f4b3.png"
+                    }
+                  },
+                  {
+                    "text": " Selecione um meio (crédito ou Pix) de doação recorrente.",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "attrs": {
+                  "textAlign": null
+                },
+                "content": [
+                  {
+                    "type": "emoji",
+                    "attrs": {
+                      "name": "memo",
+                      "emoji": "📝",
+                      "fallbackImage": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple/img/apple/64/1f4dd.png"
+                    }
+                  },
+                  {
+                    "text": " Se for via Pix, preencha o formulário: (EM BREVE O LINK).",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "attrs": {
+                  "textAlign": null
+                },
+                "content": [
+                  {
+                    "type": "emoji",
+                    "attrs": {
+                      "name": "blue_heart",
+                      "emoji": "💙",
+                      "fallbackImage": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple/img/apple/64/1f499.png"
+                    }
+                  },
+                  {
+                    "text": " Pronto! Todos os meses você apoiará nosso projeto sem esforço e fará parte.",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "attrs": {
+                  "textAlign": null
+                },
+                "content": [
+                  {
+                    "type": "emoji",
+                    "attrs": {
+                      "name": "star",
+                      "emoji": "⭐",
+                      "fallbackImage": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple/img/apple/64/2b50.png"
+                    }
+                  },
+                  {
+                    "text": " ",
+                    "type": "text"
+                  },
+                  {
+                    "text": "Benefícios:",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " Você ainda ganha acesso a nossa newsletter exclusiva com atualizações sobre como está sendo usado o seu dinheiro.",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "_uid": "9aa3dba0-208f-4b4c-a4be-51da6abaa085",
+          "cards": [
+            {
+              "cor": "#B0D9EC",
+              "_uid": "7b15fa0a-e5fe-4ebd-a836-5ec9ad4d119a",
+              "botao": [
+                {
+                  "_uid": "2bc2f770-da25-48da-9fea-8283b422a0f0",
+                  "link": {
+                    "id": "8606c0ba-e3c7-4f0b-aa3b-12baea3601aa",
+                    "rel": "",
+                    "url": "",
+                    "apoio": "financeiro",
+                    "title": "",
+                    "linktype": "story",
+                    "fieldtype": "multilink",
+                    "cached_url": "contato"
+                  },
+                  "button": [
+                    {
+                      "_uid": "bd8b5c6a-66df-47fb-9e87-820434f7dd7e",
+                      "title": "Quero dar apoio financeiro",
+                      "variant": "outline",
+                      "component": "button"
+                    }
+                  ],
+                  "component": "button-nav"
+                }
+              ],
+              "titulo": "Apoio Financeiro e Patrocínio",
+              "component": "tipo-parceria-card",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Investimento financeiro direto: Contribuições financeiras que garantem a sustentabilidade e a expansão do Einstein Floripa. Patrocínio de eventos e ações específicas: Financiamento direcionado para atividades, workshops e eventos pontuais, ampliando seu alcance e impacto.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "cor": "#74C3CC",
+              "_uid": "32d69448-31a2-44be-a274-171aaede0ce2",
+              "botao": [
+                {
+                  "_uid": "b843410b-08d7-40a5-956d-d6509eb4cbb0",
+                  "link": {
+                    "id": "8606c0ba-e3c7-4f0b-aa3b-12baea3601aa",
+                    "url": "",
+                    "linktype": "story",
+                    "fieldtype": "multilink",
+                    "cached_url": "contato"
+                  },
+                  "button": [
+                    {
+                      "_uid": "e21c1d08-dc77-4a99-83a3-e067aa512009",
+                      "title": "Quero ajudar com recursos",
+                      "variant": "outline",
+                      "component": "button"
+                    }
+                  ],
+                  "component": "button-nav"
+                }
+              ],
+              "titulo": "Recursos materiais",
+              "component": "tipo-parceria-card",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Investimento financeiro direto: Contribuições financeiras que garantem a sustentabilidade e a expansão do Einstein Floripa. Patrocínio de eventos e ações específicas: Financiamento direcionado para atividades, workshops e eventos pontuais, ampliando seu alcance e impacto.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "cor": "#54ADD5",
+              "_uid": "be8e0d37-1a85-46af-86a9-c032f2afdbd6",
+              "botao": [
+                {
+                  "_uid": "f85afb60-b1be-4afd-8b23-6b8bf494c0b4",
+                  "link": {
+                    "id": "8606c0ba-e3c7-4f0b-aa3b-12baea3601aa",
+                    "url": "",
+                    "linktype": "story",
+                    "fieldtype": "multilink",
+                    "cached_url": "contato"
+                  },
+                  "button": [
+                    {
+                      "_uid": "0053b018-c592-45df-a286-7b4435fd131a",
+                      "title": "Quero apoiar como mentor",
+                      "variant": "outline",
+                      "component": "button"
+                    }
+                  ],
+                  "component": "button-nav"
+                }
+              ],
+              "titulo": "Consultoria e Mentoria",
+              "component": "tipo-parceria-card",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Investimento financeiro direto: Contribuições financeiras que garantem a sustentabilidade e a expansão do Einstein Floripa. Patrocínio de eventos e ações específicas: Financiamento direcionado para atividades, workshops e eventos pontuais, ampliando seu alcance e impacto.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "cor": "#BFE3E7",
+              "_uid": "9a1dbfd9-98df-4416-9c06-b4c541106853",
+              "botao": [
+                {
+                  "_uid": "6ca816fc-ed8b-4f1c-91e9-9a4f55c02d2a",
+                  "link": {
+                    "id": "8606c0ba-e3c7-4f0b-aa3b-12baea3601aa",
+                    "url": "",
+                    "linktype": "story",
+                    "fieldtype": "multilink",
+                    "cached_url": "contato"
+                  },
+                  "button": [
+                    {
+                      "_uid": "6446f7c9-f915-4278-a1d3-5218bc4eee46",
+                      "title": "Quero dar apoio institucional",
+                      "variant": "outline",
+                      "component": "button"
+                    }
+                  ],
+                  "component": "button-nav"
+                }
+              ],
+              "titulo": "Apoio Institucional e Pedagógico",
+              "component": "tipo-parceria-card",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Investimento financeiro direto: Contribuições financeiras que garantem a sustentabilidade e a expansão do Einstein Floripa. Patrocínio de eventos e ações específicas: Financiamento direcionado para atividades, workshops e eventos pontuais, ampliando seu alcance e impacto.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "titulo": "tipos de parceria",
+          "component": "tipos-parceria-section"
+        },
+        {
+          "_uid": "b0e5974c-db4f-42ed-957a-8ea0c65e6555",
+          "texto": "SEJA UM PARCEIRO",
+          "animar": true,
+          "component": "text-stripe"
+        },
+        {
+          "_uid": "f910989d-882a-442c-89a7-97909ba7f995",
+          "cards": [
+            {
+              "_uid": "c3cc6950-815a-47f0-8f3a-c96956f55736",
+              "imagem": {
+                "id": 1503124,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/120x120/8e63f9d2d0/visibilidade.png",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "titulo": "Visibilidade da Marca",
+              "component": "imagem-card",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "As doações nos ajudam a fornecer materiais didáticos essenciais para nossos alunos, além de recursos de aula que apoiam professores e monitores em suas atividades. Com sua ajuda, garantimos que todos tenham acesso às ferramentas necessárias para um aprendizado completo.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "17543efd-1510-4f38-8dee-829767ccedeb",
+              "imagem": {
+                "id": 1503126,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/120x120/fd2c9af238/aperto-maos.png",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "titulo": "Potenciais Clientes",
+              "component": "imagem-card",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Organizamos eventos que enriquecem o aprendizado e promovem o engajamento dos nossos alunos. Esses momentos complementam os estudos e fortalecem a troca de experiências, mas demandam recursos como decoração, alimentação e outros itens importantes para sua realização.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "0d07ea66-22ee-4e5d-841f-6705847a0b53",
+              "imagem": {
+                "id": 119563672106251,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/1000x1000/d840dc92f1/microfone.svg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "titulo": "Relatórios Mensais",
+              "component": "imagem-card",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "As doações também são fundamentais para manter o funcionamento do Einstein Floripa. Desde despesas administrativas até custos com infraestrutura e tecnologia, cada contribuição é um passo para sustentar nossas iniciativas e ampliar nosso impacto.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "titulo": "Por que ser nosso parceiro?",
+          "component": "beneficios-parceria-section",
+          "subtitulo": "Benefícios"
+        },
+        {
+          "_uid": "d9cd2a23-8315-46c0-9fa5-625c9cd11d9b",
+          "etapas": [
+            {
+              "_uid": "407b1b00-2ae9-4b0c-918f-9c6128a98f9a",
+              "titulo": "Contato Inicial",
+              "component": "card-texto",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Conversamos para entender as expectativas e objetivos da sua empresa, identificando juntos as melhores possibilidades de parceria.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "c5a013c1-b4ff-4b91-abcd-f9fb077434fa",
+              "titulo": "Planejamento Conjunto",
+              "component": "card-texto",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Desenvolvemos ações personalizadas e estratégicas, alinhadas às necessidades específicas da sua empresa e ao impacto desejado.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "6481384d-01c3-4793-ae0f-985a27a2e29f",
+              "titulo": "Implementação",
+              "component": "card-texto",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Colocamos em prática as ações planejadas, garantindo uma execução organizada, transparente e alinhada aos objetivos definidos previamente.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "b1f9d669-c697-4cbd-b6fd-a6092df1d276",
+              "titulo": "Acompanhamento",
+              "component": "card-texto",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Realizamos monitoramento constante e fornecemos relatórios detalhados de impacto, garantindo transparência e confiança em cada etapa da parceria.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "titulo": "Como funciona?",
+          "component": "processo-parceria-section",
+          "subtitulo": "Processo"
+        }
+      ],
+      "footer": "114e01b4-2100-44a2-9179-16f26a2486a3",
+      "header": "98c8cf33-9796-4984-980b-6138bf6c3727",
+      "imagem": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null,
+        "source": null,
+        "filename": "",
+        "copyright": null,
+        "fieldtype": "asset",
+        "meta_data": {}
+      },
+      "titulo": "Einstein Floripa | Quer nos ajudar?",
+      "component": "pagina",
+      "descricao": "Ajude a transformar a educação: seja um doador!",
+      "corDoFooter": "azul"
+    },
+    "published": true,
+    "slug": "quer-nos-ajudar",
+    "path": null,
+    "full_slug": "quer-nos-ajudar",
+    "default_root": null,
+    "disble_fe_editor": false,
+    "disable_fe_editor": false,
+    "parent": null,
+    "is_startpage": false,
+    "unpublished_changes": false,
+    "meta_data": null,
+    "imported_at": null,
+    "preview_token": {
+      "token": "236e71cd5c4e8e2ef26b49f32c0ca518676cfac8",
+      "timestamp": "1787836382"
+    },
+    "pinned": false,
+    "breadcrumbs": [],
+    "publish_at": null,
+    "expire_at": null,
+    "first_published_at": "2025-06-09T14:36:38.661Z",
+    "last_author": {
+      "id": 273894,
+      "userid": "einstein-website@einsteinfloripa.com.br",
+      "friendly_name": "Einstein Floripa"
+    },
+    "last_author_id": 273894,
+    "user_ids": [],
+    "space_role_ids": [],
+    "translated_slugs": [],
+    "localized_paths": [],
+    "position": 0,
+    "translated_stories": [],
+    "can_not_view": false,
+    "is_scheduled": null,
+    "scheduled_dates": null,
+    "ideas": [],
+    "current_version_id": 213042283785219,
+    "variant_type": null,
+    "experiment_ids": [],
+    "stage": null,
+    "stages": [],
+    "favourite_for_user_ids": []
+  }
+}

@@ -1,0 +1,701 @@
+{
+  "story": {
+    "name": "Home",
+    "parent_id": null,
+    "group_id": "23fb9666-d0d9-4a53-a263-853af69918a0",
+    "alternates": [],
+    "created_at": "2025-01-17T19:03:21.371Z",
+    "deleted_at": null,
+    "sort_by_date": null,
+    "tag_list": [],
+    "updated_at": "2026-08-18T22:55:37.247Z",
+    "published_at": "2026-03-09T22:00:00.103Z",
+    "id": 20487651,
+    "uuid": "e4051456-f423-490b-a640-5a468c0dc4c3",
+    "is_folder": false,
+    "content": {
+      "_uid": "a261c2c6-50af-4991-bae1-f19d2f4f9676",
+      "body": [
+        {
+          "_uid": "15b32f63-6491-4378-8f41-30459d417b45",
+          "acoes": [],
+          "imagem": {
+            "id": 1058077,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a-us.storyblok.com/f/1022982/1057x478/d2a09776d1/alunos-organizadores.png",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "titulo": "Junte-se a nós e transforme o futuro de aluno para aluno",
+          "component": "main-hero",
+          "subtitulo": "Cursinho pré-vestibular gratuito para estudantes de baixa renda que sonham com uma educação superior de qualidade.",
+          "cardTitulo": "NOS AJUDE A",
+          "imagemMobile": {
+            "id": 1058078,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a-us.storyblok.com/f/1022982/4096x2731/c97a74a5d6/alunos-organizadores-mobile.jpeg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "cardSubtitulo": "MUDAR A EDUCAÇÃO DO BRASIL",
+          "linkDaNossaDoacao": {
+            "id": "9381ae01-7ca9-41f1-b33e-dd8b785663eb",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "quer-nos-ajudar"
+          }
+        },
+        {
+          "_uid": "2429e39e-8d9c-42f1-ab8a-678d4f76bea5",
+          "acoes": [
+            {
+              "_uid": "c052374a-23d6-4c40-b4aa-9d90086f8604",
+              "link": {
+                "id": "245e7af7-4299-480f-85af-4a8653c3697a",
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": "sobre-nos"
+              },
+              "button": [
+                {
+                  "_uid": "e7984bc2-b645-431d-962e-c1ad63ab2646",
+                  "title": "Conheça mais",
+                  "variant": "default",
+                  "component": "button"
+                }
+              ],
+              "component": "button-nav"
+            }
+          ],
+          "titulo": "Criando um futuro onde a educação é para todos",
+          "component": "about-section",
+          "descricao": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "O Einstein Floripa nasceu do sonho de três universitários em ",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": "democratizar o acesso ao ensino superior ",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": "no Brasil. Ao se depararem com as dificuldades de muitos para alcançar uma ",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": "educação de qualidade",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", decidiram agir e criaram este projeto ",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": "voluntário e gratuito",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", que abre portas para um futuro melhor.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "_uid": "6c23d084-1f98-44de-a4c4-4bb71ef138f8",
+          "imagem": {
+            "id": 1058624,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a-us.storyblok.com/f/1022982/2514x1665/2cab4a671e/aprovados.png",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "metricas": [
+            {
+              "_uid": "c029a834-2ff2-4f59-9b8f-20e4c92d5f3d",
+              "valor": "+600",
+              "component": "metric",
+              "descricao": "APROVADOS"
+            },
+            {
+              "_uid": "df798bb0-58f6-43f7-9753-7a0e51df3e78",
+              "valor": "+2MIL",
+              "component": "metric",
+              "descricao": "VIDAS TRANSFORMADAS"
+            },
+            {
+              "_uid": "a7d7cf36-346a-4cb3-bb3b-7b8c306fff2b",
+              "valor": "+23MIL",
+              "component": "metric",
+              "descricao": "HORAS TRABALHADAS"
+            },
+            {
+              "_uid": "35eb47a6-2a1f-42be-9927-6ef3316b3c0e",
+              "valor": "+8MIL",
+              "component": "metric",
+              "descricao": "HORAS DE AULA"
+            }
+          ],
+          "component": "achievements-section",
+          "textoStripe": "SOMOS EINSTEIN"
+        },
+        {
+          "_uid": "64538d3f-a219-4108-a462-df5e1268359a",
+          "texto": "SOMOS EINSTEIN",
+          "animar": true,
+          "component": "text-stripe"
+        },
+        {
+          "_uid": "7629d973-f008-482b-8c79-3d9b5505692f",
+          "acoes": [
+            {
+              "_uid": "df25e09f-ee4c-41f0-975c-8937836d3152",
+              "link": {
+                "id": "8606c0ba-e3c7-4f0b-aa3b-12baea3601aa",
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": "contato"
+              },
+              "button": [
+                {
+                  "_uid": "a48bd664-af13-458a-9820-4f9ffaa8d340",
+                  "title": "Entre em contato",
+                  "variant": "default",
+                  "component": "button"
+                }
+              ],
+              "component": "button-nav"
+            }
+          ],
+          "imagem": {
+            "id": 1463521,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a-us.storyblok.com/f/1022982/753x620/f4a4e1b3a2/alunos-eventos.png",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "qrCode": {
+            "id": null,
+            "alt": null,
+            "name": "",
+            "focus": null,
+            "title": null,
+            "filename": null,
+            "copyright": null,
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "titulo": "Gostou da iniciativa e quer nos ajudar?",
+          "botaoNav": [
+            {
+              "_uid": "fcf1c09a-c26e-464b-b2e7-3e894a030f7a",
+              "link": {
+                "id": "9381ae01-7ca9-41f1-b33e-dd8b785663eb",
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": "quer-nos-ajudar"
+              },
+              "button": [
+                {
+                  "_uid": "227fc20f-20bf-4573-b477-9ead92803214",
+                  "icone": {
+                    "id": null,
+                    "alt": null,
+                    "name": "",
+                    "focus": null,
+                    "title": null,
+                    "source": null,
+                    "filename": "",
+                    "copyright": null,
+                    "fieldtype": "asset",
+                    "meta_data": {}
+                  },
+                  "title": "Veja aqui meios de doar",
+                  "variant": "default",
+                  "disabled": false,
+                  "component": "button",
+                  "iconeADireita": false
+                }
+              ],
+              "component": "button-nav"
+            }
+          ],
+          "component": "contribution-section",
+          "descricao": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "É uma empresa e o Einstein Floripa despertou seu interesse? Agende uma conversa para sermos parceiros!",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "subtitulo": {
+            "type": "doc",
+            "attrs": {
+              "backgroundColor": null
+            },
+            "content": [
+              {
+                "type": "paragraph",
+                "attrs": {
+                  "textAlign": null
+                },
+                "content": [
+                  {
+                    "text": "O projeto se sustenta por meio de doações e parcerias que garantem a continuidade e o crescimento do nosso cursinho.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "attrs": {
+                  "textAlign": null
+                },
+                "content": [
+                  {
+                    "text": "Contribua com doações recorrentes ou avulsas e acompanhe, por meio de relatórios e newsletters, o impacto real do seu apoio.",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          "headlineImagem": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Cada real investido é convertido em oportunidades – aulas, simulados, eventos e materiais que tornam possível o acesso à educação de qualidade.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "qrCodeDescricao": {
+            "type": "doc",
+            "attrs": {
+              "backgroundColor": null
+            },
+            "content": [
+              {
+                "type": "paragraph",
+                "attrs": {
+                  "textAlign": null
+                }
+              }
+            ]
+          }
+        },
+        {
+          "_uid": "71a49dd5-9a68-4102-adb5-0133356d7289",
+          "nome": "Emanuelle de Souza Bünzen",
+          "botao": [
+            {
+              "_uid": "d8d970de-b070-40d8-bed4-a725d96b54dd",
+              "link": {
+                "id": "e4051456-f423-490b-a640-5a468c0dc4c3",
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": "home"
+              },
+              "button": [
+                {
+                  "_uid": "c01ab64f-1a38-4adb-9275-e73e0b7cc640",
+                  "title": "Veja + 50 depoimentos",
+                  "variant": "link",
+                  "component": "button"
+                }
+              ],
+              "component": "button-nav"
+            }
+          ],
+          "imagem": {
+            "id": 62659533462214,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a-us.storyblok.com/f/1022982/640x1024/88a4025bce/times_manu.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "component": "single-testimonal-section",
+          "testemunho": "A oportunidade de ajudar as pessoas, ver o sorriso e o alívio em seus rostos, e presenciar o brilho nos olhos e a garra dos alunos apesar de tudo, é o que realmente me move.",
+          "apresentacao": "Voluntária do Einstein 2025"
+        },
+        {
+          "_uid": "a0b3cc69-9f9a-4a42-8034-ccf0237e491d",
+          "cards": [
+            {
+              "cor": "#75529A",
+              "_uid": "2308eda4-d802-4394-b8ce-1c4918a3fb05",
+              "acoes": [
+                {
+                  "_uid": "9aa66a8e-bf41-4759-b292-c945b35c83b8",
+                  "link": {
+                    "id": "",
+                    "url": "https://app.pipefy.com/public/form/d5X3ZGuX",
+                    "linktype": "url",
+                    "fieldtype": "multilink",
+                    "cached_url": "https://app.pipefy.com/public/form/d5X3ZGuX"
+                  },
+                  "button": [
+                    {
+                      "_uid": "91aa05eb-cbdf-41b0-9189-83891b81eef5",
+                      "title": "Inscreva-se",
+                      "variant": "default",
+                      "disabled": false,
+                      "component": "button"
+                    }
+                  ],
+                  "disabled": true,
+                  "component": "button-nav"
+                }
+              ],
+              "image": {
+                "id": 1465037,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/620x489/4770b8a634/inscricao-alunos.png",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "titulo": "Alunos",
+              "component": "card-inscricao",
+              "descricao": "Tenha um suporte completo, aprenda e cresça conosco. Estamos aqui para te auxiliar em cada passo da sua jornada."
+            },
+            {
+              "cor": "#0085C1",
+              "_uid": "f158706d-150d-48fc-b9f8-acee45bc2f3d",
+              "acoes": [
+                {
+                  "_uid": "dde286c6-07c3-4741-93c4-6c4bd30da79e",
+                  "link": {
+                    "id": "841be562-89ab-4ca5-a595-2e6b6febb828",
+                    "url": "",
+                    "linktype": "story",
+                    "fieldtype": "multilink",
+                    "cached_url": "voluntariado"
+                  },
+                  "button": [
+                    {
+                      "_uid": "93902b7f-1d83-4786-986c-eeaa09cf1569",
+                      "title": "Inscreva-se",
+                      "variant": "default",
+                      "disabled": false,
+                      "component": "button"
+                    }
+                  ],
+                  "component": "button-nav"
+                },
+                {
+                  "_uid": "3284c7d3-cf43-4a15-8824-7f935574460a",
+                  "link": {
+                    "id": "841be562-89ab-4ca5-a595-2e6b6febb828",
+                    "url": "",
+                    "linktype": "story",
+                    "fieldtype": "multilink",
+                    "cached_url": "voluntariado"
+                  },
+                  "button": [
+                    {
+                      "_uid": "5f91efe7-96e0-421e-9537-c2afdf05522c",
+                      "title": "Saiba mais",
+                      "variant": "link",
+                      "component": "button"
+                    }
+                  ],
+                  "component": "button-nav"
+                }
+              ],
+              "image": {
+                "id": 1465039,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/804x492/76fdb85e39/inscricao-voluntarios.png",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "titulo": "Voluntários",
+              "component": "card-inscricao",
+              "descricao": "Adquira experiência, faça a diferença e torne-se um profissional atuante em uma causa que transforma vidas."
+            },
+            {
+              "cor": "#2FA5B3",
+              "_uid": "77058d1e-b23d-4d36-8679-0aa35da46b7e",
+              "acoes": [
+                {
+                  "_uid": "53ea6648-448e-4889-a2c9-0d85ad675a08",
+                  "link": {
+                    "id": "8606c0ba-e3c7-4f0b-aa3b-12baea3601aa",
+                    "url": "",
+                    "linktype": "story",
+                    "fieldtype": "multilink",
+                    "cached_url": "contato"
+                  },
+                  "button": [
+                    {
+                      "_uid": "45db709d-0be3-474f-819e-db9d93d49bd0",
+                      "title": "Seja um parceiro",
+                      "variant": "default",
+                      "component": "button"
+                    }
+                  ],
+                  "component": "button-nav"
+                },
+                {
+                  "_uid": "4ec15d36-2e3b-4441-973a-66283313851d",
+                  "link": {
+                    "id": "9381ae01-7ca9-41f1-b33e-dd8b785663eb",
+                    "url": "",
+                    "anchor": "tipos-de-parceria",
+                    "linktype": "story",
+                    "fieldtype": "multilink",
+                    "cached_url": "quer-nos-ajudar"
+                  },
+                  "button": [
+                    {
+                      "_uid": "2aa5773a-6dde-4368-abb6-68cbff800fd7",
+                      "title": "Saiba mais",
+                      "variant": "link",
+                      "component": "button"
+                    }
+                  ],
+                  "component": "button-nav"
+                }
+              ],
+              "image": {
+                "id": 1465045,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/606x440/fcb42069e2/inscricnao-empresas.png",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "titulo": "Empresas",
+              "component": "card-inscricao",
+              "descricao": "Se você acredita que a educação é a base para mudar vidas, associe sua marca a nós e nos ajude a reescrever a história."
+            }
+          ],
+          "component": "join-us-section"
+        }
+      ],
+      "footer": "114e01b4-2100-44a2-9179-16f26a2486a3",
+      "header": "98c8cf33-9796-4984-980b-6138bf6c3727",
+      "imagem": {
+        "id": 78782374224097,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a-us.storyblok.com/f/1022982/4032x3024/25f9e8f6f2/piquenique-aprovados-min.png",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "titulo": "Einstein Floripa",
+      "component": "pagina",
+      "descricao": "Cursinho pré-vestibular gratuito para estudantes de baixa renda que sonham com uma educação superior de qualidade.",
+      "corDoFooter": "azul-escuro"
+    },
+    "published": true,
+    "slug": "home",
+    "path": null,
+    "full_slug": "home",
+    "default_root": null,
+    "disble_fe_editor": false,
+    "disable_fe_editor": false,
+    "parent": null,
+    "is_startpage": false,
+    "unpublished_changes": true,
+    "meta_data": null,
+    "imported_at": null,
+    "preview_token": {
+      "token": "236e71cd5c4e8e2ef26b49f32c0ca518676cfac8",
+      "timestamp": "1787836382"
+    },
+    "pinned": false,
+    "breadcrumbs": [],
+    "publish_at": null,
+    "expire_at": null,
+    "first_published_at": "2025-06-02T03:28:19.953Z",
+    "last_author": {
+      "id": 273894,
+      "userid": "einstein-website@einsteinfloripa.com.br",
+      "friendly_name": "Einstein Floripa"
+    },
+    "last_author_id": 273894,
+    "user_ids": [],
+    "space_role_ids": [],
+    "translated_slugs": [],
+    "localized_paths": [],
+    "position": 20,
+    "translated_stories": [],
+    "can_not_view": false,
+    "is_scheduled": null,
+    "scheduled_dates": null,
+    "ideas": [],
+    "current_version_id": 210551346111798,
+    "variant_type": null,
+    "experiment_ids": [],
+    "stage": null,
+    "stages": [],
+    "favourite_for_user_ids": []
+  }
+}

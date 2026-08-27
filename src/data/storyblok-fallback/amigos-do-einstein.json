@@ -1,0 +1,327 @@
+{
+  "story": {
+    "name": "Amigos do Einstein",
+    "parent_id": null,
+    "group_id": "d63ab974-4b1b-4243-9073-dac288571727",
+    "alternates": [],
+    "created_at": "2025-06-11T21:50:15.393Z",
+    "deleted_at": null,
+    "sort_by_date": null,
+    "tag_list": [],
+    "updated_at": "2025-08-18T19:12:58.445Z",
+    "published_at": "2025-08-18T19:12:58.435Z",
+    "id": 36823991,
+    "uuid": "18c1cf61-3ecb-4765-9eb7-aafd0487abf3",
+    "is_folder": false,
+    "content": {
+      "_uid": "9229cde2-514e-492b-ae5e-624e931b6c2e",
+      "body": [
+        {
+          "_uid": "b21123d0-1bc0-4374-8ba1-3d8cf55547e8",
+          "cards": [
+            {
+              "cor": "#00283A",
+              "_uid": "ac654bc9-966f-4ef2-8547-dcc8f12d8200",
+              "link": {
+                "id": "",
+                "url": "https://pag.ae/7VZFt-ama",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "https://pag.ae/7VZFt-ama"
+              },
+              "titulo": "R$5",
+              "corTexto": "light",
+              "component": "card-amigos-einstein",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Proporciona material didático para 2 estudantes por 1 mês.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "cor": "#005E89",
+              "_uid": "e53823b5-d6f3-45db-9d16-b9c7b2bd634f",
+              "link": {
+                "id": "",
+                "url": "https://pag.ae/7VZFt-ama",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "https://pag.ae/7VZFt-ama"
+              },
+              "titulo": "R$15",
+              "corTexto": "light",
+              "component": "card-amigos-einstein",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Proporciona material didático para 2 estudantes por 1 mês.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "cor": "#0079B0",
+              "_uid": "a2e50aea-4aa4-4e0f-b396-3a9207677be9",
+              "link": {
+                "id": "",
+                "url": "https://pag.ae/7VZFt-ama",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "https://pag.ae/7VZFt-ama"
+              },
+              "titulo": "R$25",
+              "corTexto": "light",
+              "component": "card-amigos-einstein",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Proporciona material didático para 2 estudantes por 1 mês.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "cor": "#54ADD5",
+              "_uid": "b1f06a4e-3a5f-4a86-b52f-90b0a6d65400",
+              "link": {
+                "id": "",
+                "url": "https://pag.ae/7VZFt-ama",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "https://pag.ae/7VZFt-ama"
+              },
+              "titulo": "R$60",
+              "corTexto": "dark",
+              "component": "card-amigos-einstein",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Proporciona material didático para 2 estudantes por 1 mês.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "cor": "#B0D9EC",
+              "_uid": "e53cb901-7111-47d1-a4d1-fdae4c6a7565",
+              "link": {
+                "id": "",
+                "url": "https://pag.ae/7VZFt-ama",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "https://pag.ae/7VZFt-ama"
+              },
+              "titulo": "R$100",
+              "corTexto": "dark",
+              "component": "card-amigos-einstein",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Proporciona material didático para 2 estudantes por 1 mês.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "cor": "#74C3CC",
+              "_uid": "4a038abd-678e-42b8-9cb5-4961ea3f5d49",
+              "link": {
+                "id": "",
+                "url": "https://pag.ae/7VZFt-ama",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "https://pag.ae/7VZFt-ama"
+              },
+              "titulo": "R$200",
+              "corTexto": "dark",
+              "component": "card-amigos-einstein",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Proporciona material didático para 2 estudantes por 1 mês.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "component": "amigos-einstein-section",
+          "descricao": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Com a doação recorrente você apoia o projeto sem se preocupar com pagamentos e ainda ganha acesso a nossa newsletter exclusiva com atualizações sobre como está sendo usado o dinheiro!",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "footer": "114e01b4-2100-44a2-9179-16f26a2486a3",
+      "header": "98c8cf33-9796-4984-980b-6138bf6c3727",
+      "imagem": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null,
+        "source": null,
+        "filename": "",
+        "copyright": null,
+        "fieldtype": "asset",
+        "meta_data": {}
+      },
+      "titulo": "Einstein Floripa | Amigos do Einstein",
+      "component": "pagina",
+      "descricao": "Ajude a transformar a educação: seja um amigo do Einstein",
+      "corDoFooter": "azul"
+    },
+    "published": true,
+    "slug": "amigos-do-einstein",
+    "path": null,
+    "full_slug": "amigos-do-einstein",
+    "default_root": null,
+    "disble_fe_editor": false,
+    "disable_fe_editor": false,
+    "parent": null,
+    "is_startpage": false,
+    "unpublished_changes": false,
+    "meta_data": null,
+    "imported_at": null,
+    "preview_token": {
+      "token": "d851cc0802b4a926c8de00119ef8b7b822a24078",
+      "timestamp": "1787836381"
+    },
+    "pinned": false,
+    "breadcrumbs": [],
+    "publish_at": null,
+    "expire_at": null,
+    "first_published_at": "2025-06-15T16:06:41.497Z",
+    "last_author": {
+      "id": 273894,
+      "userid": "einstein-website@einsteinfloripa.com.br",
+      "friendly_name": "Einstein Floripa"
+    },
+    "last_author_id": 273894,
+    "user_ids": [],
+    "space_role_ids": [],
+    "translated_slugs": [],
+    "localized_paths": [],
+    "position": -10,
+    "translated_stories": [],
+    "can_not_view": false,
+    "is_scheduled": null,
+    "scheduled_dates": null,
+    "ideas": [],
+    "current_version_id": null,
+    "variant_type": null,
+    "experiment_ids": [],
+    "stage": null,
+    "stages": [],
+    "favourite_for_user_ids": []
+  }
+}

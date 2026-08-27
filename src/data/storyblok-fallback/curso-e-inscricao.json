@@ -1,0 +1,1175 @@
+{
+  "story": {
+    "name": "Curso e inscrição",
+    "parent_id": null,
+    "group_id": "9d64dfe0-2d5e-4126-a122-36df217c0a3e",
+    "alternates": [],
+    "created_at": "2025-10-07T00:38:44.755Z",
+    "deleted_at": null,
+    "sort_by_date": null,
+    "tag_list": [],
+    "updated_at": "2026-08-20T23:57:05.472Z",
+    "published_at": "2026-08-20T23:57:05.461Z",
+    "id": 98746059864737,
+    "uuid": "5f509d1f-0b41-4169-825d-a4a6833c2b56",
+    "is_folder": false,
+    "content": {
+      "_uid": "e4a4aade-6f73-48a9-8806-e1146d9a1cf3",
+      "body": [
+        {
+          "_uid": "6668906a-c387-4b2a-b4ae-842d56cfa513",
+          "acoes": [
+            {
+              "_uid": "dbc1272c-12e9-4ed7-9429-61c50c6f8ec8",
+              "link": {
+                "id": "",
+                "url": "https://drive.google.com/file/d/1b2taFjklGrOnpnH1CDf4CV8bIZjZ0aKf/view?usp=drivesdk",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "https://drive.google.com/file/d/1b2taFjklGrOnpnH1CDf4CV8bIZjZ0aKf/view?usp=drivesdk"
+              },
+              "button": [
+                {
+                  "_uid": "fb974e4a-3ee7-4d17-b518-af6c589af642",
+                  "icone": {
+                    "id": null,
+                    "alt": null,
+                    "name": "",
+                    "focus": null,
+                    "title": null,
+                    "source": null,
+                    "filename": "",
+                    "copyright": null,
+                    "fieldtype": "asset",
+                    "meta_data": {}
+                  },
+                  "title": "Processo Seletivo",
+                  "variant": "outline",
+                  "component": "button",
+                  "iconeADireita": false
+                }
+              ],
+              "component": "button-nav"
+            },
+            {
+              "_uid": "cb1a6641-0d2d-4b62-923e-3a48fd93221e",
+              "link": {
+                "id": "",
+                "url": "https://app.pipefy.com/public/form/d5X3ZGuX",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "https://app.pipefy.com/public/form/d5X3ZGuX"
+              },
+              "button": [
+                {
+                  "_uid": "52d77429-f8c1-45b3-88ac-4eebcc511aec",
+                  "icone": {
+                    "id": null,
+                    "alt": null,
+                    "name": "",
+                    "focus": null,
+                    "title": null,
+                    "source": null,
+                    "filename": "",
+                    "copyright": null,
+                    "fieldtype": "asset",
+                    "meta_data": {}
+                  },
+                  "title": "Inscreva-se",
+                  "variant": "default",
+                  "component": "button",
+                  "iconeADireita": false
+                }
+              ],
+              "component": "button-nav"
+            }
+          ],
+          "Titulo": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "attrs": {
+                  "textAlign": null
+                },
+                "content": [
+                  {
+                    "text": "Curso ",
+                    "type": "text"
+                  },
+                  {
+                    "text": "gratuito",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "anchor",
+                        "attrs": {
+                          "id": "circle"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": " de preparação para o ",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "attrs": {
+                  "textAlign": null
+                },
+                "content": [
+                  {
+                    "text": "vestibular",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "anchor",
+                        "attrs": {
+                          "id": "arrows"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": " destinado a alunos ",
+                    "type": "text"
+                  },
+                  {
+                    "text": "de baixa renda",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "anchor",
+                        "attrs": {
+                          "id": "underline"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "imagem": {
+            "id": 118760624798880,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a-us.storyblok.com/f/1022982/1440x512/a4793dec3f/alunos-curso.png",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "imagens": [],
+          "Descricao": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "attrs": {
+                  "textAlign": null
+                },
+                "content": [
+                  {
+                    "text": "Aulas presenciais na Universidade Federal de Santa Catarina (UFSC), de segunda a sexta-feira, das 18h às 22h.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "component": "curso-hero",
+          "descricao": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "attrs": {
+                  "textAlign": null
+                },
+                "content": [
+                  {
+                    "text": "Aulas presenciais na Universidade Federal de Santa Catarina (UFSC), de segunda a sexta-feira, das 18h às 22h.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "_uid": "96de7968-6f86-4cc4-a5d1-98e857186251",
+          "cards": [
+            {
+              "_uid": "7ca68ac3-0f72-4386-baee-01c3e563eddc",
+              "icone": {
+                "id": 137556169039923,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/24x24/199d68b29f/presentation-1.svg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "Imagem": {
+                "id": null,
+                "alt": null,
+                "name": "",
+                "focus": null,
+                "title": null,
+                "source": null,
+                "filename": "",
+                "copyright": null,
+                "fieldtype": "asset",
+                "meta_data": {}
+              },
+              "Titulo": "Aulas",
+              "Descricao": "Diariamente e presencial na ufsc das 18h até 22h",
+              "component": "oferecemos-card"
+            },
+            {
+              "_uid": "9a1fc5fb-a504-4130-8bc9-6d69128d823f",
+              "icone": {
+                "id": 137556372242484,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/24x24/34229da810/calendar-fold.svg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "Imagem": {
+                "id": 119319876457218,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/612x282/ce7a1cc50d/semaninhas-card.png",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "Titulo": "Semaninhas",
+              "Descricao": "3 semanas de aula apenas sobre conteúdo básico",
+              "component": "oferecemos-card"
+            },
+            {
+              "_uid": "ce8767f3-ef3f-4e3e-97db-a7f3b8c2c460",
+              "icone": {
+                "id": 119324915004167,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/32x32/873036f60b/student_icon.svg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "Imagem": {
+                "id": null,
+                "alt": null,
+                "name": "",
+                "focus": null,
+                "title": null,
+                "source": null,
+                "filename": "",
+                "copyright": null,
+                "fieldtype": "asset",
+                "meta_data": {}
+              },
+              "Titulo": "Monitorias",
+              "Descricao": "Suporte de aula ao aluno. Diárias na UFSC, das 17:10 às 17:50",
+              "component": "oferecemos-card"
+            },
+            {
+              "_uid": "1fb5f227-49df-4bbe-af3a-5d5ac7840d52",
+              "icone": {
+                "id": 119324915217163,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/32x32/50181c3fdf/question_icon.svg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "Imagem": {
+                "id": null,
+                "alt": null,
+                "name": "",
+                "focus": null,
+                "title": null,
+                "source": null,
+                "filename": "",
+                "copyright": null,
+                "fieldtype": "asset",
+                "meta_data": {}
+              },
+              "Titulo": "TutorEinstein",
+              "Descricao": "Acompanhamento individual ao aluno oferecido por um voluntário do projeto",
+              "component": "oferecemos-card"
+            },
+            {
+              "_uid": "e9ba27b3-b4f8-4ab9-ace6-2683408444d6",
+              "icone": {
+                "id": 119324915020552,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/32x32/e8a775cfbd/personswim_icon.svg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "Imagem": {
+                "id": null,
+                "alt": null,
+                "name": "",
+                "focus": null,
+                "title": null,
+                "source": null,
+                "filename": "",
+                "copyright": null,
+                "fieldtype": "asset",
+                "meta_data": {}
+              },
+              "Titulo": "Simulados",
+              "Descricao": "Diversas provas de preparação",
+              "component": "oferecemos-card"
+            },
+            {
+              "_uid": "6a1854e2-cc6d-44ab-b388-426fbf50729c",
+              "icone": {
+                "id": 119324915020552,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/32x32/e8a775cfbd/personswim_icon.svg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "Imagem": {
+                "id": null,
+                "alt": null,
+                "name": "",
+                "focus": null,
+                "title": null,
+                "source": null,
+                "filename": "",
+                "copyright": null,
+                "fieldtype": "asset",
+                "meta_data": {}
+              },
+              "Titulo": "Revisões",
+              "Descricao": "Mensais, para relembrar o essencial",
+              "component": "oferecemos-card"
+            },
+            {
+              "_uid": "5d220f99-93f9-4ea4-a148-e291f6bbb325",
+              "icone": {
+                "id": 137556546904117,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/24x24/f3b828b8e4/cake.svg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "Imagem": {
+                "id": null,
+                "alt": null,
+                "name": "",
+                "focus": null,
+                "title": null,
+                "source": null,
+                "filename": "",
+                "copyright": null,
+                "fieldtype": "asset",
+                "meta_data": {}
+              },
+              "Titulo": "Intervalos temáticos",
+              "Descricao": "Para comemorar datas especiais",
+              "component": "oferecemos-card"
+            },
+            {
+              "_uid": "927419f1-551f-4105-a670-4d94c0ecc660",
+              "icone": {
+                "id": 137556680507446,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/24x24/d49c1b9441/square-stack.svg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "Imagem": {
+                "id": null,
+                "alt": null,
+                "name": "",
+                "focus": null,
+                "title": null,
+                "source": null,
+                "filename": "",
+                "copyright": null,
+                "fieldtype": "asset",
+                "meta_data": {}
+              },
+              "Titulo": "Aulões",
+              "Descricao": "Momento de revisão de conteúdos aberto ao público, geralmente temático",
+              "component": "oferecemos-card"
+            },
+            {
+              "_uid": "a752cd91-70d6-4c1e-bf19-74cf6bd0729c",
+              "icone": {
+                "id": 137556813819959,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/24x24/34bf3130bf/volleyball.svg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "Imagem": {
+                "id": null,
+                "alt": null,
+                "name": "",
+                "focus": null,
+                "title": null,
+                "source": null,
+                "filename": "",
+                "copyright": null,
+                "fieldtype": "asset",
+                "meta_data": {}
+              },
+              "Titulo": "OlimpEinstein",
+              "Descricao": "Olimpíada de esportes para integração entre alunos e voluntários ",
+              "component": "oferecemos-card"
+            },
+            {
+              "_uid": "40c543b8-0fe2-429f-98e1-4814ca0542cf",
+              "icone": {
+                "id": 137556969246777,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a-us.storyblok.com/f/1022982/24x24/1e20d992f8/flame-kindling.svg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "Imagem": {
+                "id": null,
+                "alt": null,
+                "name": "",
+                "focus": null,
+                "title": null,
+                "source": null,
+                "filename": "",
+                "copyright": null,
+                "fieldtype": "asset",
+                "meta_data": {}
+              },
+              "Titulo": "ArraiEinstein",
+              "Descricao": "Festa junina para integração entre alunos e voluntários ",
+              "component": "oferecemos-card"
+            }
+          ],
+          "titulo": "O que oferecemos?",
+          "component": "oferecemos-section"
+        },
+        {
+          "_uid": "facc9b03-c05f-4ca5-811d-c231eb3634db",
+          "etapas": [
+            {
+              "_uid": "12c8c859-283d-4041-94da-07263c92a0fc",
+              "titulo": "Inscrição",
+              "component": "card-texto",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Assim que o link para a inscrição estiver disponível, preencha o formulário com seus dados pessoais e informações!",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "8e4ec269-8060-45e9-ad18-51e1f63ca545",
+              "titulo": "Prova teórica",
+              "component": "card-texto",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Os aprovados na etapa anterior realizaram a prova teórica, que engloba conhecimentos gerais do ensino médio.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "7276f91b-df15-4fdb-b68f-1d32e314ce32",
+              "titulo": "Documentos",
+              "component": "card-texto",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Passou na entrevista e está tudo \"ok\" com os seus documentos?! Bem-vindo ao Einstein Floripa!! Conquiste com a gente!!",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "2c977c30-0484-4cf7-9cb9-06760f8c2939",
+              "titulo": "Entrevista",
+              "component": "card-texto",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Passou na entrevista e está tudo \"ok\" com os seus documentos?! Bem-vindo ao Einstein Floripa!! Conquiste com a gente!!",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "_uid": "a58e7cf7-33b4-4fc3-add7-5e5ba7a910e4",
+              "titulo": "... Bem-vindo?",
+              "component": "card-texto",
+              "descricao": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Passou na entrevista e está tudo \"ok\" com os seus documentos?! Bem-vindo ao Einstein Floripa!! Conquiste com a gente!!",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "titulo": "processo seletivo",
+          "component": "etapas-section",
+          "subtitulo": "etapas do nosso"
+        },
+        {
+          "_uid": "ecb988dc-c5c8-4314-ae24-f66a93ae4021",
+          "links": [
+            {
+              "_uid": "9fe0669f-222a-46af-b961-52a28f22b2e5",
+              "link": {
+                "id": "",
+                "url": "https://app.pipefy.com/public/form/d5X3ZGuX",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "https://app.pipefy.com/public/form/d5X3ZGuX"
+              },
+              "button": [
+                {
+                  "_uid": "aec86322-3fd0-49e3-bc5e-81848968b460",
+                  "icone": {
+                    "id": null,
+                    "alt": null,
+                    "name": "",
+                    "focus": null,
+                    "title": null,
+                    "source": null,
+                    "filename": "",
+                    "copyright": null,
+                    "fieldtype": "asset",
+                    "meta_data": {}
+                  },
+                  "title": "Link de Inscrição",
+                  "variant": "ghost",
+                  "component": "button",
+                  "iconeADireita": false
+                }
+              ],
+              "component": "button-nav"
+            },
+            {
+              "_uid": "2efda2d1-032e-41ab-8932-ef9bdb4c3def",
+              "link": {
+                "id": "",
+                "url": "https://drive.google.com/file/d/1u6-IMbiA45K-c9Q9eX-G49V9lxJxeon7/view?usp=sharing",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "https://drive.google.com/file/d/1u6-IMbiA45K-c9Q9eX-G49V9lxJxeon7/view?usp=sharing"
+              },
+              "button": [
+                {
+                  "_uid": "c2dfc714-b71d-483b-9df2-b3741a80697e",
+                  "icone": {
+                    "id": null,
+                    "alt": null,
+                    "name": "",
+                    "focus": null,
+                    "title": null,
+                    "source": null,
+                    "filename": "",
+                    "copyright": null,
+                    "fieldtype": "asset",
+                    "meta_data": {}
+                  },
+                  "title": "Manual do candidato",
+                  "variant": "ghost",
+                  "component": "button",
+                  "iconeADireita": false
+                }
+              ],
+              "component": "button-nav"
+            },
+            {
+              "_uid": "8a36546d-69a9-4a42-862a-923da9d6374f",
+              "link": {
+                "id": "",
+                "url": "https://drive.google.com/file/d/1b2taFjklGrOnpnH1CDf4CV8bIZjZ0aKf/view?usp=drivesdk",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "https://drive.google.com/file/d/1b2taFjklGrOnpnH1CDf4CV8bIZjZ0aKf/view?usp=drivesdk"
+              },
+              "button": [
+                {
+                  "_uid": "fcb2c531-f39d-41bf-ab26-50dff203f4ba",
+                  "icone": {
+                    "id": null,
+                    "alt": null,
+                    "name": "",
+                    "focus": null,
+                    "title": null,
+                    "source": null,
+                    "filename": "",
+                    "copyright": null,
+                    "fieldtype": "asset",
+                    "meta_data": {}
+                  },
+                  "title": "Edital 2026",
+                  "variant": "ghost",
+                  "component": "button",
+                  "iconeADireita": false
+                }
+              ],
+              "component": "button-nav"
+            },
+            {
+              "_uid": "abd523f3-f863-4333-b3af-1aa87f2b47c4",
+              "link": {
+                "id": "",
+                "url": "https://drive.google.com/file/d/1KZgQNuDxPYbtvFXxdrAJ3wHRlQUSsW4s/view?usp=sharing",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "https://drive.google.com/file/d/1KZgQNuDxPYbtvFXxdrAJ3wHRlQUSsW4s/view?usp=sharing"
+              },
+              "button": [
+                {
+                  "_uid": "2aa6a9b6-06dc-4015-aeb3-ca5eaa3b32d7",
+                  "icone": {
+                    "id": null,
+                    "alt": null,
+                    "name": "",
+                    "focus": null,
+                    "title": null,
+                    "source": null,
+                    "filename": "",
+                    "copyright": null,
+                    "fieldtype": "asset",
+                    "meta_data": {}
+                  },
+                  "title": "Aprovados para Entrevista 2026",
+                  "variant": "ghost",
+                  "component": "button",
+                  "iconeADireita": false
+                }
+              ],
+              "component": "button-nav"
+            }
+          ],
+          "titulo": "Vai se inscrever?",
+          "component": "links-materiais-section",
+          "descricao": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "attrs": {
+                  "textAlign": null
+                },
+                "content": [
+                  {
+                    "text": "Não se esqueça de ver o material!",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "_uid": "98452728-a1ac-4c79-9c2d-2d3e7d0a94cb",
+          "duvidas": [
+            {
+              "_uid": "dc1c54e6-3174-46c9-8c20-8c38757f8389",
+              "pergunta": "Apenas estudantes com baixa renda podem se inscrever?",
+              "resposta": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "As vagas são prioritariamente destinadas a alunos de baixa renda, com renda familiar bruta per capita de até 1,5 salário mínimo.",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "No entanto, caso ainda existam vagas remanescentes, também poderão ser aceitos candidatos com renda de até 3,5 salários mínimos, desde que atendam aos demais requisitos do edital e apresentem toda a documentação exigida.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "duvida"
+            },
+            {
+              "_uid": "35e123e8-1436-4658-816a-dc1c50c683d8",
+              "pergunta": "Apenas maiores de idade podem se inscrever?",
+              "resposta": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Não! A idade mínima para inscrição é de 16 anos a partir da data de início do processo seletivo.",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Mas, importante lembrar que é necessário ter cursado ou estar cursando em 2026 o TERCEIRO ano do ensino médio",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "duvida"
+            },
+            {
+              "_uid": "fd55b17a-ea20-4db4-8391-c57c6e01b6c5",
+              "pergunta": "Até quando vão as inscrições?",
+              "resposta": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Até dia 27 de fevereiro de 2026.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "duvida"
+            },
+            {
+              "_uid": "7d882957-548f-449f-86b4-318a330c995c",
+              "pergunta": "As aulas são voltadas apenas para o vestibular da UFSC?",
+              "resposta": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "Não! O Einstein Floripa oferece aulas e simulados com objetivo de preparar os alunos para os vestibulares UFSC, UDESC e ENEM.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "duvida"
+            },
+            {
+              "_uid": "e0081801-8dd3-4211-bbab-4f9f6dda555d",
+              "pergunta": "Onde o cursinho acontece?",
+              "resposta": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "As aulas e monitorias acontecem no Centro de Ciências de Saúde (CCS) da UFSC, de segunda a sexta das 18 até as 22 horas.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "duvida"
+            },
+            {
+              "_uid": "70401df1-01bb-424d-96d5-5c0880d387e1",
+              "pergunta": "O processo seletivo é online?",
+              "resposta": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "textAlign": null
+                    },
+                    "content": [
+                      {
+                        "text": "A inscrição para o processo seletivo e o envio de documentos é online, mas as etapas de prova e entrevista acontecem presencialmente na UFSC.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "duvida"
+            }
+          ],
+          "component": "duvidas-frequentes-section",
+          "subtitulo": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Ainda tem dúvidas? Nós mande um email para ",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "processo.seletivo-organizadores@einsteinfloripa.com.br",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "attrs": {
+                          "href": "mailto:processo.seletivo-organizadores@einsteinfloripa.com.br",
+                          "uuid": null,
+                          "anchor": null,
+                          "target": "_blank",
+                          "linktype": "url"
+                        }
+                      },
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": "#000000"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "ou para",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "processo.seletivo-docentes@einsteinfloripa.com.br",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "attrs": {
+                          "href": "mailto:processo.seletivo-docentes@einsteinfloripa.com.br",
+                          "uuid": null,
+                          "anchor": null,
+                          "target": "_blank",
+                          "linktype": "url"
+                        }
+                      },
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": "#000000"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "footer": "114e01b4-2100-44a2-9179-16f26a2486a3",
+      "header": "98c8cf33-9796-4984-980b-6138bf6c3727",
+      "imagem": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null,
+        "source": null,
+        "filename": "",
+        "copyright": null,
+        "fieldtype": "asset",
+        "meta_data": {}
+      },
+      "titulo": "Curso e Inscrição",
+      "component": "pagina",
+      "descricao": "Curso e Inscrição",
+      "corDoFooter": "azul"
+    },
+    "published": true,
+    "slug": "curso-e-inscricao",
+    "path": null,
+    "full_slug": "curso-e-inscricao",
+    "default_root": null,
+    "disble_fe_editor": false,
+    "disable_fe_editor": false,
+    "parent": null,
+    "is_startpage": false,
+    "unpublished_changes": false,
+    "meta_data": null,
+    "imported_at": null,
+    "preview_token": {
+      "token": "d851cc0802b4a926c8de00119ef8b7b822a24078",
+      "timestamp": "1787836381"
+    },
+    "pinned": false,
+    "breadcrumbs": [],
+    "publish_at": null,
+    "expire_at": null,
+    "first_published_at": "2025-12-04T05:38:47.687Z",
+    "last_author": {
+      "id": 273894,
+      "userid": "einstein-website@einsteinfloripa.com.br",
+      "friendly_name": "Einstein Floripa"
+    },
+    "last_author_id": 273894,
+    "user_ids": [],
+    "space_role_ids": [],
+    "translated_slugs": [],
+    "localized_paths": [],
+    "position": -30,
+    "translated_stories": [],
+    "can_not_view": false,
+    "is_scheduled": null,
+    "scheduled_dates": null,
+    "ideas": [],
+    "current_version_id": 211274241779965,
+    "variant_type": null,
+    "experiment_ids": [],
+    "stage": null,
+    "stages": [],
+    "favourite_for_user_ids": []
+  }
+}
