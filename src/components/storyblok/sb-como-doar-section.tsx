@@ -241,9 +241,9 @@ export const SbComoDoarSection = ({ blok }: Blok<StoryblokComoDoarSection>) => {
                   <div className="flex items-start gap-3 text-sm sm:text-base text-app-neutral-800">
                     <ClipboardList className="w-5 h-5 mt-0.5 shrink-0 text-app-blue-700" />
                     <p className="leading-tight font-medium">
-                      Para ter acesso à nossa newsletter e garantir os benefícios
-                      de ser um amigo do einstein, preencha o formulário abaixo 
-                      (leva menos de um minuto!).
+                      Para ter acesso à nossa newsletter e garantir os
+                      benefícios de ser um amigo do einstein, preencha o
+                      formulário abaixo (leva menos de um minuto!).
                     </p>
                   </div>
 
