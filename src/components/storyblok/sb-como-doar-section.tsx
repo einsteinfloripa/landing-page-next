@@ -184,7 +184,7 @@ export const SbComoDoarSection = ({ blok }: Blok<StoryblokComoDoarSection>) => {
                       1
                     </div>
                     <p className="leading-tight">
-                      Leia o QRCode
+                      Copie a chave Pix
                       <br className="hidden sm:block" /> ao lado
                     </p>
                   </div>
@@ -241,9 +241,9 @@ export const SbComoDoarSection = ({ blok }: Blok<StoryblokComoDoarSection>) => {
                   <div className="flex items-start gap-3 text-sm sm:text-base text-app-neutral-800">
                     <ClipboardList className="w-5 h-5 mt-0.5 shrink-0 text-app-blue-700" />
                     <p className="leading-tight font-medium">
-                      Para validar sua doação (Cartão ou Pix) e garantir seus
-                      benefícios, precisamos que você preencha o formulário
-                      abaixo:
+                      Para ter acesso à nossa newsletter e garantir os
+                      benefícios de ser um amigo do einstein, preencha o
+                      formulário abaixo (leva menos de um minuto!).
                     </p>
                   </div>
 
